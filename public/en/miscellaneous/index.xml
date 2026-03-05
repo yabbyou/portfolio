@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Miscellaneous on Adam Lundgren</title>
-    <link>http://localhost:1313/en/miscellaneous/</link>
+    <link>http://localhost:1313/portfolio/en/miscellaneous/</link>
     <description>Recent content in Miscellaneous on Adam Lundgren</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en-US</language>
-    <atom:link href="http://localhost:1313/en/miscellaneous/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/portfolio/en/miscellaneous/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fake Ad</title>
-      <link>http://localhost:1313/en/miscellaneous/mbp/</link>
+      <link>http://localhost:1313/portfolio/en/miscellaneous/mbp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/miscellaneous/mbp/</guid>
+      <guid>http://localhost:1313/portfolio/en/miscellaneous/mbp/</guid>
       <description>Plantagen</description>
     </item>
     <item>
       <title>Sweden 2020</title>
-      <link>http://localhost:1313/en/miscellaneous/fotboll/</link>
+      <link>http://localhost:1313/portfolio/en/miscellaneous/fotboll/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/miscellaneous/fotboll/</guid>
+      <guid>http://localhost:1313/portfolio/en/miscellaneous/fotboll/</guid>
       <description>Euros 2020</description>
     </item>
     <item>
       <title>This site</title>
-      <link>http://localhost:1313/en/miscellaneous/site/</link>
+      <link>http://localhost:1313/portfolio/en/miscellaneous/site/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/miscellaneous/site/</guid>
+      <guid>http://localhost:1313/portfolio/en/miscellaneous/site/</guid>
       <description>Euros 2020</description>
     </item>
   </channel>

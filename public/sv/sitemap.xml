@@ -2,220 +2,220 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/sv/</loc>
+    <loc>http://localhost:1313/portfolio/sv/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/"
+                href="http://localhost:1313/portfolio/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/"
+                href="http://localhost:1313/portfolio/sv/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/archives/</loc>
+    <loc>http://localhost:1313/portfolio/sv/archives/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/archives/"
+                href="http://localhost:1313/portfolio/en/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/archives/"
+                href="http://localhost:1313/portfolio/sv/archives/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/miscellaneous/</loc>
+    <loc>http://localhost:1313/portfolio/sv/miscellaneous/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/miscellaneous/"
+                href="http://localhost:1313/portfolio/en/miscellaneous/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/miscellaneous/"
+                href="http://localhost:1313/portfolio/sv/miscellaneous/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/tags/case/</loc>
+    <loc>http://localhost:1313/portfolio/sv/tags/case/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/case/"
+                href="http://localhost:1313/portfolio/en/tags/case/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/tags/case/"
+                href="http://localhost:1313/portfolio/sv/tags/case/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/categories/</loc>
+    <loc>http://localhost:1313/portfolio/sv/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/categories/"
+                href="http://localhost:1313/portfolio/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/categories/"
+                href="http://localhost:1313/portfolio/sv/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/tags/concept/</loc>
+    <loc>http://localhost:1313/portfolio/sv/tags/concept/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/concept/"
+                href="http://localhost:1313/portfolio/en/tags/concept/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/tags/concept/"
+                href="http://localhost:1313/portfolio/sv/tags/concept/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/concept/</loc>
+    <loc>http://localhost:1313/portfolio/sv/advertising/concept/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/concept/"
+                href="http://localhost:1313/portfolio/en/advertising/concept/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/concept/"
+                href="http://localhost:1313/portfolio/sv/advertising/concept/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/miscellaneous/mbp/</loc>
+    <loc>http://localhost:1313/portfolio/sv/miscellaneous/mbp/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/miscellaneous/mbp/"
+                href="http://localhost:1313/portfolio/en/miscellaneous/mbp/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/miscellaneous/mbp/"
+                href="http://localhost:1313/portfolio/sv/miscellaneous/mbp/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/petablock/</loc>
+    <loc>http://localhost:1313/portfolio/sv/advertising/petablock/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/petablock/"
+                href="http://localhost:1313/portfolio/en/advertising/petablock/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/petablock/"
+                href="http://localhost:1313/portfolio/sv/advertising/petablock/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/tags/poster/</loc>
+    <loc>http://localhost:1313/portfolio/sv/tags/poster/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/poster/"
+                href="http://localhost:1313/portfolio/en/tags/poster/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/tags/poster/"
+                href="http://localhost:1313/portfolio/sv/tags/poster/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/poster/</loc>
+    <loc>http://localhost:1313/portfolio/sv/advertising/poster/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/poster/"
+                href="http://localhost:1313/portfolio/en/advertising/poster/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/poster/"
+                href="http://localhost:1313/portfolio/sv/advertising/poster/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/radio/</loc>
+    <loc>http://localhost:1313/portfolio/sv/advertising/radio/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/radio/"
+                href="http://localhost:1313/portfolio/en/advertising/radio/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/radio/"
+                href="http://localhost:1313/portfolio/sv/advertising/radio/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/</loc>
+    <loc>http://localhost:1313/portfolio/sv/advertising/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/"
+                href="http://localhost:1313/portfolio/en/advertising/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/"
+                href="http://localhost:1313/portfolio/sv/advertising/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/spotifydreammode/</loc>
+    <loc>http://localhost:1313/portfolio/sv/advertising/spotifydreammode/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/spotifydreammode/"
+                href="http://localhost:1313/portfolio/en/advertising/spotifydreammode/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/spotifydreammode/"
+                href="http://localhost:1313/portfolio/sv/advertising/spotifydreammode/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/miscellaneous/fotboll/</loc>
+    <loc>http://localhost:1313/portfolio/sv/miscellaneous/fotboll/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/miscellaneous/fotboll/"
+                href="http://localhost:1313/portfolio/en/miscellaneous/fotboll/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/miscellaneous/fotboll/"
+                href="http://localhost:1313/portfolio/sv/miscellaneous/fotboll/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/tags/</loc>
+    <loc>http://localhost:1313/portfolio/sv/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/"
+                href="http://localhost:1313/portfolio/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/tags/"
+                href="http://localhost:1313/portfolio/sv/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/miscellaneous/site/</loc>
+    <loc>http://localhost:1313/portfolio/sv/miscellaneous/site/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/miscellaneous/site/"
+                href="http://localhost:1313/portfolio/en/miscellaneous/site/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/miscellaneous/site/"
+                href="http://localhost:1313/portfolio/sv/miscellaneous/site/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/volvo_fireward/</loc>
+    <loc>http://localhost:1313/portfolio/sv/advertising/volvo_fireward/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/volvo_fireward/"
+                href="http://localhost:1313/portfolio/en/advertising/volvo_fireward/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/volvo_fireward/"
+                href="http://localhost:1313/portfolio/sv/advertising/volvo_fireward/"
                 />
   </url>
 </urlset>
