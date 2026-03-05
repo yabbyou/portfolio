@@ -78,10 +78,10 @@ languages:
     menus:
       main:
         - name: REKLAM
-          url: advertising/
+          pageRef: /advertising
           weight: 10
         - name: BLANDAT
-          url: miscellaneous/
+          pageRef: /miscellaneous
           weight: 20
 
   en:
@@ -92,10 +92,10 @@ languages:
     menus:
       main:
         - name: ADVERTISING
-          url: advertising/
+          pageRef: /advertising
           weight: 10
         - name: MISCELLANEOUS
-          url: miscellaneous/
+          pageRef: /miscellaneous
           weight: 20
 
 pygmentsUseClasses: true
