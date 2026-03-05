@@ -9,6 +9,12 @@ author:
 outputs:
   home:
     - HTML
+  section:
+    - HTML
+  taxonomy:
+    - HTML
+  term:
+    - HTML
 
 module:
   imports:
