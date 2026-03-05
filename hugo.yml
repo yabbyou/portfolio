@@ -77,10 +77,10 @@ languages:
     menus:
       main:
         - name: REKLAM
-          url: /sv/advertising/
+          url: /advertising/
           weight: 10
         - name: BLANDAT
-          url: /sv/miscellaneous/
+          url: /miscellaneous/
           weight: 20
 
   en:
@@ -91,10 +91,10 @@ languages:
     menus:
       main:
         - name: ADVERTISING
-          url: /en/advertising/
+          url: /advertising/
           weight: 10
         - name: MISCELLANEOUS
-          url: /en/miscellaneous/
+          url: /miscellaneous/
           weight: 20
 
 
