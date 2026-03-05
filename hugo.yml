@@ -1,4 +1,4 @@
-baseURL: "https://examplesite.com/"
+baseURL: https://github.com/yabbyou/portfolio.git
 title: Adam Lundgren
 description: Copywriter Adam Lundgren
 theme: ["PaperMod"]
