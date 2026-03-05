@@ -30,8 +30,8 @@
                      <a href="{{ .RelPermalink }}"
                         title="{{ .Language.LanguageName }}">
                         {{ .Lang | upper }}
-                        </a>
-                        {{- end }}
+                     </a>
+                    {{- end }}
                 {{- end }}
             </div>
             {{- end }}
@@ -72,14 +72,14 @@
         <ul id="menu">
             {{- range .Site.Menus.main }}
 
-            {{- $menuURL := .URL | relLangURL }}
+            {{- $menuURL := .Page.RelPermalink }}
             {{- $isActive := or
                 (eq $currentPage.RelPermalink $menuURL)
                 (and $currentPage.Section (eq $currentPage.Section (trim $menuURL "/" | path.Base)))
             }}
 
             <li>
-                <a href="{{ .URL | relLangURL }}"
+                <a href="{{ .Page.RelPermalink }}"
                    title="{{ .Title | default .Name }}">
                     <span {{ if $isActive }}class="active"{{ end }}>
                         {{ .Pre }}{{ .Name }}{{ .Post }}
