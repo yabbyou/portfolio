@@ -34,8 +34,6 @@
                         {{- end }}
                 {{- end }}
             </div>
-
-
             {{- end }}
         </div>
 
@@ -44,7 +42,7 @@
             {{- $label_text := (.Site.Params.label.text | default .Site.Title) }}
             {{- if .Site.Title }}
             <a class="logo"
-               href="{{ "" | absLangURL }}"
+               href="{{ "" | relLangURL }}"
                accesskey="h"
                title="{{ $label_text }} (Alt + H)">
                 {{- if .Site.Params.label.icon }}
@@ -74,14 +72,14 @@
         <ul id="menu">
             {{- range .Site.Menus.main }}
 
-            {{- $menuURL := .URL | absLangURL }}
+            {{- $menuURL := .URL | relLangURL }}
             {{- $isActive := or
                 (eq $currentPage.RelPermalink $menuURL)
                 (and $currentPage.Section (eq $currentPage.Section (trim $menuURL "/" | path.Base)))
             }}
 
             <li>
-                <a href="{{ .URL | absLangURL }}"
+                <a href="{{ .URL | relLangURL }}"
                    title="{{ .Title | default .Name }}">
                     <span {{ if $isActive }}class="active"{{ end }}>
                         {{ .Pre }}{{ .Name }}{{ .Post }}
