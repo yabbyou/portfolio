@@ -2,6 +2,8 @@ baseURL: "https://yabbyou.github.io/portfolio/"
 title: Adam Lundgren
 description: Copywriter Adam Lundgren
 
+canonifyURLs: true
+
 author:
   name: Adam Lundgren
   email: lundgrenen23@gmail.com
