@@ -85,6 +85,8 @@ languages:
 
 
 
+pygmentsUseClasses: true
+
 markup:
   highlight:
     noClasses: false
