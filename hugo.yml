@@ -33,7 +33,6 @@ minify:
   disableXML: true
   minifyOutput: true
 
-
 defaultContentLanguage: sv
 defaultContentLanguageInSubdir: true
 
@@ -66,7 +65,7 @@ params:
   homeInfoParams:
     Title: "\U0001F44B"
     Content:
-    
+
   customJS:
     - js/hero-scroll.js
 
@@ -78,12 +77,12 @@ languages:
     weight: 1
     menus:
       main:
-      - name: REKLAM
-      pageRef: advertising
-      weight: 10
-      - name: BLANDAT
-      pageRef: miscellaneous
-      weight: 20
+        - name: REKLAM
+          pageRef: advertising
+          weight: 10
+        - name: BLANDAT
+          pageRef: miscellaneous
+          weight: 20
 
   en:
     languageCode: en-US
@@ -93,13 +92,11 @@ languages:
     menus:
       main:
         - name: ADVERTISING
-        pageRef: advertising
-        weight: 10
+          pageRef: advertising
+          weight: 10
         - name: MISCELLANEOUS
-        pageRef: miscellaneous
-        weight: 20
-
-
+          pageRef: miscellaneous
+          weight: 20
 
 pygmentsUseClasses: true
 
