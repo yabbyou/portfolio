@@ -1,6 +1,8 @@
 baseURL: "https://yabbyou.github.io/portfolio/"
 title: Adam Lundgren
 description: Copywriter Adam Lundgren
+author:
+  name: Adam Lundgren
 
 module:
   imports:
