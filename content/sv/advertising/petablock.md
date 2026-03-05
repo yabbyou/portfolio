@@ -2,19 +2,24 @@
 draft: false
 title: 'PETA Block'
 description: 'Never buy an animal online again.'
+
 cover:
     image: img/peta_block/mammakobabyko.jpeg
+
 tags: 
  - CASE
+
 variant: "case"
-summary: 'PETA ville ha en idé som skulle hjälpa djur som används som kläder. Det visade sig att marknadens efterfrågan faktiskt är låg, men också att det är svårt för folk att se alla tillgängliga alternativ som gömmer sig bland djurliken. Lösningen blev ett plugin som gör din webbläsare helt vegansk och tar bort alla brutala alternativ.'
-translationKey: petablock
 layout: wide
-tags:
-- case
-badge: 
+
+summary: 'PETA ville ha en idé som skulle hjälpa djur som används som kläder. Det visade sig att marknadens efterfrågan faktiskt är låg, men också att det är svårt för folk att se alla tillgängliga alternativ som gömmer sig bland djurliken. Lösningen blev ett plugin som gör din webbläsare helt vegansk och tar bort alla brutala alternativ.'
+
+translationKey: petablock
+
 row: 1
 order: 1
+
+badge: 
 ---
 &nbsp; 
  
