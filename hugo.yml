@@ -1,8 +1,10 @@
 baseURL: "https://yabbyou.github.io/portfolio/"
 title: Adam Lundgren
 description: Copywriter Adam Lundgren
+
 author:
   name: Adam Lundgren
+  email: lundgrenen23@gmail.com
 
 module:
   imports:
@@ -13,7 +15,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
+googleAnalytics: G-XXXXXXXX
 
 minify:
   disableXML: true
