@@ -1,0 +1,34 @@
+#scroll-indicator {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 100vh;
+  z-index: 2147483647;
+  pointer-events: auto;
+  transition: opacity 0.25s ease;
+  clip-path: inset(var(--header-height) 0 0 0);
+}
+
+.scroll-dot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+html.has-hero:not(.scrolled-past-hero) #scroll-indicator {
+  clip-path: inset(100vh 0 0 0);
+  opacity: 0;
+}
+
+html.has-hero.scrolled-past-hero #scroll-indicator {
+  clip-path: inset(var(--header-height) 0 0 0);
+  opacity: 1;
+}
+

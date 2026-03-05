@@ -1,0 +1,298 @@
+/* ======================================================
+   NAV / HEADER (UNCHANGED)
+   ====================================================== */
+
+.nav {
+  display: flex;
+  align-items: center;
+  max-width: var(--nav-width, 1200px);
+  margin-inline: auto;
+  min-height: var(--header-height);
+  padding-top: 0.357rem;
+  margin-bottom: 0.014rem;
+}
+
+.nav-left,
+.nav-center,
+#menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  margin-left: var(--gap);
+  gap: 13px;
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  font-family: "Albertus Nova";
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.095em;
+  text-decoration: none;
+  position: relative;
+}
+
+button#theme-toggle {
+  background: none;
+  border: none;
+  transform: translateY(-2.8%);
+}
+
+[data-theme="dark"] #moon { display: none; }
+[data-theme="light"] #sun { display: none; }
+
+/* MENU */
+
+#menu {
+  margin-left: auto;
+  margin-right: var(--gap);
+  list-style: none;
+  display: flex;
+  gap: var(--gap);
+  overflow: visible;
+}
+
+#menu a,
+#menu .active {
+  font-family: "Gilroy";
+  font-size: 0.605rem;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+}
+
+#menu li span {
+  position: relative;
+}
+
+#menu li span::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3.5px;
+  height: 3.5px;
+  border-radius: 50%;
+  background-color: currentColor;
+  opacity: 0;
+}
+
+#menu li span.active::before {
+  opacity: 0.9;
+}
+
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 1000;
+  background: transparent;
+}
+
+/* ======================================================
+   HERO HEADER BEHAVIOR (STABLE)
+   ====================================================== */
+
+body:not(.has-hero) .header,
+.header.is-scrolled {
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--header-border);
+}
+
+.has-hero:not(.scrolled-past-hero) .header {
+  background: transparent;
+  border-bottom: 0;
+}
+
+.has-hero.scrolled-past-hero .header {
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--header-border);
+}
+
+/* ======================================================
+   HERO LAYOUT CONTROLS (CLEANED — NO X TRANSLATE)
+   ====================================================== */
+
+.has-hero .post-hero-inner {
+  --hero-align-x: flex-start;
+  --hero-align-y: flex-end;
+  --hero-text-align: left;
+
+  --hero-offset-y: -10px;
+
+  --hero-title-gap: 0%;
+}
+
+/* ======================================================
+   HERO CONTAINER
+   ====================================================== */
+
+.has-hero .post-hero {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  color-scheme: dark;
+  overflow: hidden;
+}
+
+/* ======================================================
+   HERO OVERLAY + BLUR (SIMPLE ONLY)
+   ====================================================== */
+
+.has-hero .post-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.25),
+    rgba(0,0,0,0.85)
+  );
+  z-index: 1;
+}
+
+html.has-hero body.is-simple .post-hero-overlay {
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+}
+
+/* ======================================================
+   HERO TEXT (CASE + SIMPLE)
+   ====================================================== */
+
+.has-hero .post-hero-inner {
+  position: relative;
+  z-index: 3;
+
+  max-width: 960px;
+  margin: 0;
+  padding: 6rem 15rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: var(--hero-align-y);
+  align-items: var(--hero-align-x);
+
+  /* 🔥 vertical offset only */
+  transform: translateY(var(--hero-offset-y));
+
+  color: #fff;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.75);
+}
+
+.has-hero .post-hero-title {
+  font-family: "Albertus Nova";
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 0.0155em;
+  margin-bottom: var(--hero-title-gap);
+}
+
+.has-hero .post-hero-description {
+  font-family: "Gilroy";
+  font-size: 19px;
+  font-weight: 200;
+  line-height: 1.3;
+}
+
+/* ======================================================
+   SIMPLE HERO — CENTERED SLIDER (UNCHANGED)
+   ====================================================== */
+
+.has-hero .post-hero {
+  position: relative;
+}
+
+html.has-hero body.is-simple .post-hero-slider {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -60%);
+  width: min(1040px, 90vw);
+  z-index: 2;
+}
+
+/* Slider contents scale naturally */
+html.has-hero body.is-simple .post-hero-slider > *,
+html.has-hero body.is-simple .post-hero-slider video,
+html.has-hero body.is-simple .post-hero-slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ======================================================
+   HIDE DUPLICATE ARTICLE HEADER
+   ====================================================== */
+
+.has-hero .post-hero + .header + .main .post-header--inner {
+  display: none;
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+}
+
+/* ======================================================
+   SIMPLE HERO — HERO EXTRA
+   ====================================================== */
+
+html.has-hero body.is-simple .post-hero-extra {
+  position: absolute;
+  right: -1.25rem;
+  bottom: -1.25rem;
+  transform: translate(90%, 350%);
+
+  display: inline-flex;
+  align-items: center;
+
+  width: max-content;
+  max-width: max-content;
+  flex: 0 0 auto;
+  align-self: flex-start;
+
+  padding: 0.45rem 0.7rem;
+
+  font-family: 'CodeSaver';
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: rgb(40, 40, 40);
+  backdrop-filter: blur(6px);
+  border-radius: 3px;
+
+  white-space: nowrap;
+  z-index: 4;
+}
+
+.has-hero .post-hero-title,
+.has-hero .post-hero-description {
+  color: #fff !important;
+}
+
+.has-hero .post-hero {
+  min-height: 100vh;
+  margin-bottom: 2rem; /* ensures scroll space exists */
+}
+
+html.has-hero .main {
+  padding-top: 0;
+}

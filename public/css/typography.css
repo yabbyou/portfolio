@@ -1,0 +1,10 @@
+.post-content blockquote {
+  font-family: "CodeSaver", serif;
+  font-weight: 400;
+}
+
+.post-content blockquote p,
+.post-content blockquote li {
+  font-family: "CodeSaver", serif;
+  font-weight: 400;
+}

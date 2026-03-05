@@ -1,0 +1,76 @@
+{{/* Optional size parameters from shortcode: width / height */}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+{{- $align := .Get "align" | default "center" -}}
+{{- $type := .Get "type" | default "" -}}
+
+{{- $isSimple := eq $.Page.Params.variant "simple" -}}
+
+{{/* Build frame style (width only) */}}
+{{- $frameStyleParts := slice -}}
+{{- with $width }}{{ $frameStyleParts = $frameStyleParts | append (printf "max-width:%s" .) }}{{ end }}
+{{- $frameStyle := delimit $frameStyleParts ";" -}}
+
+{{/* Build slider style (height only) */}}
+{{- $sliderStyleParts := slice -}}
+{{- with $height }}{{ $sliderStyleParts = $sliderStyleParts | append (printf "height:%s" .) }}{{ end }}
+{{- $sliderStyle := delimit $sliderStyleParts ";" -}}
+
+{{/* START: capture slider markup */}}
+{{- $slider := printf `
+<div class="slider-frame slider-align-%s %s"
+  %s>
+
+  <div class="slider-main-row">
+    <button class="slider-arrow prev" type="button">〈</button>
+
+    <div class="custom-slider %s"
+         %s
+         %s>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          %s
+        </div>
+      </div>
+    </div>
+
+    <button class="slider-arrow next" type="button">〉</button>
+  </div>
+
+  <div class="swiper-pagination"></div>
+</div>
+`
+  $align
+  $type
+  (cond $frameStyle (printf `style="%s;"` $frameStyle) "")
+  $type
+  (cond $sliderStyle (printf `style="%s;"` $sliderStyle) "")
+  (cond (.Get "disableOverlay") "data-disable-overlay" "")
+  .Inner
+-}}
+{{/* END */}}
+
+{{ if $isSimple }}
+  {{/* Register slider for hero, do NOT render inline */}}
+  {{ $.Page.Scratch.Add "hero_slider" $slider }}
+{{ else }}
+  {{ $slider | safeHTML }}
+{{ end }}
+
+{{/* overlay remains GLOBAL and untouched */}}
+{{ if not ($.Page.Scratch.Get "overlay_rendered") }}
+{{ $.Page.Scratch.Set "overlay_rendered" true }}
+
+<div class="slider-overlay">
+  <button class="slider-close" type="button">✕</button>
+  <button class="overlay-prev" type="button">‹</button>
+  <button class="overlay-next" type="button">›</button>
+
+  <div class="slider-overlay-content">
+    <img class="slider-lightbox-img" style="display:none;">
+    <video class="slider-lightbox-video" controls style="display:none;"></video>
+    <div class="slider-caption"></div>
+  </div>
+</div>
+
+{{ end }}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Reklam on Adam Lundgren</title>
+    <link>http://localhost:1313/sv/advertising/</link>
+    <description>Recent content in Reklam on Adam Lundgren</description>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>sv-SV</language>
+    <atom:link href="http://localhost:1313/sv/advertising/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Concept title</title>
+      <link>http://localhost:1313/sv/advertising/concept/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sv/advertising/concept/</guid>
+      <description>Audiobooks that pause when you fall asleep</description>
+    </item>
+    <item>
+      <title>PETA Block</title>
+      <link>http://localhost:1313/sv/advertising/petablock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sv/advertising/petablock/</guid>
+      <description>Never buy an animal online again.</description>
+    </item>
+    <item>
+      <title>Poster Title</title>
+      <link>http://localhost:1313/sv/advertising/poster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sv/advertising/poster/</guid>
+      <description>Audiobooks that pause when you fall asleep</description>
+    </item>
+    <item>
+      <title>Radio Title</title>
+      <link>http://localhost:1313/sv/advertising/radio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sv/advertising/radio/</guid>
+      <description>Audiobooks that pause when you fall asleep</description>
+    </item>
+    <item>
+      <title>Spotify Dream Mode</title>
+      <link>http://localhost:1313/sv/advertising/spotifydreammode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sv/advertising/spotifydreammode/</guid>
+      <description>yo</description>
+    </item>
+    <item>
+      <title>Volvo Fireward</title>
+      <link>http://localhost:1313/sv/advertising/volvo_fireward/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sv/advertising/volvo_fireward/</guid>
+      <description>For Life Between Our Roads</description>
+    </item>
+  </channel>
+</rss>

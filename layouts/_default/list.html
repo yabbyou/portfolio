@@ -1,0 +1,77 @@
+{{- define "main" }}
+
+{{- if (and site.Params.profileMode.enabled .IsHome) }}
+  {{- partial "index_profile.html" . }}
+{{- else }}
+
+{{- if not .IsHome | and .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content">
+  {{ .Content }}
+</div>
+{{- end }}
+
+{{/* ------------------------------------------
+     COLLECT + SORT PAGES (ABSOLUTELY SAFE)
+------------------------------------------ */}}
+
+{{- $pages := union .RegularPages .Sections }}
+
+{{- if .IsHome }}
+  {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
+{{- end }}
+
+{{/* 
+  CRITICAL:
+  Enforce deterministic ordering BEFORE row grouping.
+  Order of operations matters.
+*/}}
+
+{{- $pages = sort $pages "Title" "asc" }}
+{{- $pages = sort $pages "Params.order" "asc" }}
+{{- $pages = sort $pages "Params.row" "asc" }}
+
+<main class="main">
+
+{{/* ------------------------------------------
+     ROW GROUPING (TYPE-SAFE)
+------------------------------------------ */}}
+
+{{- $currentRow := -1 }}
+{{- $rowPages := slice }}
+
+{{- range $i, $p := $pages }}
+
+  {{- $row := $p.Params.row | default 999 }}
+
+  {{- if ne $row $currentRow }}
+
+    {{- if gt (len $rowPages) 0 }}
+      {{- partial "render-row.html" (dict "Pages" $rowPages) }}
+    {{- end }}
+
+    {{- $rowPages = slice }}
+    {{- $currentRow = $row }}
+
+  {{- end }}
+
+  {{- $rowPages = $rowPages | append $p }}
+
+{{- end }}
+
+{{/* Render final row */}}
+{{- if gt (len $rowPages) 0 }}
+  {{- partial "render-row.html" (dict "Pages" $rowPages) }}
+{{- end }}
+
+</main>
+
+{{- end }}
+{{- end }}

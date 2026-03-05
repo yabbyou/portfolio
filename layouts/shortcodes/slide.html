@@ -1,0 +1,32 @@
+<div class="swiper-slide"
+  data-type="{{ .Get "type" }}"
+  data-src="{{ .Get "src" }}"
+  data-caption="{{ .Get "caption" }}"
+  data-overlayposter="{{ .Get "overlayposter" }}"
+>
+
+  {{ if eq (.Get "type") "video" }}
+
+    <div class="slide-video-thumb">
+      <video
+        class="slide-inline-video"
+        src="{{ .Get "src" }}"
+        preload="metadata"
+        poster="{{ .Get "poster" }}"
+        playsinline
+        controls
+      ></video>
+
+      <button class="video-play-overlay" type="button" aria-label="Play video">▶</button>
+    </div>
+
+  {{ else }}
+
+    <!-- IMPORTANT: ALWAYS wrap images in slide-image-thumb -->
+    <div class="slide-image-thumb">
+      <img src="{{ .Get "src" }}" alt="">
+    </div>
+
+  {{ end }}
+
+</div>

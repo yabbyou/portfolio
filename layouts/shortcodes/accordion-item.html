@@ -1,0 +1,16 @@
+{{ $title := .Get "title" | default "Accordion Item" }}
+{{ $type := $.Page.Scratch.Get "accordionType" | default "default" }}
+
+<div class="accordion-item">
+  <button {{ if ne $type "info" }}aria-expanded="false"{{ else }}aria-expanded="true"{{ end }}>
+    <span class="accordion-title">{{ $title }}</span>
+
+    {{ if ne $type "info" }}
+      <span class="icon" aria-hidden="true"></span>
+    {{ end }}
+  </button>
+
+  <div class="accordion-content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

@@ -1,0 +1,65 @@
+{{- $img := .Params.cover.image | default .Params.featured_image -}}
+{{- if $img }}
+
+<section class="post-hero"
+         style="background-image:url('{{ $img | relURL }}')">
+
+  <div class="post-hero-overlay"></div>
+
+  <div class="post-hero-inner">
+
+    {{- if eq .Params.variant "simple" }}
+
+      {{ partial "breadcrumbs.html" . }}
+
+      <div class="post-hero-row">
+        <div class="post-hero-text">
+          <h1 class="post-hero-title">{{ .Title }}</h1>
+
+          {{- if .Description }}
+            <p class="post-hero-description">{{ .Description }}</p>
+          {{- end }}
+        </div>
+      </div>
+
+    {{- else }}
+
+      {{ partial "breadcrumbs.html" . }}
+
+      <h1 class="post-hero-title">{{ .Title }}</h1>
+
+      {{- if .Description }}
+        <p class="post-hero-description">{{ .Description }}</p>
+      {{- end }}
+
+      {{- if not (.Param "hideMeta") }}
+        <div class="post-hero-meta">
+          {{- partial "post_meta.html" . -}}
+        </div>
+      {{- end }}
+
+    {{- end }}
+
+  </div>
+
+  {{- if eq .Params.variant "simple" }}
+    <div class="post-hero-slider">
+
+      {{- with .Scratch.Get "hero_slider" }}
+        {{ . | safeHTML }}
+      {{- end }}
+
+      {{- with .Params.heroExtra }}
+        <div class="post-hero-extra">
+          {{ . | markdownify }}
+        </div>
+      {{- end }}
+
+    </div>
+  {{- end }}
+
+  <div id="hero-end" aria-hidden="true"></div>
+
+</section>
+
+{{- end }}

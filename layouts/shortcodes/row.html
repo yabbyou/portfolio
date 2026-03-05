@@ -1,0 +1,5 @@
+{{ $class := .Get 0 | default "serif" }}
+
+<div class="brief-row {{ with .Get 0 }}brief-{{ . }}{{ end }}">
+  {{ .Inner | markdownify }}
+</div>

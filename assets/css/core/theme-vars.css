@@ -1,0 +1,46 @@
+:root {
+    --gap: 24px;
+    --content-gap: 20px;
+    --nav-width: 1280px;
+    --main-width: 1280px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --radius: 8px;
+    --theme: rgb(243, 243, 242);
+    --entry: rgb(251, 251, 247);
+    --primary: rgb(30, 30, 30);
+    --secondary: rgb(108, 108, 108);
+    --tertiary: rgb(214, 214, 214);
+    --content: rgb(31, 31, 31);
+    --code-block-bg: rgb(236, 236, 234);
+    --code-bg: rgb(243,243,242);
+    --border: rgb(231, 231, 231);
+    --header-bg: var(--theme);
+    --header-border: rgb(232, 231, 231);
+    --header-offset: 0.0000em; /* controls gap below header */
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    --theme: rgb(19, 19, 19);
+    --entry: rgb(22, 22, 22);
+    --primary: #ffffff;
+    --secondary: rgb(155, 156, 157);
+    --tertiary: rgb(65, 66, 68);
+    --content: rgb(218,218,219);
+    --code-block-bg: rgb(31,31,32);
+    --code-bg: rgb(19, 19, 19);
+    --border: rgb(28,27,26);
+    --header-bg: var(--theme);
+    --header-border: var(--border);
+    color-scheme: dark;
+}
+
+.list {
+    background: var(--code-bg);
+}
+
+[data-theme="dark"] .list {
+    background: var(--theme);
+}
+

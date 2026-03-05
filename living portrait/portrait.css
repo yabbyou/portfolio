@@ -1,0 +1,38 @@
+#portrait-frame {
+  position: relative;
+  width: 420px;              /* EXACT export width */
+  height: 560px;             /* EXACT export height */
+  user-select: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#portrait-frame img {
+  position: absolute;
+  inset: 0;
+  width: 70%;
+  height: 70%;
+  display: block;
+  pointer-events: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55px;
+  border-radius: 4px;
+}
+
+.eyelids {
+  opacity: 0;
+}
+
+.iris {
+  transition: transform 0.08s linear;
+}
+
+.eyelids {
+  opacity: 0;
+  transition: opacity 0.06s linear;
+}
+
+.eyelids.is-blinking {
+  opacity: 1;
+}

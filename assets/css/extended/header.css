@@ -1,0 +1,287 @@
+.nav {
+    display: flex;
+    align-items: center;
+    max-width: var(--nav-width, 1200px);
+    margin-inline: auto;
+    min-height: var(--header-height);
+    padding-top: 0.357rem;
+    margin-bottom: 0.014rem;
+}
+
+.nav-left,
+.nav-center,
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    margin-left: var(--gap);
+    gap: 13px;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    font-family: "Albertus Nova";
+    font-size: 0.920rem;
+    font-weight: 700;
+    letter-spacing: 0.0950em;
+    text-decoration: none;
+}
+
+button#theme-toggle {
+    scale: 100%;
+    background: none;
+    border: none;
+    transform: translateY(-2.8%);
+}
+
+[data-theme="dark"] #moon { display: none; }
+[data-theme="light"] #sun { display: none; }
+
+.lang-switch {
+    display: flex;
+    gap: 0px;
+}
+
+.lang-switch a {
+    font-family: "Gilroy";
+    font-size: 0.605rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    letter-spacing: 0.095em;
+    transform: translateY(-0%);
+}
+
+/* MENU */
+#menu {
+    margin-left: auto;
+    margin-right: var(--gap);
+    list-style: none;
+    display: flex;
+    gap: var(--gap);
+}
+
+#menu a {
+    font-family: "Gilroy";
+    font-size: 0.605rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    transform: translateY(-0%);
+}
+
+#menu .active {
+    font-family: "Gilroy";
+    font-size: 0.605rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    transform: translateY(-0%);
+}
+
+.header {
+    background: transparent;
+    border-bottom: 0px solid var(--header-border);
+    background-clip: padding-box;
+}
+
+/* ======================================================
+   NORMAL HEADER (DEFAULT STATE)
+   ====================================================== */
+
+body:not(.has-hero) .header,
+.header.is-scrolled {
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--header-border);
+    box-shadow: none;
+}
+
+:root[data-theme="dark"] body:not(.has-hero) .header,
+:root[data-theme="dark"] .header.is-scrolled {
+    box-shadow: none;
+}
+
+/* Non-hero pages start solid */
+body:not(.has-hero) .header {
+    background: var(--header-bg);
+    border-bottom: 0.062rem solid var(--header-border);
+}
+
+/* anchor */
+#menu li span {
+    position: relative;
+}
+
+/* dot exists for ALL items */
+#menu li span::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 46%;
+    transform: translateY(-48%);
+    width: 3.5px;
+    height: 3.5px;
+    border-radius: 50%;
+    background-color: currentColor;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* active state = visible */
+#menu li span.active::before {
+    opacity: 0.9;
+}
+
+/* home: menu dot off */
+.is-home #menu li span.active::before {
+    opacity: 0;
+}
+
+/* prevent clipping */
+#menu {
+    overflow: visible;
+}
+
+#menu .active {
+    border: none;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo-dot {
+    position: absolute;
+    font-size: 0.900em;
+    right: -5px;
+    top: 2.2670em;
+    transform: translateY(-50%);
+    opacity: 1;
+    pointer-events: none;
+    color: currentColor;
+}
+
+.is-home #menu .active::after {
+    display: none;
+}
+
+.header a:hover {
+    opacity: 0.85;
+}
+
+/* ======================================================
+   ADDITIVE ONLY — HEADER BEHAVIOR
+   ====================================================== */
+
+/* Make header follow scroll WITHOUT changing layout */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Offset content so nothing jumps */
+.main {
+    position: sticky;
+    top: 0;
+    padding-top: 4.2em;
+}
+
+
+
+/*
+  This class is toggled by JS when the hero is passed.
+  Until then, your existing transparent hero styles apply.
+*/
+.header.is-scrolled {
+    background: var(--header-bg);
+    border-bottom: 0.062rem solid var(--header-border);
+    box-shadow: none;
+}
+
+:root[data-theme="dark"] .header.is-scrolled {
+    box-shadow: none;
+}
+
+/* ======================================================
+   AUTHORITATIVE HEADER POSITION (OVERRIDES HERO CSS)
+   ====================================================== */
+
+.header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* ======================================================
+   HERO LOCKED STATE (OVER HERO ONLY)
+   ====================================================== */
+
+.has-hero .header.is-hero-active {
+    background: none;
+    border-bottom: 0;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+/* lock text + icons to white */
+.has-hero .header.is-hero-active a,
+.has-hero .header.is-hero-active span {
+    color: inherit;
+}
+
+.has-hero .header.is-hero-active svg {
+    fill: currentColor;
+}
+
+/* theme toggle NEVER locked (existing rule preserved) */
+.has-hero .header.is-hero-active #theme-toggle,
+.has-hero .header.is-hero-active #theme-toggle * {
+    color: unset !important;
+    fill: unset !important;
+}
+
+/* Keep header transparent ONLY while hero is active */
+.has-hero:not(.scrolled-past-hero) .header.is-scrolled {
+    background: transparent;
+    border-bottom: 0;
+    box-shadow: none;
+}
+
+/* Restore normal header once hero is passed */
+.has-hero.scrolled-past-hero .header {
+    background: var(--header-bg);
+    border-bottom: 0.062rem solid var(--header-border);
+    color: inherit;
+}
+
+/* ======================================================
+   HERO — FORCE TRANSPARENT HEADER UNTIL HERO IS PASSED
+   ====================================================== */
+
+body.has-hero:not(.scrolled-past-hero) .header {
+    background: transparent !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+}
+
+/* ======================================================
+   HERO — TRANSPARENT HEADER UNTIL HERO IS PASSED
+   ====================================================== */
+
+html.has-hero:not(.scrolled-past-hero) .header {
+    background: transparent !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+}
+

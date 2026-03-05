@@ -1,0 +1,421 @@
+/* =========================================================
+   SLIDER — Stable v1.5.0 (Tall + Wide unified)
+   ========================================================= */
+
+/* =========================================================
+   GEOMETRY
+   ========================================================= */
+
+.custom-slider {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.custom-slider {
+  border-radius: 3px;
+}
+
+.custom-slider.tall {
+  aspect-ratio: 3 / 4; /* portrait ratio */
+}
+
+.custom-slider.single {
+  aspect-ratio: unset;
+  height: auto;
+}
+
+.custom-slider.single .swiper,
+.custom-slider.single .swiper-wrapper,
+.custom-slider.single .swiper-slide {
+  height: auto !important;
+}
+
+/* =========================================================
+   FRAME
+   ========================================================= */
+
+.slider-frame {
+  width: 100%;
+  margin: 2rem auto;
+  border-radius: 3px;
+  overflow: visible;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+}
+
+/* TALL SLIDER — match text column width */
+.slider-frame.tall {
+  max-width: 650px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-main-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.slider-main-row::before {
+  content: "";
+  position: absolute;
+  inset: -60px;
+}
+
+.slider-main-row .custom-slider {
+  width: 100%;
+}
+
+.slider-frame.slider-sized .custom-slider {
+  aspect-ratio: auto;
+  height: 100%;
+}
+
+.slider-frame.slider-sized .swiper,
+.slider-frame.slider-sized .swiper-wrapper,
+.slider-frame.slider-sized .swiper-slide {
+  height: 100%;
+}
+
+/* =========================================================
+   SWIPER CORE
+   ========================================================= */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* =========================================================
+   MEDIA BEHAVIOR
+   ========================================================= */
+
+
+
+/* Tall sliders fill frame */
+.custom-slider.tall .swiper-slide img,
+.custom-slider.tall .swiper-slide video {
+  object-fit: cover;
+}
+
+.custom-slider.single img,
+.custom-slider.single video {
+  object-fit: cover !important;
+}
+
+/* =========================================================
+   IMAGE / VIDEO WRAPPERS
+   ========================================================= */
+
+.slide-image-thumb,
+.slide-video-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.slide-image-thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.custom-slider.tall .slide-image-thumb img {
+  object-fit: cover;
+}
+
+.slide-video-thumb video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-video-thumb video.playing {
+  object-fit: contain !important;
+}
+
+/* =========================================================
+   PAGINATION
+   ========================================================= */
+
+.slider-frame > .swiper-pagination {
+  position: static;
+  display: flex !important;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50%;
+  background: var(--slider-inline-bullet);
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--slider-inline-bullet-active);
+}
+
+.slider-frame.video-playing > .swiper-pagination {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* =========================================================
+   ARROWS
+   ========================================================= */
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  color: var(--slider-inline-arrow-color);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .4s ease .15s, color .25s ease;
+}
+
+.slider-arrow.prev {
+  left: -65px;
+}
+
+.slider-arrow.next {
+  right: -65px;
+}
+
+.slider-main-row:hover .slider-arrow,
+.slider-frame.show-arrows .slider-arrow {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slider-main-row:hover .slider-arrow {
+  color: var(--slider-inline-arrow-hover);
+}
+
+.slider-frame.video-playing .slider-arrow {
+  opacity: 0;
+  pointer-events: auto;
+}
+
+.slider-frame.video-playing:hover .slider-arrow {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slider-frame.video-playing:hover > .swiper-pagination {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* =========================================================
+   PLAY BUTTON
+   ========================================================= */
+
+.video-play-overlay {
+  position: absolute;
+  inset: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.65);
+  color: white;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* =========================================================
+   OVERLAY (LIGHTBOX)
+   ========================================================= */
+
+.slider-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 99999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-overlay.active {
+  display: flex;
+}
+
+.slider-overlay-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  text-align: center;
+}
+
+.slider-lightbox-img,
+.slider-lightbox-video {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 3px;
+}
+
+.overlay-prev,
+.overlay-next,
+.slider-close {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: none;
+  color: rgb(250,251,247);
+  border: none;
+  cursor: pointer;
+}
+
+.slider-close { top: 22px; right: 22px; }
+.overlay-prev { left: 22px; top: 50%; transform: translateY(-50%); }
+.overlay-next { right: 22px; top: 50%; transform: translateY(-50%); }
+
+.slider-caption {
+  margin-top: 12px;
+  font-size: .9rem;
+  color: white;
+}
+
+/* =========================================================
+   ZOOM MODE
+   ========================================================= */
+
+.slider-overlay.zoomed {
+  cursor: zoom-out;
+}
+
+.slider-overlay.zoomed img,
+.slider-overlay.zoomed video {
+  max-width: none;
+  max-height: none;
+  object-fit: none !important;
+}
+
+.slider-overlay.zoomed .slider-overlay-content {
+  overflow: auto;
+}
+
+/* =========================================================
+   SCROLL LOCK
+   ========================================================= */
+
+html.overlay-open,
+body.overlay-open {
+  overflow: hidden;
+  height: 100%;
+}
+
+body.overlay-open {
+  position: fixed;
+  width: 100%;
+}
+
+/* =========================================================
+   THEME VARIABLES
+   ========================================================= */
+
+:root {
+  --slider-inline-arrow-color: #5e5e5e;
+  --slider-inline-arrow-hover: #000;
+  --slider-inline-bullet: #b9b9b9;
+  --slider-inline-bullet-active: #797979;
+}
+
+:root[data-theme="dark"] {
+  --slider-inline-arrow-color: #bfbfbf;
+  --slider-inline-arrow-hover: #fff;
+  --slider-inline-bullet: #777;
+  --slider-inline-bullet-active: #c1c1c1;
+}
+
+/* =========================================================
+   ALIGNMENT
+   ========================================================= */
+
+.slider-frame.slider-align-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slider-frame.slider-align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-frame.slider-align-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slider-frame {
+  overflow: visible;
+}
+
+.custom-slider.tall img {
+  object-fit: cover !important;
+}
+
+.slide-image-thumb {
+  background: rgba(47, 47, 47, 0);
+}
+
+.slider-frame.slider-sized .custom-slider {
+  aspect-ratio: auto !important;
+}
+
+.slide-image-thumb img {
+  display: block;
+}

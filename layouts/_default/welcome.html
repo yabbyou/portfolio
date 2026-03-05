@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+{{ $parts := split .RawContent "<!-- BODY -->" }}
+
+<article class="post-single home">
+
+  <!-- HERO -->
+  <section class="welcome-hero-wrapper">
+    {{ index $parts 0 | markdownify }}
+  </section>
+
+  <!-- ARROW -->
+  <div class="hero-scroll-indicator" aria-hidden="true">
+    ↓
+  </div>
+
+  <!-- BODY -->
+  <section class="post-content">
+    {{ if gt (len $parts) 1 }}
+      {{ index $parts 1 | markdownify }}
+    {{ end }}
+  </section>
+
+</article>
+
+{{ end }}

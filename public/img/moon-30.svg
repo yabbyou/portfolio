@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+	<defs>
+		<image width="24" height="24" id="img1" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgdmlld0JveD0iMCAwIDI0IDI0IgogICAgIHdpZHRoPSIyNCIKICAgICBoZWlnaHQ9IjI0IgogICAgIGZpbGw9ImN1cnJlbnRDb2xvciIKICAgICBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgPHBhdGggZD0iTTIxIDEyLjc5QTkgOSAwIDEgMSAxMS4yMSAzCiAgICAgICAgICAgNyA3IDAgMCAwIDIxIDEyLjc5eiIvPgo8L3N2Zz4K"/>
+	</defs>
+	<style>
+		.s0 { fill: #f2f3f2 } 
+	</style>
+	<path fill-rule="evenodd" class="s0" d="m15 27.5c-6.91 0-12.5-5.59-12.5-12.5 0-6.91 5.59-12.5 12.5-12.5 6.91 0 12.5 5.59 12.5 12.5 0 6.91-5.59 12.5-12.5 12.5z"/>
+	<use id="moon15" href="#img1" transform="matrix(1,0,0,1,3,3)"/>
+</svg>

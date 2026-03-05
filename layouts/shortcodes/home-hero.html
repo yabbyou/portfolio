@@ -1,0 +1,16 @@
+<div class="welcome-hero-wrapper">
+
+  <div class="hero-left-text">
+    {{ .Get "left" | markdownify }}
+  </div>
+
+  <div class="hero-anchor">
+  {{ partial "portrait.html" . }}
+  </div>
+
+
+  <div class="hero-bottom-text">
+    {{ .Get "right" | markdownify }}
+  </div>
+
+</div>

@@ -1,0 +1,199 @@
+/* ================================
+   Container
+================================ */
+
+.container {
+  margin: 0 auto;
+  padding: 3rem 0;
+  max-width: var(--main-width);
+}
+
+/* ================================
+   Accordion wrapper
+================================ */
+
+.faq-accordion {
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--entry); /* theme-aware */
+
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.faq-accordion--info {
+  max-width: 700px;
+}
+
+/* ================================
+   Items
+================================ */
+
+.faq-accordion .accordion-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-accordion .accordion-item:last-child {
+  border-bottom: none;
+}
+
+/* ================================
+   Question row
+================================ */
+
+.faq-accordion button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+
+  font-family: "CodeSaver", monospace;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.0155em;
+
+  color: var(--primary); /* theme-aware */
+}
+
+.faq-accordion button:hover {
+  opacity: 0.85; /* replaces hard-coded hover color */
+}
+
+.faq-accordion .accordion-title {
+  flex: 1;
+}
+
+/* ================================
+   Icon
+================================ */
+
+.faq-accordion .icon {
+  width: 1.25rem;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: currentColor;
+}
+
+.faq-accordion .icon::before {
+  content: "+";
+}
+
+.faq-accordion button[aria-expanded="true"] .icon::before {
+  content: "−";
+}
+
+/* ================================
+   Accordion content
+================================ */
+
+.faq-accordion .accordion-content {
+  overflow: hidden;
+  padding: 0;
+
+  font-family: "CodeSaver", monospace;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.0155em;
+  color: var(--content);
+
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-0.25rem);
+  transition:
+    opacity 80ms ease,
+    transform 80ms ease;
+}
+
+/* Expanded state */
+.faq-accordion button[aria-expanded="true"] + .accordion-content {
+  max-height: none;
+  opacity: 1;
+  transform: translateY(0);
+  padding: 0 1.5rem 1.5rem;
+}
+
+/* Paragraph cleanup */
+.faq-accordion .accordion-content p {
+  margin: 0;
+  max-width: 60ch;
+}
+
+/* ================================
+   Reduced motion
+================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-accordion .accordion-content {
+    transition: none;
+  }
+}
+
+/* ================================
+   INFO VARIANT (Always Open)
+================================ */
+
+.faq-accordion--info .icon {
+  display: none;
+}
+
+.faq-accordion--info .accordion-content {
+  max-height: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  padding: 0 1.5rem;
+  max-width: 700px;
+  min-width: 700px;
+}
+
+/* ================================
+   FORCE LEFT ALIGNMENT 
+================================ */
+
+.post-content .faq-accordion .accordion-content,
+.post-content .faq-accordion .accordion-content ul,
+.post-content .faq-accordion .accordion-content li,
+.post-content .faq-accordion .accordion-content p {
+  text-align: left !important;
+}
+
+/* ================================
+   Separate stacked accordions
+================================ */
+
+.faq-accordion + .faq-accordion {
+  margin-top: 2rem;
+}
+
+.container + .container {
+  margin-top: 2rem;
+}
+
+/* ================================
+   BULLET CONTROL
+================================ */
+
+/* DATA variant (default) keeps bullets */
+.faq-accordion .accordion-content ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+/* INFO variant removes bullets */
+.faq-accordion--info .accordion-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.faq-accordion--info .accordion-content li {
+  padding-left: 0;
+}

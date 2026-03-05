@@ -1,0 +1,98 @@
+baseURL: "https://examplesite.com/"
+title: Adam Lundgren
+description: Copywriter Adam Lundgren
+theme: ["PaperMod"]
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+
+defaultContentLanguage: sv
+defaultContentLanguageInSubdir: true
+
+params:
+  env: production
+  mainSections:
+    - advertising
+    - miscellaneous
+  title: ExampleSite
+  description: "ExampleSite description"
+  keywords: [Blog, Portfolio]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+
+  label:
+    text: "Adam Lundgren"
+    icon: /.png
+    iconHeight: 35
+
+  homeInfoParams:
+    Title: "\U0001F44B"
+    Content:
+    
+  customJS:
+    - js/hero-scroll.js
+
+languages:
+  sv:
+    languageCode: sv-SV
+    languageName: Svenska
+    contentDir: content/sv
+    weight: 1
+    menus:
+      main:
+        - name: REKLAM
+          url: /sv/advertising/
+          weight: 10
+        - name: BLANDAT
+          url: /sv/miscellaneous/
+          weight: 20
+
+  en:
+    languageCode: en-US
+    languageName: English
+    contentDir: content/en
+    weight: 2
+    menus:
+      main:
+        - name: ADVERTISING
+          url: /en/advertising/
+          weight: 10
+        - name: MISCELLANEOUS
+          url: /en/miscellaneous/
+          weight: 20
+
+
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+caches:
+  images:
+    dir: :cacheDir/images

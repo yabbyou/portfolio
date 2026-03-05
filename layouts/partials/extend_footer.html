@@ -1,0 +1,26 @@
+{{/* layouts/partials/extend_footer.html */}}
+
+<!-- Swiper JS (external CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+{{/* Hugo Pipes: bundle all custom scripts */}}
+{{ $js := slice
+    (resources.Get "js/main.js")
+    (resources.Get "js/header-hero.js")
+    (resources.Get "js/header-compact.js")
+    (resources.Get "js/sliders.js")
+    (resources.Get "js/accordion.js")
+    (resources.Get "js/copyurl.js")
+    (resources.Get "js/portrait-eyes.js")
+    (resources.Get "js/annotation.js")
+    (resources.Get "js/scroll-indicator.js")
+    | resources.Concat "js/script.js"
+    | minify
+    | fingerprint
+}}
+
+<script
+  src="{{ $js.RelPermalink }}"
+  integrity="{{ $js.Data.Integrity }}"
+  defer>
+</script>

@@ -1,0 +1,183 @@
+:root {
+  --page-max: 1200px;
+  --text-max: 650px;
+}
+
+/* ===============================
+   HERO LAYOUT
+   =============================== */
+
+.welcome-hero-wrapper {
+  max-width: 1200px;
+  margin: 6rem auto 5rem;
+  padding: 0 var(--gap);
+}
+
+.welcome-hero-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 5rem;
+  align-items: center;
+}
+
+/* Portrait */
+
+.hero-anchor {
+  display: flex;
+  justify-content: center;
+}
+
+/* Text stack */
+
+.hero-text-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 520px;
+}
+
+/* Headline */
+
+.hero-left-text {
+  font-family: 'Albertus Nova';
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+/* Subline */
+
+.hero-bottom-text {
+  font-family: 'Albertus Nova';
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* ===============================
+   MOBILE
+   =============================== */
+
+@media (max-width: 900px) {
+  .welcome-hero-grid {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+    text-align: center;
+  }
+
+  .hero-text-stack {
+    align-items: center;
+  }
+}
+
+/* ===============================
+   BODY CONTENT
+   =============================== */
+
+.post-content {
+  max-width: 650px;
+  margin: 5rem auto 6rem;
+  font-family: 'Banto', sans-serif;
+  line-height: 1.9;
+  font-size: 15px;
+  font-weight: 200;
+  text-align: left;
+}
+
+/* ===============================
+   MOBILE
+   =============================== */
+
+@media (max-width: 900px) {
+  .welcome-hero-grid {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-left-text,
+  .hero-bottom-text {
+    text-align: center;
+  }
+}
+
+/* ===============================
+   ANNOTATIONS
+   =============================== */
+
+.annotation-tooltip {
+  display: none;
+}
+
+.annotated:hover + .annotation-tooltip,
+.annotated.is-active + .annotation-tooltip {
+  display: block;
+}
+
+.post-single.home {
+  overflow: visible;
+}
+/* ===============================
+   HERO → BODY ARROW
+   =============================== */
+
+.hero-scroll-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  margin: 3rem auto;
+
+  font-family: 'Albertus Nova', serif;
+  font-size: 56px;
+  line-height: 1;
+  font-weight: 300;
+
+  color: var(--primary);
+
+  pointer-events: none;
+  user-select: none;
+}
+
+.annotated {
+  cursor: help;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.15em;
+}
+
+/* ===============================
+   TOOLTIP — BASE (LIGHT MODE)
+   =============================== */
+
+.annotation-tooltip {
+  position: absolute;
+
+  max-width: 340px;
+  padding: 0.4rem 0.65rem;
+
+  background: rgb(31, 31, 31); /* LIGHT BG */
+  color: rgb(243, 243, 242);      /* LIGHT TEXT */
+
+  font-family: 'CodeSaver';
+  font-size: 12px;
+  line-height: 1.45;
+
+  border-radius: 2px;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+
+  z-index: 9999;
+
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+:root[data-theme="dark"] .annotation-tooltip {
+  background: rgb(65, 66, 68);   /* DARK BG */
+  color: rgb(218,218,219);        /* DARK TEXT */
+}

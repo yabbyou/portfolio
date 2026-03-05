@@ -1,0 +1,49 @@
+/* Custom styles added to demo */
+
+.twitter-tweet {
+    margin: auto;
+}
+
+iframe {
+    border-radius: var(--radius) !important;
+}
+
+.home-info ul {
+    padding-inline-start: 20px;
+}
+
+.entry-cover img {
+    border: 1px solid var(--border);
+}
+
+.annotated {
+  cursor: help;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.15em;
+}
+
+.annotation-tooltip {
+  position: absolute;
+  max-width: 260px;
+  padding: 0.6rem 0.75rem;
+
+  background: rgba(0, 0, 0, 0.92);
+  color: #fff;
+
+  font-family: 'Banto', sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+
+  border-radius: 6px;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+
+  z-index: 9999;
+}
+
+html {
+  overflow-y: scroll; /* always allocate scroll behavior */
+}

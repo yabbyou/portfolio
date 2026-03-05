@@ -1,0 +1,10 @@
+{{ $type := .Get "type" | default "default" }}
+{{ $.Page.Scratch.Set "accordionType" $type }}
+
+<div class="container">
+  <div class="faq-accordion faq-accordion--{{ $type }}">
+    {{ .Inner }}
+  </div>
+</div>
+
+{{ $.Page.Scratch.Delete "accordionType" }}

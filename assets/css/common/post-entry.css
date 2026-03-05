@@ -1,0 +1,392 @@
+/* ============================================================
+   BASE CARD (SHARED)
+   ============================================================ */
+
+.post-entry,
+.first-entry {
+    position: relative;
+    padding: 0;
+    background: var(--entry);
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: transform 0.1s;
+}
+
+.post-entry:active,
+.first-entry:active {
+    transform: scale(0.99);
+}
+
+/* ============================================================
+   ROW CONTAINERS
+   ============================================================ */
+
+.post-row {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto calc(var(--gap) * 2);
+}
+
+/* ---------- WIDE ROW ---------- */
+
+.post-row-wide {
+    display: flex;
+    justify-content: center;
+}
+
+.post-row-wide .post-entry {
+    width: 100%;
+}
+
+/* ---------- WIDE MINI ROW ---------- */
+
+.post-row-wide-mini {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 200px; /* OPTION 2 — ROW CONTROLS HEIGHT */
+    gap: var(--gap);
+}
+
+/* ---------- TALL ROW ---------- */
+
+.post-row-tall {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.post-row-tall .post-entry {
+    max-width: 320px;
+    max-height: 600px;
+}
+
+.post-row-tall:has(.post-entry:nth-child(1):last-child) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.post-row-tall:has(.post-entry:nth-child(2):last-child) {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* ============================================================
+   CARD INTERNAL LAYOUTS
+   ============================================================ */
+
+.post-entry.post-wide,
+.post-entry.post-wide-mini {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    align-items: stretch;
+
+    height: 100%;        /* ✅ CRITICAL: fill grid row */
+    min-height: 0;       /* ✅ allow children to shrink */
+}
+
+/* tall */
+.post-entry.post-tall {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================================================
+   MEDIA COLUMN
+   ============================================================ */
+
+.entry-media {
+    display: flex;
+    align-self: stretch;
+    overflow: hidden;
+    border-radius: inherit;
+    min-height: 0;
+}
+
+.entry-cover {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+}
+
+.entry-cover img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+/* ============================================================
+   IMAGE — TALL CARD
+   ============================================================ */
+
+.post-tall .entry-cover {
+    margin: calc(var(--gap) * -1) calc(var(--gap) * -1) 0;
+}
+
+.post-tall .entry-cover img {
+    aspect-ratio: 4 / 5;
+}
+
+/* ============================================================
+   IMAGE — WIDE / WIDE-MINI
+   ============================================================ */
+
+.post-wide .entry-cover img,
+.post-wide-mini .entry-cover img {
+    border-radius: 0;
+}
+
+/* Side switching */
+.post-entry.img-right .entry-media {
+    order: 2;
+}
+
+.post-entry.img-right .entry-text-wrap {
+    order: -1;
+}
+
+/* ============================================================
+   GAP ELIMINATION (EDGE OWNERSHIP)
+   ============================================================ */
+
+.post-entry.post-wide .entry-media {
+    margin: calc(var(--gap) * -1) 0;
+}
+
+.post-entry.post-wide.img-left .entry-media {
+    margin-left: calc(var(--gap) * -1);
+}
+
+.post-entry.post-wide.img-right .entry-media {
+    margin-right: calc(var(--gap) * -1);
+}
+
+/* ============================================================
+   TEXT SURFACE
+   ============================================================ */
+
+.entry-text-wrap {
+    height: 100%;
+    padding: var(--gap);
+    min-height: 0;
+}
+
+.entry-text {
+    position: relative;
+}
+
+/* ============================================================
+   HEADER (BASE — DO NOT TOUCH)
+   ============================================================ */
+
+.entry-header h1,
+.entry-header h2 {
+    margin: 13px 0 0;
+    margin-inline: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: 'Gilroy';
+    letter-spacing: 0.0155em;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: underline;
+    text-decoration-thickness: 0.09em;
+    text-underline-offset: 38%;
+}
+
+/* ============================================================
+   SUMMARY
+   ============================================================ */
+
+.entry-content {
+    margin-top: 18px;
+    margin-inline: 30px;
+    line-height: 1.5;
+    font-family: 'Banto';
+    font-weight: 300;
+    letter-spacing: 0.035em;
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+/* ============================================================
+   TAGS
+   ============================================================ */
+
+.entry-tags {
+    margin-top: auto;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.entry-tag {
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-left: 31px;
+    margin-bottom: 18px;
+    padding: 6px 10px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+/* Light theme */
+:root .entry-tag {
+    background: rgb(241, 241, 241);
+    color: #666; /* your chosen light-mode tag color */
+}
+
+/* Dark theme */
+:root[data-theme="dark"] .entry-tag {
+    background: rgba(255, 255, 255, 0.08);
+    color: #aaa; /* your chosen dark-mode tag color */
+}
+
+.post-entry.post-wide .entry-text,
+.post-entry.post-wide-mini .entry-text {
+    padding-bottom: 44px;
+}
+
+.post-entry.post-wide .entry-tags,
+.post-entry.post-wide-mini .entry-tags {
+    position: absolute;
+    left: 2px;
+    bottom: -8px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+    .post-row-tall,
+    .post-row-wide-mini {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .post-entry.post-wide,
+    .post-entry.post-wide-mini {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .entry-cover img {
+        aspect-ratio: 16 / 9;
+        height: auto;
+    }
+
+    .post-entry.post-wide .entry-tags,
+    .post-entry.post-wide-mini .entry-tags {
+        position: static;
+        margin-top: 27px;
+    }
+
+    .post-entry.post-wide .entry-text,
+    .post-entry.post-wide-mini .entry-text {
+        padding-bottom: 0;
+    }
+}
+
+/* ============================================================
+   CARD BADGE
+   ============================================================ */
+
+.entry-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: 5;
+    min-width: 44px;
+    height: 44px;
+    padding: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: #b40000;
+    color: #fff;
+    font-family: 'Gilroy';
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+/* ============================================================
+   TALL CARD — TEXT HEIGHT CONTROL
+   ============================================================ */
+
+.post-entry.post-tall .entry-text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.post-entry.post-tall .entry-content {
+    flex: 0 0 auto;
+    min-height: 5.5em;
+}
+
+.post-entry.post-tall .entry-tags {
+    margin-top: auto;
+}
+
+/* ============================================================
+   WIDE-MINI — EDGE ESCAPE
+   ============================================================ */
+
+.post-entry.post-wide-mini .entry-media {
+    margin: calc(var(--gap) * -1);
+}
+
+/* ============================================================
+   WIDE-MINI — IMAGE POSITION SWITCHING
+   ============================================================ */
+
+.post-entry.post-wide-mini {
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.6fr);
+}
+
+.post-entry.post-wide-mini.img-right {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+}
+
+.post-entry.post-wide-mini.img-right .entry-media {
+    grid-column: 2;
+}
+
+.post-entry.post-wide-mini.img-right .entry-text-wrap {
+    grid-column: 1;
+}
+
+/* ============================================================
+   WIDE-MINI — HEADER TYPOGRAPHY OVERRIDE (SAFE)
+   ============================================================ */
+
+.post-entry.post-wide-mini .entry-header h1,
+.post-entry.post-wide-mini .entry-header h2 {
+    line-height: 1.8;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-underline-offset: 27%;
+}
+
+/* ============================================================
+   WIDE-MINI — TIGHTER VERTICAL RHYTHM
+   ============================================================ */
+
+.post-entry.post-wide-mini .entry-text-wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.post-entry.post-wide-mini .entry-header h2 {
+    margin-top: 18px;
+}

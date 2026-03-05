@@ -1,0 +1,96 @@
+<header class="header{{ if .IsHome }} is-home{{ end }}">
+    <nav class="nav">
+
+        <!-- LEFT GROUP: THEME + LANG -->
+        <div class="nav-left">
+            {{- if (not .Site.Params.disableThemeToggle) }}
+            <button id="theme-toggle"
+                    accesskey="t"
+                    title="(Alt + T)"
+                    aria-label="Toggle theme">
+
+                <img src="{{ "img/moon-30.svg" | absURL }}"
+                     alt=""
+                     id="moon"
+                     width="30"
+                     height="30">
+
+                <img src="{{ "img/sun30.svg" | absURL }}"
+                     alt=""
+                     id="sun"
+                     width="25"
+                     height="25">
+            </button>
+            {{- end }}
+
+            {{- if (not .Site.Params.disableLangToggle) }}
+            <div class="lang-switch">
+                {{- with .Translations }}
+                    {{- range . }}
+                     <a href="{{ .RelPermalink }}"
+                        title="{{ .Language.LanguageName }}">
+                        {{ .Lang | upper }}
+                        </a>
+                        {{- end }}
+                {{- end }}
+            </div>
+
+
+            {{- end }}
+        </div>
+
+        <!-- CENTER: LOGO -->
+        <div class="nav-center">
+            {{- $label_text := (.Site.Params.label.text | default .Site.Title) }}
+            {{- if .Site.Title }}
+            <a class="logo"
+               href="{{ "" | absLangURL }}"
+               accesskey="h"
+               title="{{ $label_text }} (Alt + H)">
+                {{- if .Site.Params.label.icon }}
+                {{- $img := resources.Get .Site.Params.label.icon }}
+                {{- if $img }}
+                    {{- if .Site.Params.label.iconHeight }}
+                        {{- $img = $img.Resize (printf "x%d" .Site.Params.label.iconHeight) }}
+                    {{- else }}
+                        {{- $img = $img.Resize "x30" }}
+                    {{- end }}
+                    <img src="{{ $img.Permalink }}"
+                         alt=""
+                         aria-label="logo"
+                         height="{{- .Site.Params.label.iconHeight | default "30" -}}">
+                {{- end }}
+                {{- end }}
+                {{- $label_text -}}
+                {{- if .IsHome }}
+                <span class="logo-dot">.</span>
+                {{- end }}
+            </a>
+            {{- end }}
+        </div>
+
+        <!-- RIGHT: MENU -->
+        {{- $currentPage := . }}
+        <ul id="menu">
+            {{- range .Site.Menus.main }}
+
+            {{- $menuURL := .URL | absLangURL }}
+            {{- $isActive := or
+                (eq $currentPage.RelPermalink $menuURL)
+                (and $currentPage.Section (eq $currentPage.Section (trim $menuURL "/" | path.Base)))
+            }}
+
+            <li>
+                <a href="{{ .URL | absLangURL }}"
+                   title="{{ .Title | default .Name }}">
+                    <span {{ if $isActive }}class="active"{{ end }}>
+                        {{ .Pre }}{{ .Name }}{{ .Post }}
+                    </span>
+                </a>
+            </li>
+
+            {{- end }}
+        </ul>
+
+    </nav>
+</header>
