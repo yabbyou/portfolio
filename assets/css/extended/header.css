@@ -162,18 +162,11 @@ body:not(.has-hero) .header {
     position: absolute;
     font-size: 0.900em;
     right: -5px;
-    top: 2.2670em;
+    top: 0.6000em;
     transform: translateY(-50%);
     opacity: 1;
     pointer-events: none;
     color: currentColor;
-}
-
-.logo::after {
-  content: ".";
-  position: absolute;
-  right: -8px;
-  bottom: 2px;
 }
 
 .is-home #menu .active::after {
