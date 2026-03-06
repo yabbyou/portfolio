@@ -169,6 +169,13 @@ body:not(.has-hero) .header {
     color: currentColor;
 }
 
+.logo::after {
+  content: ".";
+  position: absolute;
+  right: -8px;
+  bottom: 2px;
+}
+
 .is-home #menu .active::after {
     display: none;
 }
