@@ -13,6 +13,12 @@
 {{ $copyCSS := resources.Get "css/extended/copyurl.css" | minify }}
 <link rel="stylesheet" href="{{ $copyCSS.RelPermalink }}">
 
+<link rel="preload" href="/fonts/Gilroy-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/AlbertusNova.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Banto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/CodeSaver-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 <!-- MUST BE LAST -->
 <link rel="stylesheet" href="/css/typography.css">
 

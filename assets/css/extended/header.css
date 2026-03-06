@@ -52,7 +52,7 @@ button#theme-toggle {
 .lang-switch a {
     font-family: "Gilroy";
     font-size: 0.605rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     letter-spacing: 0.095em;
@@ -71,7 +71,7 @@ button#theme-toggle {
 #menu a {
     font-family: "Gilroy";
     font-size: 0.605rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.12em;
     text-decoration: none;
     transform: translateY(-0%);
@@ -80,7 +80,7 @@ button#theme-toggle {
 #menu .active {
     font-family: "Gilroy";
     font-size: 0.605rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.12em;
     transform: translateY(-0%);
 }
@@ -116,6 +116,7 @@ body:not(.has-hero) .header {
 /* anchor */
 #menu li span {
     position: relative;
+    padding-left: 4px;
 }
 
 /* dot exists for ALL items */
@@ -124,9 +125,9 @@ body:not(.has-hero) .header {
     position: absolute;
     left: -9px;
     top: 46%;
-    transform: translateY(-48%);
+    transform: translateY(-50%);
     width: 3.5px;
-    height: 3.5px;
+    height: 3px;
     border-radius: 50%;
     background-color: currentColor;
     opacity: 0;
