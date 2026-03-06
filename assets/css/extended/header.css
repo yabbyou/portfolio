@@ -36,7 +36,7 @@
 }
 
 button#theme-toggle {
-    scale: 100%;
+    scale: 110%;
     background: none;
     border: none;
     transform: translateY(-2.8%);
@@ -57,7 +57,7 @@ button#theme-toggle {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     letter-spacing: 0.095em;
-    transform: translateY(-0%);
+    transform: translateY(2%);
 }
 
 /* MENU */
@@ -71,7 +71,7 @@ button#theme-toggle {
 
 #menu a {
     font-family: "Gilroy";
-    font-size: 0.605rem;
+    font-size: 0.705rem; 
     font-weight: 500;
     letter-spacing: 0.12em;
     text-decoration: none;
@@ -80,7 +80,7 @@ button#theme-toggle {
 
 #menu .active {
     font-family: "Gilroy";
-    font-size: 0.605rem;
+    font-size: 0.705rem;
     font-weight: 500;
     letter-spacing: 0.12em;
     transform: translateY(-0%);
@@ -117,14 +117,13 @@ body:not(.has-hero) .header {
 /* anchor */
 #menu li span {
     position: relative;
-    padding-left: 4px;
 }
 
 /* dot exists for ALL items */
 #menu li span::before {
     content: "";
     position: absolute;
-    left: -9px;
+    left: -0px;
     top: 46%;
     transform: translateY(-50%);
     width: 3.5px;
