@@ -156,7 +156,6 @@ body:not(.has-hero) .header {
 
 .logo {
     position: relative;
-    white-space: nowrap;
 }
 
 .logo-dot {
