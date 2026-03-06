@@ -32,6 +32,7 @@
     font-weight: 700;
     letter-spacing: 0.0950em;
     text-decoration: none;
+    line-height: 1;
 }
 
 button#theme-toggle {

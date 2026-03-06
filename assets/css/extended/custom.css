@@ -45,5 +45,9 @@ iframe {
 }
 
 html {
+  text-rendering: optimizeLegibility;
+}
+
+html {
   overflow-y: scroll; /* always allocate scroll behavior */
 }
