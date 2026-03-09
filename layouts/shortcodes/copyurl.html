@@ -1,12 +1,13 @@
 <button id="copy-url-btn" class="copy-url-btn" aria-label="Copy URL">
-  <!-- Default icons -->
-  <img src="img/link-lightmode.png"  alt="Copy URL" class="copy-url-icon light-icon default-icon">
-  <img src="img/link-darkmode.png"   alt="Copy URL" class="copy-url-icon dark-icon  default-icon">
 
-  <!-- Success icons (hidden initially) -->
-  <img src="img/check-lightmode.png" alt="Copied"    class="copy-url-icon light-icon success-icon">
-  <img src="img/check-darkmode.png"  alt="Copied"    class="copy-url-icon dark-icon  success-icon">
+  <!-- Default icons -->
+  <img src="{{ "img/link-lightmode.png" | relURL }}"  alt="Copy URL" class="copy-url-icon light-icon default-icon">
+  <img src="{{ "img/link-darkmode.png"  | relURL }}"  alt="Copy URL" class="copy-url-icon dark-icon default-icon">
+
+  <!-- Success icons -->
+  <img src="{{ "img/check-lightmode.png" | relURL }}" alt="Copied" class="copy-url-icon light-icon success-icon">
+  <img src="{{ "img/check-darkmode.png"  | relURL }}" alt="Copied" class="copy-url-icon dark-icon success-icon">
+
 </button>
 
-<!-- REMOVE the text -->
 <span id="copy-url-status" style="display:none;"></span>
