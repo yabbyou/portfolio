@@ -1,63 +1,28 @@
-/* Lock theme toggle size so layout never shifts */
+/* lock toggle size so header never shifts */
 #theme-toggle {
   width: 24px;
   height: 24px;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-right: 0rem;
   transform: translateY(-6px);
-}
-/* Icon base */
-.theme-icon {
-  width: 12px;
-  height: 12px;
-  color: var(--primary);
+  position: relative;
 }
 
+/* icon size */
 #theme-toggle img {
   position: absolute;
   width: 12px;
   height: 12px;
 }
 
-
-/* Light mode */
-.theme-icon.sun {
-  display: none;
-}
-
-/* Dark mode */
-.dark .theme-icon.sun {
-  display: inline;
-}
-
-.dark .theme-icon.moon {
-  display: none;
-}
-
-#theme-toggle {
-  display: flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-#theme-toggle svg {
-  display: block;
-}
-
-html:not([data-theme]) #theme-toggle {
-  visibility: hidden;
-}
-
-/* hide both icons initially */
+/* hide both by default */
 #moon,
 #sun {
   display: none;
 }
 
-/* show correct icon once theme is known */
+/* show correct icon immediately */
 html[data-theme="dark"] #sun {
   display: block;
 }
