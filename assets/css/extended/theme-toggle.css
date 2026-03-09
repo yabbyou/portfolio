@@ -1,4 +1,4 @@
-/* lock toggle size so header never shifts */
+/* lock toggle size so header doesn't move */
 #theme-toggle {
   width: 24px;
   height: 24px;
@@ -9,20 +9,18 @@
   position: relative;
 }
 
-/* icon size */
+/* icon sizing */
 #theme-toggle img {
   position: absolute;
   width: 12px;
   height: 12px;
 }
 
-/* hide both initially */
-#moon,
+/* default = light mode */
 #sun {
   display: none;
 }
 
-/* light mode (default) */
 #moon {
   display: block;
 }
