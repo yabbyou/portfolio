@@ -16,17 +16,22 @@
   height: 12px;
 }
 
-/* hide both by default */
+/* hide both initially */
 #moon,
 #sun {
   display: none;
 }
 
-/* show correct icon immediately */
-html[data-theme="dark"] #sun {
+/* light mode (default) */
+#moon {
   display: block;
 }
 
-html[data-theme="light"] #moon {
+/* dark mode */
+body.dark #moon {
+  display: none;
+}
+
+body.dark #sun {
   display: block;
 }
