@@ -9,6 +9,12 @@
   margin-right: 0rem;
   transform: translateY(-6px);
 }
+/* Icon base */
+.theme-icon {
+  width: 12px;
+  height: 12px;
+  color: var(--primary);
+}
 
 #theme-toggle img {
   position: absolute;
@@ -17,7 +23,19 @@
 }
 
 
+/* Light mode */
+.theme-icon.sun {
+  display: none;
+}
 
+/* Dark mode */
+.dark .theme-icon.sun {
+  display: inline;
+}
+
+.dark .theme-icon.moon {
+  display: none;
+}
 
 #theme-toggle {
   display: flex !important;
@@ -29,20 +47,6 @@
   display: block;
 }
 
-/* show moon by default (light mode) */
-#moon {
-  display: block;
-}
-
-#sun {
-  display: none;
-}
-
-/* dark mode */
-body.dark #moon {
-  display: none;
-}
-
-body.dark #sun {
-  display: block;
+html:not([data-theme]) #theme-toggle {
+  visibility: hidden;
 }
