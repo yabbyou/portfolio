@@ -9,12 +9,6 @@
   margin-right: 0rem;
   transform: translateY(-6px);
 }
-/* Icon base */
-.theme-icon {
-  width: 12px;
-  height: 12px;
-  color: var(--primary);
-}
 
 #theme-toggle img {
   position: absolute;
@@ -23,19 +17,7 @@
 }
 
 
-/* Light mode */
-.theme-icon.sun {
-  display: none;
-}
 
-/* Dark mode */
-.dark .theme-icon.sun {
-  display: inline;
-}
-
-.dark .theme-icon.moon {
-  display: none;
-}
 
 #theme-toggle {
   display: flex !important;
@@ -47,21 +29,20 @@
   display: block;
 }
 
-html:not([data-theme]) #theme-toggle {
-  visibility: hidden;
+/* show moon by default (light mode) */
+#moon {
+  display: block;
 }
 
-/* hide both icons initially */
-#moon,
 #sun {
   display: none;
 }
 
-/* show correct icon once theme is known */
-html[data-theme="dark"] #sun {
-  display: block;
+/* dark mode */
+body.dark #moon {
+  display: none;
 }
 
-html[data-theme="light"] #moon {
+body.dark #sun {
   display: block;
 }
