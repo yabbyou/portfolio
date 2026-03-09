@@ -286,3 +286,48 @@ html.has-hero:not(.scrolled-past-hero) .header {
     box-shadow: none !important;
 }
 
+@media (max-width: 768px) {
+
+  /* allow nav to reflow */
+  .nav {
+    flex-wrap: wrap;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* remove absolute centering (this breaks phones) */
+  .nav-center {
+    position: static;
+    transform: none;
+    width: 100%;
+    justify-content: center;
+    margin-top: 6px;
+  }
+
+  /* shrink logo */
+  .logo {
+    font-size: 0.8rem;
+  }
+
+  /* menu spacing */
+  #menu {
+    gap: 12px;
+    font-size: 0.65rem;
+  }
+
+  #menu a {
+    font-size: 0.65rem;
+  }
+
+  /* prevent horizontal overflow */
+  .nav-left {
+    gap: 8px;
+    margin-left: 0;
+  }
+
+  /* adjust content offset for smaller header */
+  .main {
+    padding-top: 3.6em;
+  }
+
+}
