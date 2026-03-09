@@ -46,3 +46,7 @@
 #theme-toggle svg {
   display: block;
 }
+
+html:not([data-theme]) #theme-toggle {
+  visibility: hidden;
+}
