@@ -42,3 +42,7 @@
   visibility: visible !important;
   opacity: 1 !important;
 }
+
+#theme-toggle svg {
+  display: block;
+}
