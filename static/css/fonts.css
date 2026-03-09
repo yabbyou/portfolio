@@ -6,7 +6,7 @@
   font-family: "Albertus Nova";
   font-style: normal;
   font-weight: 100;
-  src: url("../fonts/albertusnovathin.woff2") format("woff2");
+  src: url("/fonts/albertusnovathin.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -14,7 +14,7 @@
   font-family: "Albertus Nova";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/albertusnovalight.woff2") format("woff2");
+  src: url("/fonts/albertusnovalight.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -22,7 +22,7 @@
   font-family: "Albertus Nova";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/albertusnova.woff2") format("woff2");
+  src: url("/fonts/albertusnova.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -30,7 +30,7 @@
   font-family: "Albertus Nova";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/albertusnovabold.woff2") format("woff2");
+  src: url("/fonts/albertusnovabold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -38,7 +38,7 @@
   font-family: "Albertus Nova";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/albertusnovablack.woff2") format("woff2");
+  src: url("/fonts/albertusnovablack.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -50,7 +50,7 @@
   font-family: "Banto";
   font-style: normal;
   font-weight: 200;
-  src: url("../fonts/Banto-ExtraLight.woff2") format("woff2");
+  src: url("/fonts/Banto-ExtraLight.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -58,7 +58,7 @@
   font-family: "Banto";
   font-style: italic;
   font-weight: 200;
-  src: url("../fonts/Banto-ExtraLightItalic.woff2") format("woff2");
+  src: url("/fonts/Banto-ExtraLightItalic.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -66,7 +66,7 @@
   font-family: "Banto";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/Banto-Light.woff2") format("woff2");
+  src: url("/fonts/Banto-Light.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -74,7 +74,7 @@
   font-family: "Banto";
   font-style: italic;
   font-weight: 300;
-  src: url("../fonts/Banto-LightItalic.woff2") format("woff2");
+  src: url("/fonts/Banto-LightItalic.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -82,7 +82,7 @@
   font-family: "Banto";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Banto-Regular.woff2") format("woff2");
+  src: url("/fonts/Banto-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -90,7 +90,7 @@
   font-family: "Banto";
   font-style: italic;
   font-weight: 400;
-  src: url("../fonts/Banto-RegularItalic.woff2") format("woff2");
+  src: url("/fonts/Banto-RegularItalic.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -98,7 +98,7 @@
   font-family: "Banto";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/Banto-Medium.woff2") format("woff2");
+  src: url("/fonts/Banto-Medium.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -114,7 +114,7 @@
   font-family: "Banto";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Banto-Bold.woff2") format("woff2");
+  src: url("/fonts/Banto-Bold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -150,7 +150,7 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 100;
-  src: url("../fonts/Gilroy-Thin.woff2") format("woff2");
+  src: url("/fonts/Gilroy-Thin.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -158,7 +158,7 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/Gilroy-Light.woff2") format("woff2");
+  src: url("/fonts/Gilroy-Light.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -166,7 +166,7 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  src: url("/fonts/Gilroy-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -174,7 +174,7 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/Gilroy-Medium.woff2") format("woff2");
+  src: url("/fonts/Gilroy-Medium.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -187,282 +187,6 @@
 }
 
 /* ===============================
-   Lemon Milk
-   =============================== */
-
-@font-face {
-  font-family: "Lemon Milk";
-  font-style: normal;
-  font-weight: 300;
-  src: url("/fonts/LemonMilkLight.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lemon Milk";
-  font-style: italic;
-  font-weight: 300;
-  src: url("/fonts/LemonMilkLightItalic.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lemon Milk";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/LemonMilkRegular.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lemon Milk";
-  font-style: italic;
-  font-weight: 400;
-  src: url("/fonts/LemonMilkRegularItalic.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lemon Milk";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/fonts/LemonMilkMedium.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lemon Milk";
-  font-style: italic;
-  font-weight: 500;
-  src: url("/fonts/LemonMilkMediumItalic.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lemon Milk";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/LemonMilkBold.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lemon Milk";
-  font-style: italic;
-  font-weight: 700;
-  src: url("/fonts/LemonMilkBoldItalic.woff") format("woff");
-  font-display: swap;
-}
-
-/* ===============================
-   Minuscule
-   =============================== */
-
-@font-face {
-  font-family: "Minuscule";
-  font-style: normal;
-  font-weight: 300;
-  src: url("/fonts/minuscule2reg.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Minuscule";
-  font-style: italic;
-  font-weight: 300;
-  src: url("/fonts/minuscule2ital.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Minuscule";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/minuscule3reg.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Minuscule";
-  font-style: italic;
-  font-weight: 400;
-  src: url("/fonts/minuscule3ital.woff2") format("woff2");
-  font-display: swap;
-}
-
-/* ===============================
-   NK57 Monospace Ex
-   =============================== */
-
-@font-face {
-  font-family: "NK57 Monospace Ex";
-  font-style: normal;
-  font-weight: 300;
-  src: url("/fonts/NK57-Monospace-Ex-Lt.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NK57 Monospace Ex";
-  font-style: italic;
-  font-weight: 300;
-  src: url("/fonts/NK57-Monospace-Ex-Lt-It.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NK57 Monospace Ex";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/NK57-Monospace-Ex-Rg.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NK57 Monospace Ex";
-  font-style: italic;
-  font-weight: 400;
-  src: url("/fonts/NK57-Monospace-Ex-Rg-It.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NK57 Monospace Ex";
-  font-style: normal;
-  font-weight: 600;
-  src: url("/fonts/NK57-Monospace-Ex-Sb.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NK57 Monospace Ex";
-  font-style: italic;
-  font-weight: 600;
-  src: url("/fonts/NK57-Monospace-Ex-Sb-It.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NK57 Monospace Ex";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/NK57-Monospace-Ex-Bd.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NK57 Monospace Ex";
-  font-style: italic;
-  font-weight: 700;
-  src: url("/fonts/NK57-Monospace-Ex-Bd-It.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NK57 Monospace Ex";
-  font-style: normal;
-  font-weight: 800;
-  src: url("/fonts/NK57-Monospace-Ex-Eb.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NK57 Monospace Ex";
-  font-style: italic;
-  font-weight: 800;
-  src: url("/fonts/NK57-Monospace-Ex-Eb-It.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NK57 Monospace Ex";
-  font-style: normal;
-  font-weight: 900;
-  src: url("/fonts/NK57-Monospace-Ex-Bk.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NK57 Monospace Ex";
-  font-style: italic;
-  font-weight: 900;
-  src: url("/fonts/NK57-Monospace-Ex-Bk-It.woff2") format("woff2");
-  font-display: swap;
-}
-
-/* ===============================
-   FreeMono
-   =============================== */
-
-@font-face {
-  font-family: "FreeMono";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/FreeMono.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "FreeMono";
-  font-style: italic;
-  font-weight: 400;
-  src: url("/fonts/FreeMonoOblique.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "FreeMono";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/FreeMonoBold.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "FreeMono";
-  font-style: italic;
-  font-weight: 700;
-  src: url("/fonts/FreeMonoBoldOblique.woff2") format("woff2");
-  font-display: swap;
-}
-
-/* ===============================
-   Spot Mono
-   =============================== */
-
-@font-face {
-  font-family: "Spot Mono";
-  font-style: normal;
-  font-weight: 300;
-  src: url("/fonts/Spot-Mono-Light.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Spot Mono";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/Spot-Mono-Regular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Spot Mono";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/fonts/Spot-Mono-Medium.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Spot Mono";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/Spot-Mono-Bold.woff2") format("woff2");
-  font-display: swap;
-}
-
-/* ===============================
    CodeSaver
    =============================== */
 
@@ -470,18 +194,6 @@
   font-family: "CodeSaver";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/CodeSaver-Regular.woff2") format("woff2");
-  font-display: swap;
-}
-
-/* ===============================
-   Everson Mono
-   =============================== */
-
-@font-face {
-  font-family: "Everson Mono";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/everson-mono.woff2") format("woff2");
+  src: url("/fonts/CodeSaver-Regular.woff2") format("woff2");
   font-display: swap;
 }
