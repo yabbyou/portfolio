@@ -15,7 +15,7 @@ heroExtra: 2022
 ---
  
 {{< slider disableOverlay="true" >}}
-{{< slide type="single" src="/img/mix/mbp.png" caption="" >}}
+{{< slide type="single" src="img/mix/mbp.png" caption="" >}}
 {{< /slider >}}
 
  &nbsp; 
