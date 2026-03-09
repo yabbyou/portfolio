@@ -31,7 +31,7 @@ imagePosition: left
 # This became apparent when PETA requested an idea that would stop animals being used for clothing. Because it turns out that the solution didn't require us to change peoples minds. We just needed to provide a tool that could help people live in accordence with their already existing values. Luckily, the required tech is already available, simple and familiar to consumers.
 
 {{< slider >}}
-{{< slide type="video" src="img/peta_block/pb_casefilm.mp4" poster="/img/peta_block/case-thumb.png" caption="Demo film" >}}
+{{< slide type="video" src="img/peta_block/pb_casefilm.mp4" poster="img/peta_block/case-thumb.png" caption="Demo film" >}}
 {{< slide type="image" src="img/peta_block/pb_ooh.webp" caption="s" >}}
 {{< slide type="image" src="img/peta_block/pb_muhu.jpg" caption="a" >}}
 {{< /slider >}}
