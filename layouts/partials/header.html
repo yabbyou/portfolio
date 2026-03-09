@@ -9,11 +9,17 @@
                     title="(Alt + T)"
                     aria-label="Toggle theme">
 
-                <img id="theme-icon"
-                src="{{ "img/moon-30.svg" | relURL }}"
-                 width="24"
-                height="24"
-                alt="">
+                <img src="{{ "img/moon-30.svg" | absURL }}"
+                     alt=""
+                     id="moon"
+                     width="30"
+                     height="30">
+
+                <img src="{{ "img/sun30.svg" | absURL }}"
+                     alt=""
+                     id="sun"
+                     width="25"
+                     height="25">
             </button>
             {{- end }}
 

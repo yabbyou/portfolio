@@ -26,6 +26,4 @@
 {{ $copyCSS := resources.Get "css/extended/copyurl.css" | minify }}
 <link rel="stylesheet" href="{{ $copyCSS.RelPermalink }}">
 
-<script defer src="{{ "js/theme-toggle-fix.js" | relURL }}"></script>
-
 <link rel="stylesheet" href="{{ "css/typography.css" | relURL }}">
