@@ -1,34 +1,23 @@
-<!-- FONT PRELOADS -->
+<link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
+
 <link rel="preload" href="{{ "fonts/Gilroy-Light.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ "fonts/Gilroy-Regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ "fonts/Gilroy-Medium.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ "fonts/Gilroy-Bold.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
-
-<link rel="preload" href="{{ "fonts/albertusnova.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
-
+<link rel="preload" href="{{ "fonts/AlbertusNova.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ "fonts/Banto-Regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
-
 <link rel="preload" href="{{ "fonts/CodeSaver-Regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 
-
-<!-- TYPOGRAPHY -->
-<link rel="stylesheet" href="{{ "css/typography.css" | relURL }}">
-
-
-<!-- SWIPER -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 
-
-<!-- CUSTOM CSS PIPELINE -->
 {{ $styles := slice
-    (resources.Get "css/extended/sliders.css")
-    (resources.Get "css/extended/accordion.css")
-    | resources.Concat "css/custom.css"
-    | minify
+(resources.Get "css/extended/sliders.css")
+(resources.Get "css/extended/accordion.css")
+| resources.Concat "css/custom.css"
+| minify
 }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
-
-<!-- COPY URL -->
 {{ $copyCSS := resources.Get "css/extended/copyurl.css" | minify }}
 <link rel="stylesheet" href="{{ $copyCSS.RelPermalink }}">
+
+<link rel="stylesheet" href="{{ "css/typography.css" | relURL }}">
