@@ -31,9 +31,9 @@ imagePosition: left
 # This became apparent when PETA requested an idea that would stop animals being used for clothing. Because it turns out that the solution didn't require us to change peoples minds. We just needed to provide a tool that could help people live in accordence with their already existing values. Luckily, the required tech is already available, simple and familiar to consumers.
 
 {{< slider >}}
-{{< slide type="video" src="/img/peta_block/pb_casefilm.mp4" poster="/img/peta_block/case-thumb.png" caption="Demo film" >}}
-{{< slide type="image" src="/img/peta_block/pb_ooh.webp" caption="s" >}}
-{{< slide type="image" src="/img/peta_block/pb_muhu.jpg" caption="a" >}}
+{{< slide type="video" src="img/peta_block/pb_casefilm.mp4" poster="/img/peta_block/case-thumb.png" caption="Demo film" >}}
+{{< slide type="image" src="img/peta_block/pb_ooh.webp" caption="s" >}}
+{{< slide type="image" src="img/peta_block/pb_muhu.jpg" caption="a" >}}
 {{< /slider >}}
 
 ❧
@@ -94,7 +94,7 @@ Personally, I’m not a big believer in consumer power. Life is full of choices 
 &nbsp; 
 
 {{< slider type="tall" height="" >}}
-  {{< slide type="image" src="/img/peta_block/pb_ooh.webp" caption="" >}}
+  {{< slide type="image" src="img/peta_block/pb_ooh.webp" caption="" >}}
 {{< /slider >}}
 
 &nbsp; 
@@ -107,7 +107,7 @@ Personally, I’m not a big believer in consumer power. Life is full of choices 
 Like ad blockers it works by automatically removing unwanted content before it is shown on your screen. The result is a fully vegan browsing experience with no more dead bodies available for order.
 
 {{< slider >}}
-{{< slide type="single" src="/img/peta_block/pb_logo.png" caption="" >}}
+{{< slide type="single" src="img/peta_block/pb_logo.png" caption="" >}}
 {{< /slider >}}
 
 We believe that this issue doesn't require PETA to demand more effort from people change their minds with the use of shocking imagery. People already share their sentiment. Instead we want to help people break free and stop swallowing what the market is feeding them. A simple click could make it all go away. ***What do you do?***
@@ -120,7 +120,7 @@ We believe that this issue doesn't require PETA to demand more effort from peopl
 ######
 
 {{< slider type="single" >}}
-  {{< slide type="image" src="/img/peta_block/redpillbluepill.png" caption="" >}}
+  {{< slide type="image" src="img/peta_block/redpillbluepill.png" caption="" >}}
 {{< /slider >}}
 
 ###### *never buy an animal online again.*
@@ -146,7 +146,7 @@ The display of a murdered animal is a shocking site. Even more so when sold en m
 We don’t want to see animals that way. We want to see animals as they should be seen. As someone who is incredibly important to others around them. Someone you play with, learn from and someone you can’t imagine living without.
 
 {{< slider >}}
-  {{< slide type="single" src="/img/peta_block/pb_love.png" caption="" >}}
+  {{< slide type="single" src="img/peta_block/pb_love.png" caption="" >}}
 {{< /slider >}}
 
 The campaign seeks to invoke the commonly prevalent wish of not using animals as clothes by pointing out their similarities to us while explaining that most clothes are vegan already and that PETA is offering a low effort solution to the issue.
@@ -156,7 +156,7 @@ At a later stage we use the collected data to compile a naughty list from which 
 
 
 {{< slider type="tall" >}}
-  {{< slide type="image" src="/img/peta_block/pb_poster.webp" caption="" >}}
+  {{< slide type="image" src="img/peta_block/pb_poster.webp" caption="" >}}
 {{< /slider >}}
 
 &nbsp; 
