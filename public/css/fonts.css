@@ -23,7 +23,7 @@
   src: url("/fonts/albertusnova.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-display: block;
+  font-display: optional;
 }
 
 @font-face {
