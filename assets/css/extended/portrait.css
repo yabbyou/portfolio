@@ -1,7 +1,7 @@
 #portrait-frame {
   position: relative;
-  width: 420px;              /* EXACT export width */
-  height: 560px;             /* EXACT export height */
+  width: 420px;
+  height: 560px;
   user-select: none;
   margin-left: auto;
   margin-right: auto;
@@ -10,22 +10,10 @@
 #portrait-frame img {
   position: absolute;
   inset: 0;
-  width: 70%;
-  height: 70%;
-  display: block;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 55px;
   border-radius: 4px;
-}
-
-.eyelids {
-  opacity: 0;
-}
-
-.iris {
-  transition: transform 0.08s linear;
 }
 
 .eyelids {
@@ -35,13 +23,4 @@
 
 .eyelids.is-blinking {
   opacity: 1;
-}
-
-.hero-divider {
-  margin: 4rem auto 3rem;
-  text-align: center;
-  font-size: 64px;     /* big arrow */
-  line-height: 1;
-  color: var(--content);
-  opacity: 0.9;
 }
