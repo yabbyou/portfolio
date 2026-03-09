@@ -20,10 +20,10 @@
 
 @font-face {
   font-family: "Albertus Nova";
-  font-style: normal;
+  src: url("/fonts/albertusnova.woff2") format("woff2");
   font-weight: 400;
-  src: url("/portfolio/fonts/albertusnova.woff2") format("woff2");
-  font-display: optional;
+  font-style: normal;
+  font-display: block;
 }
 
 @font-face {

@@ -13,6 +13,14 @@
 {{- end }}
 
 <head>
+    <script>
+    (function () {
+     const theme = localStorage.getItem("pref-theme");
+     if (theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+    }
+ })();
+ </script>
     {{- partial "head.html" . }}
 </head>
 
