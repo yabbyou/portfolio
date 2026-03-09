@@ -21,6 +21,7 @@
 .eyelids {
   opacity: 0;
   transition: opacity 0.06s linear;
+  will-change: opacity;
 }
 
 .eyelids.is-blinking {
