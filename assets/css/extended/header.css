@@ -15,6 +15,10 @@
     align-items: center;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 .nav-left {
     margin-left: var(--gap);
     gap: 13px;
@@ -180,7 +184,6 @@ body:not(.has-hero) .header {
    ADDITIVE ONLY — HEADER BEHAVIOR
    ====================================================== */
 
-/* Make header follow scroll WITHOUT changing layout */
 .header {
     position: fixed;
     top: 0;
@@ -189,19 +192,12 @@ body:not(.has-hero) .header {
     z-index: 1000;
 }
 
-/* Offset content so nothing jumps */
 .main {
     position: sticky;
     top: 0;
     padding-top: 4.2em;
 }
 
-
-
-/*
-  This class is toggled by JS when the hero is passed.
-  Until then, your existing transparent hero styles apply.
-*/
 .header.is-scrolled {
     background: var(--header-bg);
     border-bottom: 0.062rem solid var(--header-border);
@@ -235,7 +231,6 @@ body:not(.has-hero) .header {
     color: #ffffff;
 }
 
-/* lock text + icons to white */
 .has-hero .header.is-hero-active a,
 .has-hero .header.is-hero-active span {
     color: inherit;
@@ -245,21 +240,18 @@ body:not(.has-hero) .header {
     fill: currentColor;
 }
 
-/* theme toggle NEVER locked (existing rule preserved) */
 .has-hero .header.is-hero-active #theme-toggle,
 .has-hero .header.is-hero-active #theme-toggle * {
     color: unset !important;
     fill: unset !important;
 }
 
-/* Keep header transparent ONLY while hero is active */
 .has-hero:not(.scrolled-past-hero) .header.is-scrolled {
     background: transparent;
     border-bottom: 0;
     box-shadow: none;
 }
 
-/* Restore normal header once hero is passed */
 .has-hero.scrolled-past-hero .header {
     background: var(--header-bg);
     border-bottom: 0.062rem solid var(--header-border);
@@ -286,48 +278,57 @@ html.has-hero:not(.scrolled-past-hero) .header {
     box-shadow: none !important;
 }
 
+/* ======================================================
+   MOBILE NAV LAYOUT
+   ====================================================== */
+
 @media (max-width: 768px) {
 
-  /* allow nav to reflow */
   .nav {
-    flex-wrap: wrap;
-    padding-left: 12px;
-    padding-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
-  /* remove absolute centering (this breaks phones) */
+  .nav-left {
+    gap: 10px;
+    margin-left: var(--gap);
+  }
+
   .nav-center {
     position: static;
     transform: none;
-    width: 100%;
-    justify-content: center;
-    margin-top: 6px;
+    margin-left: 8px;
   }
 
-  /* shrink logo */
-  .logo {
-    font-size: 0.8rem;
-  }
-
-  /* menu spacing */
   #menu {
-    gap: 12px;
-    font-size: 0.65rem;
+    display: none;
   }
 
-  #menu a {
-    font-size: 0.65rem;
+  .menu-toggle {
+    display: block;
+    font-size: 1.4rem;
+    margin-right: var(--gap);
+    cursor: pointer;
   }
 
-  /* prevent horizontal overflow */
-  .nav-left {
-    gap: 8px;
-    margin-left: 0;
-  }
+}
 
-  /* adjust content offset for smaller header */
-  .main {
-    padding-top: 3.6em;
+@media (max-width:768px){
+
+  #menu.mobile-open{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:var(--header-height);
+    left:0;
+    right:0;
+    background:var(--header-bg);
+    padding:16px;
+    gap:16px;
+    align-items:center;
+    border-bottom:1px solid var(--header-border);
   }
 
 }

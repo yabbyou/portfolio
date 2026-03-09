@@ -19,3 +19,8 @@ window.addEventListener('scroll', () => {
 
   dot.style.top = progress * 100 + '%';
 });
+
+function toggleMenu(){
+  const menu=document.getElementById("menu");
+  menu.classList.toggle("mobile-open");
+}
