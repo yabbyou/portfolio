@@ -50,3 +50,18 @@
 html:not([data-theme]) #theme-toggle {
   visibility: hidden;
 }
+
+/* hide both icons initially */
+#moon,
+#sun {
+  display: none;
+}
+
+/* show correct icon once theme is known */
+html[data-theme="dark"] #sun {
+  display: block;
+}
+
+html[data-theme="light"] #moon {
+  display: block;
+}
