@@ -1,8 +1,8 @@
 <div class="swiper-slide"
   data-type="{{ .Get "type" }}"
-  data-src="{{ .Get "src" }}"
+  data-src="{{ .Get "src" | relURL }}"
   data-caption="{{ .Get "caption" }}"
-  data-overlayposter="{{ .Get "overlayposter" }}"
+  data-overlayposter="{{ .Get "overlayposter" | relURL }}"
 >
 
   {{ if eq (.Get "type") "video" }}
@@ -10,9 +10,9 @@
     <div class="slide-video-thumb">
       <video
         class="slide-inline-video"
-        src="{{ .Get "src" }}"
+        src="{{ .Get "src" | relURL }}"
         preload="metadata"
-        poster="{{ .Get "poster" }}"
+        poster="{{ .Get "poster" | relURL }}"
         playsinline
         controls
       ></video>
@@ -22,9 +22,8 @@
 
   {{ else }}
 
-    <!-- IMPORTANT: ALWAYS wrap images in slide-image-thumb -->
     <div class="slide-image-thumb">
-      <img src="{{ .Get "src" }}" alt="">
+      <img src="{{ .Get "src" | relURL }}" alt="">
     </div>
 
   {{ end }}
