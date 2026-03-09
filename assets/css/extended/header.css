@@ -302,8 +302,8 @@ html.has-hero:not(.scrolled-past-hero) .header {
     margin-left: 8px;
   }
 
-  #menu {
-    display: none;
+    #menu:not(.mobile-open) {
+     display: none;
   }
 
   .menu-toggle {
