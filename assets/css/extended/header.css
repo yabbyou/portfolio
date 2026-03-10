@@ -289,12 +289,13 @@ html.has-hero:not(.scrolled-past-hero) .header {
         text-align: center;
     }
 
-    /* hero transparent panel */
+    /* hero blur — header + menu share identical values so they read as one surface */
     .has-hero:not(.scrolled-past-hero) #menu.mobile-open {
         background: rgba(0, 0, 0, 0.35);
         backdrop-filter: blur(18px);
         -webkit-backdrop-filter: blur(18px);
-        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset;
+        box-shadow: none;
+        border-top: 0;
     }
 
     /* ── MENU ITEMS ── */
