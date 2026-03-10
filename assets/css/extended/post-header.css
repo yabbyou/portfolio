@@ -320,4 +320,8 @@ html.has-hero .main {
     --hero-offset-y: -80px;
   }
 
+  .has-hero .post-hero-inner{
+    --hero-align-y:center;
+  }
+
 }

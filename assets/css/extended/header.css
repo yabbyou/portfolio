@@ -346,4 +346,20 @@ html.has-hero:not(.scrolled-past-hero) .header {
         text-align:center;
     }
 
+  
+    #menu.mobile-open{
+        align-items:center;
+    }
+
+    #menu.mobile-open li{
+        display:flex;
+        justify-content:center;
+        width:100%;
+    }
+
+    #menu.mobile-open li a{
+        display:inline-block;
+        text-align:center;
+    }
+
 }
