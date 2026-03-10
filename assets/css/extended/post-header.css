@@ -91,7 +91,7 @@ button#theme-toggle {
 .header {
   position: fixed;
   inset: 0 0 auto 0;
-  z-index: 1000;
+  z-index: 1001;  /* above mobile menu panel (999) which creates its own stacking context via backdrop-filter */
   background: transparent;
 }
 
