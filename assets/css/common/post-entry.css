@@ -303,6 +303,19 @@
     .post-entry.variant-case .entry-text-wrap {
         order: 1 !important;
     }
+
+    /* ============================================================
+   MOBILE — FORCE IMAGE ABOVE TEXT
+   ============================================================ */
+
+    .post-entry.img-right .entry-media {
+        order: -1 !important;
+    }
+
+    .post-entry.img-right .entry-text-wrap {
+        order: 1 !important;
+    }
+
 }
 
 /* ============================================================
