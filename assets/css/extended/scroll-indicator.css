@@ -38,7 +38,7 @@ html.has-hero.scrolled-past-hero #scroll-indicator {
 
 @media (max-width: 900px) {
 
-  .scroll-indicator {
+  #scroll-indicator {
     display: none !important;
   }
 
