@@ -91,7 +91,7 @@ button#theme-toggle {
 .header {
   position: fixed;
   inset: 0 0 auto 0;
-  z-index: 1001;  /* above mobile menu panel (999) which creates its own stacking context via backdrop-filter */
+  z-index: 1000;
   background: transparent;
 }
 
@@ -105,7 +105,7 @@ body:not(.has-hero) .header,
   border-bottom: 1px solid var(--header-border);
 }
 
-.has-hero:not(.scrolled-past-hero) .header {
+.has-hero:not(.scrolled-past-hero) .header:not(.menu-is-open) {
   background: transparent;
   border-bottom: 0;
 }
