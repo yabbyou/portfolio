@@ -252,10 +252,19 @@ html.has-hero:not(.scrolled-past-hero) .header {
     }
 
     .menu-toggle {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 1.4rem;
         margin-right: var(--gap);
         cursor: pointer;
+        min-width: 44px;
+        min-height: 44px;
+        border: none;
+        background: none;
+        line-height: 1;
+        padding: 0;
+        align-self: center;
     }
 
     #menu:not(.mobile-open) {
