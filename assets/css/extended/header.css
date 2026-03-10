@@ -319,28 +319,9 @@ html.has-hero:not(.scrolled-past-hero) .header {
         transform: none;           /* kill any inherited translateY */
     }
 
-    /* restore the left-side dot — un-hide and give span padding so dot doesn't overlap text */
-    #menu.mobile-open li span {
-        padding-left: 10px;
-    }
-
+    /* hide desktop dot indicator in mobile panel */
     #menu.mobile-open li span::before {
-        display: block;    /* inherits position:absolute + left:0 from desktop rule */
-    }
-
-    /* suppress on home page, consistent with desktop */
-    .is-home #menu.mobile-open li span.active::before {
-        opacity: 0;
-    }
-
-    /* ── HEADER BLUR WHEN MENU IS OPEN ON HERO (mobile only) ── */
-
-    .has-hero:not(.scrolled-past-hero) .header.menu-is-open {
-        background: rgba(0, 0, 0, 0.35) !important;
-        backdrop-filter: blur(18px) !important;
-        -webkit-backdrop-filter: blur(18px) !important;
-        border-bottom: 0 !important;
-        box-shadow: none !important;
+        display: none;
     }
 
 }
