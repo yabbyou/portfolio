@@ -328,6 +328,9 @@ html.has-hero:not(.scrolled-past-hero) .header {
     padding: 16px;
     gap: 16px;
 
+    margin-left: 0;
+    margin-right: 0;
+
     background: var(--header-bg);
 
     align-items: center;
