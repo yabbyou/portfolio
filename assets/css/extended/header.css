@@ -192,8 +192,8 @@ body:not(.has-hero) .header,
    HERO — TRANSPARENT UNTIL SCROLLED PAST
    ====================================================== */
 
-body.has-hero:not(.scrolled-past-hero) .header,
-html.has-hero:not(.scrolled-past-hero) .header {
+body.has-hero:not(.scrolled-past-hero) .header:not(.menu-is-open),
+html.has-hero:not(.scrolled-past-hero) .header:not(.menu-is-open) {
     background: transparent !important;
     border-bottom: 0 !important;
     box-shadow: none !important;
