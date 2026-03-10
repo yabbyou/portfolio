@@ -350,15 +350,18 @@ html.has-hero:not(.scrolled-past-hero) .header {
 
   /* CENTER MENU ITEMS */
 
-  #menu.mobile-open li {
-    width: 100%;
-    text-align: center;
-  }
+  /* CENTER MENU ITEMS */
 
-  #menu.mobile-open li a {
-    display: block;
-    text-align: center;
-  }
+    #menu.mobile-open li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu.mobile-open li a {
+        display: block;
+        text-align: center;
+        transform: none;
+    }
 
   /* REMOVE DESKTOP DOT INDICATOR */
 
