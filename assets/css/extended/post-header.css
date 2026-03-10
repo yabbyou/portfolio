@@ -105,7 +105,7 @@ body:not(.has-hero) .header,
   border-bottom: 1px solid var(--header-border);
 }
 
-.has-hero:not(.scrolled-past-hero) .header:not(.menu-is-open) {
+.has-hero:not(.scrolled-past-hero) .header {
   background: transparent;
   border-bottom: 0;
 }
