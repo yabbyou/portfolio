@@ -331,4 +331,13 @@ html.has-hero:not(.scrolled-past-hero) .header {
     border-bottom:1px solid var(--header-border);
   }
 
+    #menu.mobile-open {
+        text-align: center;
+  }
+
+    #menu.mobile-open li {
+        width: 100%;
+        text-align: center;
+  }
+
 }
