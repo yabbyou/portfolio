@@ -304,7 +304,7 @@ html.has-hero .main {
   @media (max-width: 900px) {
 
   .has-hero .post-hero-inner {
-    padding: 4rem 1.5rem 3rem;
+    padding: 6rem 1.5rem 3rem;
     max-width: 100%;
   }
 
@@ -314,6 +314,10 @@ html.has-hero .main {
 
   .has-hero .post-hero-description {
     font-size: 16px;
+  }
+
+  .has-hero .post-hero-inner{
+    --hero-offset-y: -80px;
   }
 
 }
