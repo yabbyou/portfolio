@@ -308,6 +308,11 @@ html.has-hero .main {
     max-width: 100%;
   }
 
+ .has-hero .post-hero-inner{
+    --hero-align-y: center;
+    --hero-offset-y: 40px;
+  }
+
   .has-hero .post-hero-title {
     font-size: 28px;
   }
