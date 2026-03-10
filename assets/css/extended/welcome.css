@@ -88,6 +88,17 @@
     display:block;
   }
 
+  .hero-anchor{
+    justify-content:center;
+    align-items:center;
+    width:100%;
+  }
+
+  #portrait-frame{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
 }
 
 /* ===============================
