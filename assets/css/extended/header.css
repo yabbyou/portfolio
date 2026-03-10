@@ -334,14 +334,7 @@ html.has-hero:not(.scrolled-past-hero) .header {
         opacity: 0;
     }
 
-    /* ── HEADER BLUR WHEN MENU IS OPEN ON HERO (mobile only) ── */
-
-    .has-hero:not(.scrolled-past-hero) .header.menu-is-open {
-        background: rgba(0, 0, 0, 0.35) !important;
-        backdrop-filter: blur(18px) !important;
-        -webkit-backdrop-filter: blur(18px) !important;
-        border-bottom: 0 !important;
-        box-shadow: none !important;
-    }
+    /* header stays transparent over hero even when menu is open —
+       the menu panel below it carries the blur surface */
 
 }
