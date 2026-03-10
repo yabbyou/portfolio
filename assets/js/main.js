@@ -21,6 +21,9 @@ window.addEventListener('scroll', () => {
 });
 
 function toggleMenu() {
+  // no-op on desktop — hamburger should not trigger panel above 768px
+  if (window.innerWidth > 768) return;
+
   const menu   = document.getElementById('menu');
   const header = document.querySelector('.header');
 
@@ -29,3 +32,13 @@ function toggleMenu() {
   menu.classList.toggle('mobile-open');
   header.classList.toggle('menu-is-open', isOpening);
 }
+
+// close menu if window is resized to desktop width
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    const menu   = document.getElementById('menu');
+    const header = document.querySelector('.header');
+    menu.classList.remove('mobile-open');
+    header.classList.remove('menu-is-open');
+  }
+});
