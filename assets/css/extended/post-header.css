@@ -324,4 +324,9 @@ html.has-hero .main {
     --hero-align-y:center;
   }
 
+  .has-hero .post-hero-inner{
+    --hero-align-y: center;
+    --hero-offset-y: 40px;
+  }
+
 }

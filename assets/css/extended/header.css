@@ -375,4 +375,17 @@ html.has-hero:not(.scrolled-past-hero) .header {
     width:100%;
     }
 
+    #menu.mobile-open{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+    #menu.mobile-open li{
+    display:flex;
+    justify-content:center;
+    width:100%;
+  }
+
 }
