@@ -1,3 +1,7 @@
+/* ======================================================
+   NAV BASE
+   ====================================================== */
+
 .nav {
     display: flex;
     align-items: center;
@@ -16,7 +20,7 @@
 }
 
 .menu-toggle {
-  display: none;
+    display: none;
 }
 
 .nav-left {
@@ -30,135 +34,18 @@
     transform: translateX(-50%);
 }
 
+/* ======================================================
+   LOGO
+   ====================================================== */
+
 .logo {
+    position: relative;
     font-family: "Albertus Nova";
     font-size: 0.920rem;
     font-weight: 700;
     letter-spacing: 0.0950em;
     text-decoration: none;
     line-height: 1;
-}
-
-button#theme-toggle {
-    scale: 110%;
-    background: none;
-    border: none;
-    transform: translateY(-2.8%);
-}
-
-[data-theme="dark"] #moon { display: none; }
-[data-theme="light"] #sun { display: none; }
-
-.lang-switch {
-    display: flex;
-    gap: 0px;
-}
-
-.lang-switch a {
-    font-family: "Gilroy";
-    font-size: 0.605rem;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    letter-spacing: 0.095em;
-    transform: translateY(2%);
-}
-
-/* MENU */
-#menu {
-    margin-left: auto;
-    margin-right: var(--gap);
-    list-style: none;
-    display: flex;
-    gap: var(--gap);
-}
-
-#menu a {
-    font-family: "Gilroy";
-    font-size: 0.705rem; 
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-decoration: none;
-    transform: translateY(-0%);
-}
-
-#menu .active {
-    font-family: "Gilroy";
-    font-size: 0.705rem;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    transform: translateY(-0%);
-}
-
-.header {
-    background: transparent;
-    border-bottom: 0px solid var(--header-border);
-    background-clip: padding-box;
-}
-
-/* ======================================================
-   NORMAL HEADER (DEFAULT STATE)
-   ====================================================== */
-
-body:not(.has-hero) .header,
-.header.is-scrolled {
-    background: var(--header-bg);
-    border-bottom: 1px solid var(--header-border);
-    box-shadow: none;
-}
-
-:root[data-theme="dark"] body:not(.has-hero) .header,
-:root[data-theme="dark"] .header.is-scrolled {
-    box-shadow: none;
-}
-
-/* Non-hero pages start solid */
-body:not(.has-hero) .header {
-    background: var(--header-bg);
-    border-bottom: 0.062rem solid var(--header-border);
-}
-
-/* anchor */
-#menu li span {
-    position: relative;
-}
-
-/* dot exists for ALL items */
-#menu li span::before {
-    content: "";
-    position: absolute;
-    left: -0px;
-    top: 46%;
-    transform: translateY(-50%);
-    width: 3.5px;
-    height: 3px;
-    border-radius: 50%;
-    background-color: currentColor;
-    opacity: 0;
-    pointer-events: none;
-}
-
-/* active state = visible */
-#menu li span.active::before {
-    opacity: 0.9;
-}
-
-/* home: menu dot off */
-.is-home #menu li span.active::before {
-    opacity: 0;
-}
-
-/* prevent clipping */
-#menu {
-    overflow: visible;
-}
-
-#menu .active {
-    border: none;
-}
-
-.logo {
-    position: relative;
 }
 
 .logo-dot {
@@ -172,24 +59,116 @@ body:not(.has-hero) .header {
     color: currentColor;
 }
 
+/* ======================================================
+   THEME TOGGLE
+   ====================================================== */
+
+button#theme-toggle {
+    scale: 110%;
+    background: none;
+    border: none;
+    transform: translateY(-2.8%);
+}
+
+[data-theme="dark"] #moon { display: none; }
+[data-theme="light"] #sun  { display: none; }
+
+/* ======================================================
+   LANG SWITCH
+   ====================================================== */
+
+.lang-switch {
+    display: flex;
+    gap: 0px;
+}
+
+.lang-switch a {
+    font-family: "Gilroy";
+    font-size: 0.605rem;
+    font-weight: 500;
+    letter-spacing: 0.095em;   /* removed duplicate 0.12em rule */
+    text-transform: uppercase;
+    transform: translateY(2%);
+}
+
+/* ======================================================
+   DESKTOP MENU
+   ====================================================== */
+
+#menu {
+    margin-left: auto;
+    margin-right: var(--gap);
+    list-style: none;
+    display: flex;
+    gap: var(--gap);
+    overflow: visible;
+}
+
+#menu a {
+    font-family: "Gilroy";
+    font-size: 0.705rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+}
+
+#menu .active {
+    font-family: "Gilroy";
+    font-size: 0.705rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    border: none;
+}
+
+/* dot indicator */
+#menu li span {
+    position: relative;
+}
+
+#menu li span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 46%;
+    transform: translateY(-50%);
+    width: 3.5px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: currentColor;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#menu li span.active::before {
+    opacity: 0.9;
+}
+
+/* home: dot off */
+.is-home #menu li span.active::before {
+    opacity: 0;
+}
+
 .is-home #menu .active::after {
     display: none;
 }
 
-.header a:hover {
-    opacity: 0.85;
-}
-
 /* ======================================================
-   ADDITIVE ONLY — HEADER BEHAVIOR
+   HEADER BASE
    ====================================================== */
 
 .header {
-    position: fixed;
+    position: fixed;          /* single authoritative declaration */
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    background: transparent;
+    border-bottom: 0px solid var(--header-border);
+    background-clip: padding-box;
+}
+
+.header a:hover {
+    opacity: 0.85;
 }
 
 .main {
@@ -198,31 +177,27 @@ body:not(.has-hero) .header {
     padding-top: 4.2em;
 }
 
+/* ======================================================
+   NORMAL HEADER (NON-HERO / SCROLLED)
+   ====================================================== */
+
+body:not(.has-hero) .header,
 .header.is-scrolled {
     background: var(--header-bg);
     border-bottom: 0.062rem solid var(--header-border);
     box-shadow: none;
 }
 
-:root[data-theme="dark"] .header.is-scrolled {
-    box-shadow: none;
-}
-
 /* ======================================================
-   AUTHORITATIVE HEADER POSITION (OVERRIDES HERO CSS)
+   HERO — TRANSPARENT UNTIL SCROLLED PAST
    ====================================================== */
 
-.header {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+body.has-hero:not(.scrolled-past-hero) .header,
+html.has-hero:not(.scrolled-past-hero) .header {
+    background: transparent !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
 }
-
-/* ======================================================
-   HERO LOCKED STATE (OVER HERO ONLY)
-   ====================================================== */
 
 .has-hero .header.is-hero-active {
     background: none;
@@ -246,12 +221,6 @@ body:not(.has-hero) .header {
     fill: unset !important;
 }
 
-.has-hero:not(.scrolled-past-hero) .header.is-scrolled {
-    background: transparent;
-    border-bottom: 0;
-    box-shadow: none;
-}
-
 .has-hero.scrolled-past-hero .header {
     background: var(--header-bg);
     border-bottom: 0.062rem solid var(--header-border);
@@ -259,139 +228,100 @@ body:not(.has-hero) .header {
 }
 
 /* ======================================================
-   HERO — FORCE TRANSPARENT HEADER UNTIL HERO IS PASSED
-   ====================================================== */
-
-body.has-hero:not(.scrolled-past-hero) .header {
-    background: transparent !important;
-    border-bottom: 0 !important;
-    box-shadow: none !important;
-}
-
-/* ======================================================
-   HERO — TRANSPARENT HEADER UNTIL HERO IS PASSED
-   ====================================================== */
-
-html.has-hero:not(.scrolled-past-hero) .header {
-    background: transparent !important;
-    border-bottom: 0 !important;
-    box-shadow: none !important;
-}
-
-/* ======================================================
-   MOBILE NAV LAYOUT
+   MOBILE NAV
    ====================================================== */
 
 @media (max-width: 768px) {
 
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
 
-  .nav-left {
-    gap: 10px;
-    margin-left: var(--gap);
-  }
+    .nav-left {
+        gap: 10px;
+        margin-left: var(--gap);
+    }
 
-  .nav-center {
-    position: static;
-    transform: none;
-    margin-left: 8px;
-  }
+    .nav-center {
+        position: static;
+        transform: none;
+        margin-left: 8px;
+    }
 
-  #menu:not(.mobile-open) {
-    display: none;
-  }
+    .menu-toggle {
+        display: block;
+        font-size: 1.4rem;
+        margin-right: var(--gap);
+        cursor: pointer;
+    }
 
-  .menu-toggle {
-    display: block;
-    font-size: 1.4rem;
-    margin-right: var(--gap);
-    cursor: pointer;
-  }
+    #menu:not(.mobile-open) {
+        display: none;
+    }
 
-  /* MOBILE MENU PANEL */
+    /* ── MOBILE MENU PANEL ── */
 
-  #menu.mobile-open {
-    display: flex;
-    flex-direction: column;
+    #menu.mobile-open {
+        /* layout */
+        display: flex;
+        flex-direction: column;
+        align-items: center;       /* centers children on the cross axis (horizontal) */
+        justify-content: flex-start;
 
-    position: fixed;
-    top: var(--header-height);
-    left: 0;
-    width: 100vw;
+        /* position */
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;                  /* use right:0 instead of width:100vw to avoid overflow issues */
+        width: 100%;
+        box-sizing: border-box;
 
-    margin: 0;
-    padding: 16px;
-    gap: 16px;
+        /* reset desktop margin/padding that fight centering */
+        margin: 0;
+        padding: 16px 0;           /* vertical breathing room, NO horizontal padding */
+        gap: 16px;
 
-    margin-left: 0;
-    margin-right: 0;
+        background: var(--header-bg);
+        border-bottom: 0;
+        text-align: center;
+    }
 
-    background: var(--header-bg);
+    /* hero transparent panel */
+    .has-hero:not(.scrolled-past-hero) #menu.mobile-open {
+        background: rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset;
+    }
 
-    align-items: center;
-    text-align: center;
-
-    border-bottom: 0;
-  }
-
-  /* HERO STATE (TRANSPARENT HEADER MODE) */
-
-  .has-hero:not(.scrolled-past-hero) #menu.mobile-open {
-    background: rgba(0,0,0,0.35);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    box-shadow: 0 1px 0 rgba(255,255,255,0.06) inset;
-  }
-
-  /* CENTER MENU ITEMS */
-
-  /* CENTER MENU ITEMS */
+    /* ── MENU ITEMS ── */
 
     #menu.mobile-open li {
         width: 100%;
-        text-align: center;
+        display: flex;
+        justify-content: center;   /* horizontally centers the <a> on the midline */
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
-    #menu.mobile-open li a {
+    #menu.mobile-open li a,
+    #menu.mobile-open li span {
         display: block;
         text-align: center;
-        transform: none;
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+        transform: none;           /* kill any inherited translateY */
     }
 
-  /* REMOVE DESKTOP DOT INDICATOR */
-
-  #menu.mobile-open li span::before {
-    display: none;
-  }
-
-  #menu.mobile-open {
-    margin-left: 0;       /* already set ✓ */
-    margin-right: 0;      /* already set ✓ */
-    padding-left: 0;      /* neutralize any inherited padding */
-    padding-right: 0;
-    width: 100%;          /* ensure full viewport width */
-    left: 0;              /* already set ✓ */
-    box-sizing: border-box;
-}
-
-#menu.mobile-open li {
-    width: 100%;
-    display: flex;
-    justify-content: center;   /* ← this is the key addition */
-    text-align: center;
-}
-
-#menu.mobile-open li a,
-#menu.mobile-open li span {
-    text-align: center;
-    margin: 0 auto;            /* ← belt-and-suspenders centering */
-    display: block;
-    width: fit-content;
-}
+    /* hide desktop dot indicator in mobile panel */
+    #menu.mobile-open li span::before {
+        display: none;
+    }
 
 }
