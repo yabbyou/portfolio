@@ -278,84 +278,45 @@ html.has-hero:not(.scrolled-past-hero) .header {
     box-shadow: none !important;
 }
 
-/* ======================================================
-   MOBILE NAV LAYOUT
-   ====================================================== */
+@media (max-width:768px){
 
-@media (max-width: 768px) {
+  #menu.mobile-open{
+    display:flex;
+    flex-direction:column;
 
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    position:fixed;
+    top:var(--header-height);
+    left:0;
+    right:0;
+    width:100%;
+
+    margin:0;
+    padding:16px;
+    gap:16px;
+
+    background:var(--header-bg);
+
+    align-items:center;
+    text-align:center;
+
+    border-bottom:0;
   }
 
-  .nav-left {
-    gap: 10px;
-    margin-left: var(--gap);
+  .has-hero:not(.scrolled-past-hero) #menu.mobile-open{
+    background:rgba(0,0,0,0.35);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    box-shadow:0 1px 0 rgba(255,255,255,0.06) inset;
   }
 
-  .nav-center {
-    position: static;
-    transform: none;
-    margin-left: 8px;
+  #menu.mobile-open li{
+    width:100%;
+    text-align:center;
   }
 
-  #menu:not(.mobile-open) {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-    font-size: 1.4rem;
-    margin-right: var(--gap);
-    cursor: pointer;
-  }
-
-  /* MOBILE MENU PANEL */
-
-  #menu.mobile-open {
-    display: flex;
-    flex-direction: column;
-
-    position: fixed;
-    top: var(--header-height);
-    left: 0;
-    width: 100vw;
-
-    margin: 0;
-    padding: 16px;
-    gap: 16px;
-
-    background: var(--header-bg);
-
-    align-items: center;
-    text-align: center;
-
-    border-bottom: 0;
-  }
-
-  /* HERO STATE (TRANSPARENT HEADER MODE) */
-
-  .has-hero:not(.scrolled-past-hero) #menu.mobile-open {
-    background: rgba(0,0,0,0.35);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    box-shadow: 0 1px 0 rgba(255,255,255,0.06) inset;
-  }
-
-  /* CENTER ITEMS */
-
-  #menu.mobile-open li {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  #menu.mobile-open li a {
-    display: block;
-    text-align: center;
+  #menu.mobile-open li a{
+    display:block;
+    text-align:center;
   }
 
 }
