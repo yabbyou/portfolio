@@ -316,6 +316,28 @@
         order: 1 !important;
     }
 
+    /* ============================================================
+   MOBILE — TALL CARDS SIDE LAYOUT
+   ============================================================ */
+
+    .post-entry.post-tall {
+        display: grid;
+        grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+        align-items: stretch;
+    }
+
+    .post-entry.post-tall .entry-media {
+        order: 0;
+    }
+
+    .post-entry.post-tall .entry-text-wrap {
+        order: 0;
+    }
+
+    .post-entry.post-tall .entry-cover img {
+        aspect-ratio: 4 / 3;
+}
+
 }
 
 /* ============================================================
