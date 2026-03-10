@@ -298,16 +298,13 @@ html.has-hero:not(.scrolled-past-hero) .header {
         z-index: 999;
     }
 
-    /* hero: pseudo-element on header provides matching blur behind nav content
-       avoids z-index/stacking-context fights entirely */
-    .has-hero:not(.scrolled-past-hero) .header.menu-is-open::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.35);
-        backdrop-filter: blur(18px);
-        -webkit-backdrop-filter: blur(18px);
-        z-index: -1;
+    /* hero: flat tint on header matches panel visually — two elements blurring
+       different parts of the image can never be pixel-identical, so flat rgba
+       is the only reliable way to produce a seamless unified surface */
+    .has-hero:not(.scrolled-past-hero) .header.menu-is-open {
+        background: rgba(0, 0, 0, 0.35) !important;
+        border-bottom: 0 !important;
+        box-shadow: none !important;
     }
 
     /* MENU ITEMS */
