@@ -14,9 +14,7 @@ window.addEventListener('scroll', () => {
   const scrollTop = window.scrollY;
   const maxScroll =
     document.documentElement.scrollHeight - window.innerHeight;
-
   const progress = scrollTop / maxScroll;
-
   dot.style.top = progress * 100 + '%';
 });
 
@@ -29,37 +27,39 @@ function toggleMenu() {
                  !document.documentElement.classList.contains('scrolled-past-hero');
 
   const isOpening = !menu.classList.contains('mobile-open');
-
   menu.classList.toggle('mobile-open');
   header.classList.toggle('menu-is-open', isOpening);
 
   if (isHero) {
     if (isOpening) {
-      // single blur element spanning header + menu panel as one surface
-      const blur = document.createElement('div');
-      blur.className = 'menu-blur-bg';
-      const menuHeight = menu.offsetHeight || 120;
-      blur.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: calc(var(--header-height) + ${menuHeight}px);
-        background: rgba(0, 0, 0, 0.35);
-        backdrop-filter: blur(18px);
-        -webkit-backdrop-filter: blur(18px);
-        z-index: 998;
-        pointer-events: none;
-      `;
-      document.body.appendChild(blur);
+      // wait one frame so menu is rendered and has a real offsetHeight
+      requestAnimationFrame(() => {
+        const headerHeight = header.offsetHeight;
+        const menuHeight   = menu.offsetHeight;
+
+        const blur = document.createElement('div');
+        blur.className = 'menu-blur-bg';
+        blur.style.cssText = `
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: ${headerHeight + menuHeight}px;
+          background: rgba(0, 0, 0, 0.35);
+          backdrop-filter: blur(18px);
+          -webkit-backdrop-filter: blur(18px);
+          z-index: 998;
+          pointer-events: none;
+        `;
+        // insert as first child of body so it's behind header (z-index 1001) and menu (1000)
+        document.body.insertBefore(blur, document.body.firstChild);
+      });
     } else {
-      // remove blur element
       document.querySelectorAll('.menu-blur-bg').forEach(el => el.remove());
     }
   }
 }
 
-// close menu on resize to desktop
 window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
     const menu   = document.getElementById('menu');

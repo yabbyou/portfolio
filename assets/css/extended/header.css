@@ -286,16 +286,16 @@ html.has-hero:not(.scrolled-past-hero) .header {
         text-align: center;
     }
 
-    /* hero: panel blur — sits below header at normal position */
+    /* hero: panel is fully transparent — .menu-blur-bg JS element handles the single unified blur */
     .has-hero:not(.scrolled-past-hero) #menu.mobile-open {
-        background: rgba(0, 0, 0, 0.35);
-        backdrop-filter: blur(18px);
-        -webkit-backdrop-filter: blur(18px);
+        background: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
         box-shadow: none;
         border-top: 0;
         top: var(--header-height);
         padding-top: 16px;
-        z-index: 999;
+        z-index: 1000;
     }
 
     /* hero header bg handled by .menu-blur-bg JS element */
