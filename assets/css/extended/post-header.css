@@ -296,3 +296,24 @@ html.has-hero body.is-simple .post-hero-extra {
 html.has-hero .main {
   padding-top: 0;
 }
+
+/* ======================================================
+   MOBILE HERO TEXT FIX
+   ====================================================== */
+
+  @media (max-width: 900px) {
+
+  .has-hero .post-hero-inner {
+    padding: 6rem 1.5rem 3rem;
+    max-width: 100%;
+  }
+
+  .has-hero .post-hero-title {
+    font-size: 28px;
+  }
+
+  .has-hero .post-hero-description {
+    font-size: 16px;
+  }
+
+}
