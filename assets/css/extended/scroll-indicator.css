@@ -32,3 +32,14 @@ html.has-hero.scrolled-past-hero #scroll-indicator {
   opacity: 1;
 }
 
+/* ======================================================
+   MOBILE — DISABLE SCROLL INDICATOR
+   ====================================================== */
+
+@media (max-width: 900px) {
+
+  .scroll-indicator {
+    display: none !important;
+  }
+
+}
