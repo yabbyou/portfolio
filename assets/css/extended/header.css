@@ -388,4 +388,12 @@ html.has-hero:not(.scrolled-past-hero) .header {
     width:100%;
   }
 
+    #menu.mobile-open{
+    margin-right:0;
+    margin-left:0;
+    left:0;
+    right:0;
+    width:100%;
+  }
+
 }
