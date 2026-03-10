@@ -328,12 +328,15 @@ html.has-hero:not(.scrolled-past-hero) .header {
     padding:16px;
     gap:16px;
     align-items:center;
-    border-bottom:1px solid var(--header-border);
+    border-bottom:0px solid var(--header-border);
     }
 
-    /* keep dropdown dark while hero is visible */
     .has-hero:not(.scrolled-past-hero) #menu.mobile-open{
-    background: rgba(0,0,0,0.92);
+        background: rgba(0,0,0,0.35);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border-bottom: none;
+        box-shadow: 0 1px 0 rgba(255,255,255,0.06) inset;
     }
 
     #menu.mobile-open{
