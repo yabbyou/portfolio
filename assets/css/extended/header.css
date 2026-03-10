@@ -320,16 +320,16 @@ html.has-hero:not(.scrolled-past-hero) .header {
   #menu.mobile-open{
     display:flex;
     flex-direction:column;
-    position:absolute;
+    position:fixed;
     top:var(--header-height);
     left:0;
-    right:0;
+    width:100vw;
     background:var(--header-bg);
     padding:16px;
     gap:16px;
     align-items:center;
     border-bottom:1px solid var(--header-border);
-  }
+    }
 
     #menu.mobile-open{
         align-items:center;
