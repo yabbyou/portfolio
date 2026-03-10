@@ -369,4 +369,29 @@ html.has-hero:not(.scrolled-past-hero) .header {
     display: none;
   }
 
+  #menu.mobile-open {
+    margin-left: 0;       /* already set ✓ */
+    margin-right: 0;      /* already set ✓ */
+    padding-left: 0;      /* neutralize any inherited padding */
+    padding-right: 0;
+    width: 100%;          /* ensure full viewport width */
+    left: 0;              /* already set ✓ */
+    box-sizing: border-box;
+}
+
+#menu.mobile-open li {
+    width: 100%;
+    display: flex;
+    justify-content: center;   /* ← this is the key addition */
+    text-align: center;
+}
+
+#menu.mobile-open li a,
+#menu.mobile-open li span {
+    text-align: center;
+    margin: 0 auto;            /* ← belt-and-suspenders centering */
+    display: block;
+    width: fit-content;
+}
+
 }
