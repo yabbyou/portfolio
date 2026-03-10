@@ -345,12 +345,11 @@ html.has-hero:not(.scrolled-past-hero) .header {
     box-shadow: 0 1px 0 rgba(255,255,255,0.06) inset;
   }
 
-  /* CENTER ITEMS */
+  /* CENTER MENU ITEMS */
 
   #menu.mobile-open li {
-    display: flex;
-    justify-content: center;
     width: 100%;
+    text-align: center;
   }
 
   #menu.mobile-open li a {
@@ -358,14 +357,10 @@ html.has-hero:not(.scrolled-past-hero) .header {
     text-align: center;
   }
 
-  #menu.mobile-open li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  /* REMOVE DESKTOP DOT INDICATOR */
 
-  #menu.mobile-open li span::before{
-    display:none;
+  #menu.mobile-open li span::before {
+    display: none;
   }
 
 }
