@@ -326,7 +326,7 @@ html.has-hero .main {
 
   .has-hero .post-hero-inner{
     --hero-align-y: center;
-    --hero-offset-y: 20px;
+    --hero-offset-y: 55px;
   }
 
 }
