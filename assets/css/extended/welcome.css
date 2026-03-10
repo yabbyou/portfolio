@@ -58,14 +58,12 @@
    =============================== */
 
 @media (max-width: 900px) {
+
   .welcome-hero-grid {
     grid-template-columns: 1fr;
     row-gap: 2.5rem;
+    justify-items: center;
     text-align: center;
-  }
-
-  .hero-text-stack {
-    align-items: center;
   }
 
   .welcome-hero-wrapper {
@@ -74,6 +72,7 @@
   }
 
   .hero-text-stack {
+    align-items: center;
     max-width: 100%;
   }
 
@@ -82,30 +81,15 @@
     margin: 3rem auto 4rem;
   }
 
-  .hero-anchor img{
-    max-width:100%;
-    height:auto;
-    display:block;
+  .hero-anchor {
+    justify-content: center;
+    width: 100%;
   }
 
-  .hero-anchor{
-    justify-content:center;
-    align-items:center;
-    width:100%;
-  }
-
-  #portrait-frame{
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .welcome-hero-grid{
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  #portrait-frame{
-    margin: 0 auto;
+  .hero-anchor img {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
 }
