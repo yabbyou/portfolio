@@ -291,6 +291,18 @@
     .post-entry.post-wide-mini .entry-text {
         padding-bottom: 0;
     }
+
+    /* ============================================================
+   MOBILE — FORCE CASE IMAGE ON TOP
+   ============================================================ */
+
+    .post-entry.variant-case .entry-media {
+        order: -1 !important;
+    }
+
+    .post-entry.variant-case .entry-text-wrap {
+        order: 1 !important;
+    }
 }
 
 /* ============================================================
