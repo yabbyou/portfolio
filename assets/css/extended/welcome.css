@@ -67,6 +67,19 @@
   .hero-text-stack {
     align-items: center;
   }
+
+  .welcome-hero-wrapper {
+  margin: 3.5rem auto 2.5rem;
+  padding: 0 1.2rem;
+}
+
+.hero-text-stack {
+  max-width: 100%;
+}
+
+.post-content {
+  padding: 0 1.2rem;
+  margin: 3rem auto 4rem;
 }
 
 /* ===============================
