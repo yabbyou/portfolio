@@ -99,6 +99,15 @@
     margin-right:auto;
   }
 
+  .welcome-hero-grid{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  #portrait-frame{
+    margin: 0 auto;
+  }
+
 }
 
 /* ===============================
