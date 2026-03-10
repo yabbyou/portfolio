@@ -161,7 +161,7 @@ button#theme-toggle {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1001;            /* must be above panel's backdrop-filter stacking context (999) */
     background: transparent;
     border-bottom: 0px solid var(--header-border);
     background-clip: padding-box;
