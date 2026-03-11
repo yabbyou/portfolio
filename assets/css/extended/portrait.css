@@ -33,5 +33,11 @@
   #portrait-frame {
     width: min(420px, 80vw);
     height: calc(min(420px, 80vw) * (560 / 420));
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

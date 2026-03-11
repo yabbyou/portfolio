@@ -42,7 +42,7 @@
   });
 
   /* =========================
-     SCROLL BLINK (mobile)
+     SCROLL BLINK (mobile only)
      blinks once when scroll
      motion is detected, then
      waits 1s before re-arming
@@ -52,6 +52,7 @@
   let scrollBlinkCooldown = null;
 
   window.addEventListener("scroll", () => {
+    if (window.innerWidth > 768) return;   // desktop: skip
     if (!scrollBlinkArmed) return;
     scrollBlinkArmed = false;
     quickBlink();
