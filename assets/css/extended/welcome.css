@@ -92,14 +92,6 @@
     justify-content: center;
     align-items: center;
   }
-
-  #portrait-frame {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    left: auto !important;
-    transform: none !important;
-    position: relative !important;
-  }
 }
 
 /* ===============================
