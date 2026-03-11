@@ -204,8 +204,8 @@
     margin-top: 18px;
     margin-inline: 30px;
     line-height: 1.5;
-    font-family: 'Banto';
-    font-weight: 300;
+    font-family: 'Banto' !important;
+    font-weight: 300 !important;
     letter-spacing: 0.035em;
     font-size: 13px;
     color: var(--secondary);
