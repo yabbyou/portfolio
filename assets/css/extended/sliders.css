@@ -419,3 +419,23 @@ body.overlay-open {
 .slide-image-thumb img {
   display: block;
 }
+
+/* =========================================================
+   SUPPRESS NATIVE iOS SAFARI VIDEO CONTROLS
+   ========================================================= */
+
+.slide-inline-video::-webkit-media-controls {
+  display: none !important;
+}
+
+.slide-inline-video::-webkit-media-controls-panel {
+  display: none !important;
+}
+
+.slide-inline-video::-webkit-media-controls-play-button {
+  display: none !important;
+}
+
+.slide-inline-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
