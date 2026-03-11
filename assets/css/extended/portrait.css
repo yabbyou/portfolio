@@ -37,7 +37,6 @@
 
 @media (max-width: 900px) {
   #portrait-frame {
-    /* scale proportionally to viewport, capped at desktop size */
     width: min(
       calc(420px * var(--portrait-scale-desktop)),
       calc(100vw * var(--portrait-scale-mobile))
@@ -48,8 +47,5 @@
         calc(100vw * var(--portrait-scale-mobile))
       ) * (560 / 420)
     );
-    /* centering — works regardless of parent container */
-    margin-left: auto;
-    margin-right: auto;
   }
 }

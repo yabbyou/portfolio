@@ -91,15 +91,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    overflow: visible;   /* don't clip the frame */
   }
 
-  /* grid cell must be full width so margin:auto on portrait can center */
-  .welcome-hero-grid > * {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  #portrait-frame {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    left: auto !important;
+    transform: none !important;
+    position: relative !important;
   }
 }
 
