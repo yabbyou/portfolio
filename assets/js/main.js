@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const base = window.location.pathname.includes('/sv/') ? '/portfolio/sv/' : '/portfolio/en/';
     li.innerHTML = `<a href="${base}#contact"><span class="contact-label">Contact</span></a>`;
     menu.appendChild(li);
+    li.querySelector('a').addEventListener('click', () => closeMenu());
   }
 });
 
