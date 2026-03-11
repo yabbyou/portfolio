@@ -6,6 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.__initHeaderCompact) {
     window.__initHeaderCompact();
   }
+
+  // close menu when any menu link is clicked
+  document.querySelectorAll('#menu a, .menu-contact-mobile a').forEach(link => {
+    link.addEventListener('click', () => {
+      closeMenu();
+    });
+  });
 });
 
 const dot = document.querySelector('.scroll-dot');
@@ -16,6 +23,28 @@ window.addEventListener('scroll', () => {
     document.documentElement.scrollHeight - window.innerHeight;
   const progress = scrollTop / maxScroll;
   dot.style.top = progress * 100 + '%';
+});
+
+function closeMenu() {
+  const menu   = document.getElementById('menu');
+  const header = document.querySelector('.header');
+  menu.classList.remove('mobile-open');
+  header.classList.remove('menu-is-open');
+  document.querySelectorAll('.menu-blur-bg').forEach(el => el.remove());
+}
+
+/* inject mobile-only Contact item into menu once */
+document.addEventListener('DOMContentLoaded', () => {
+  const menu = document.getElementById('menu');
+  if (menu && !menu.querySelector('.menu-contact-mobile')) {
+    const li = document.createElement('li');
+    li.className = 'menu-contact-mobile';
+    // get current lang prefix from <html lang> attribute
+    const lang = document.documentElement.lang || 'en';
+    const base = window.location.pathname.includes('/sv/') ? '/portfolio/sv/' : '/portfolio/en/';
+    li.innerHTML = `<a href="${base}#contact"><span class="contact-label">Contact</span></a>`;
+    menu.appendChild(li);
+  }
 });
 
 function toggleMenu() {
@@ -32,7 +61,6 @@ function toggleMenu() {
 
   if (isHero) {
     if (isOpening) {
-      // wait one frame so menu is rendered and has a real offsetHeight
       requestAnimationFrame(() => {
         const headerHeight = header.offsetHeight;
         const menuHeight   = menu.offsetHeight;
@@ -51,7 +79,6 @@ function toggleMenu() {
           z-index: 998;
           pointer-events: none;
         `;
-        // insert as first child of body so it's behind header (z-index 1001) and menu (1000)
         document.body.insertBefore(blur, document.body.firstChild);
       });
     } else {
@@ -62,10 +89,6 @@ function toggleMenu() {
 
 window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
-    const menu   = document.getElementById('menu');
-    const header = document.querySelector('.header');
-    menu.classList.remove('mobile-open');
-    header.classList.remove('menu-is-open');
-    document.querySelectorAll('.menu-blur-bg').forEach(el => el.remove());
+    closeMenu();
   }
 });

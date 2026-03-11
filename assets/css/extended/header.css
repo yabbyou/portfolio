@@ -353,3 +353,43 @@ html.has-hero:not(.scrolled-past-hero) .header {
     }
 
 }
+/* ======================================================
+   MOBILE-ONLY CONTACT ITEM
+   ====================================================== */
+
+/* hidden everywhere by default */
+.menu-contact-mobile {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    #menu.mobile-open .menu-contact-mobile {
+        display: flex !important;
+        justify-content: center;
+        width: 100%;
+        padding-top: 12px;
+        margin-top: 4px;
+        border-top: 1px solid rgba(128, 128, 128, 0.25);
+    }
+
+    #menu.mobile-open .menu-contact-mobile a {
+        display: block;
+        text-align: center;
+        transform: none;
+    }
+
+    #menu.mobile-open .menu-contact-mobile .contact-label {
+        font-family: "Gilroy";
+        font-size: 0.705rem;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        opacity: 0.45;
+        padding-left: 0;
+        position: static;   /* no ::before dot */
+    }
+
+    #menu.mobile-open .menu-contact-mobile .contact-label::before {
+        display: none !important;
+    }
+}
