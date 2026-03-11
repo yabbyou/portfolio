@@ -11,15 +11,17 @@ layout: wide-mini
 row: 1
 order: 1
 heroExtra: 2022
+  
 ---
-&nbsp; 
  
-&nbsp; 
-──────────────────────────────────────────
- 
-&nbsp; 
-{{< figure
-  src="/img/mix/mbp.png"
-  alt=""
-  width="900"
->}}
+{{< slider disableOverlay="true" >}}
+{{< slide type="single" src="img/mix/mbp.png" caption="" >}}
+{{< /slider >}}
+
+ &nbsp; 
+
+ &nbsp; 
+
+
+##### Inte godkänd av någon.
+
