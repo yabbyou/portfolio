@@ -1,10 +1,17 @@
+/* ================================
+   SCALE VARIABLES — tweak these
+   ================================ */
+:root {
+  --portrait-scale-desktop: 1;    /* 1 = 420×560px, 0.8 = 336×448px etc */
+  --portrait-scale-mobile: 0.75;  /* relative to viewport width */
+}
+
 #portrait-frame {
   position: relative;
-  width: 420px;
-  height: 560px;
+  width: calc(420px * var(--portrait-scale-desktop));
+  height: calc(560px * var(--portrait-scale-desktop));
   user-select: none;
-  margin: 0 auto;
-  flex-shrink: 0;   /* prevent grid from squishing it on desktop */
+  flex-shrink: 0;
 }
 
 #portrait-frame img {
@@ -28,16 +35,21 @@
   opacity: 1;
 }
 
-/* mobile: scale down proportionally, stay centered */
 @media (max-width: 900px) {
   #portrait-frame {
-    width: min(420px, 80vw);
-    height: calc(min(420px, 80vw) * (560 / 420));
+    /* scale proportionally to viewport, capped at desktop size */
+    width: min(
+      calc(420px * var(--portrait-scale-desktop)),
+      calc(100vw * var(--portrait-scale-mobile))
+    );
+    height: calc(
+      min(
+        calc(420px * var(--portrait-scale-desktop)),
+        calc(100vw * var(--portrait-scale-mobile))
+      ) * (560 / 420)
+    );
+    /* centering — works regardless of parent container */
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
