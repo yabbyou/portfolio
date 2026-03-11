@@ -70,6 +70,8 @@
 {{- if (not site.Params.disableScrollToTop) }}
 <script>
     var mybutton = document.getElementById("top-link");
+    mybutton.style.visibility = "hidden";
+    mybutton.style.opacity = "0";
 
     window.addEventListener("scroll", function () {
 
