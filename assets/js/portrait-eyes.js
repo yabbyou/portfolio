@@ -15,12 +15,10 @@
 
   function quickBlink() {
     if (isHolding) return;
-
     closeEyes();
-
     blinkTimeout = setTimeout(() => {
       if (!isHolding) openEyes();
-    }, 170); //
+    }, 170);
   }
 
   /* =========================
@@ -44,7 +42,28 @@
   });
 
   /* =========================
-     AUTO BLINK (EVERY 4s)
+     SCROLL BLINK (mobile)
+     blinks once when scroll
+     motion is detected, then
+     waits 1s before re-arming
+  ========================== */
+
+  let scrollBlinkArmed = true;
+  let scrollBlinkCooldown = null;
+
+  window.addEventListener("scroll", () => {
+    if (!scrollBlinkArmed) return;
+    scrollBlinkArmed = false;
+    quickBlink();
+
+    clearTimeout(scrollBlinkCooldown);
+    scrollBlinkCooldown = setTimeout(() => {
+      scrollBlinkArmed = true;
+    }, 1000);
+  }, { passive: true });
+
+  /* =========================
+     AUTO BLINK (EVERY 5s)
   ========================== */
 
   setInterval(() => {

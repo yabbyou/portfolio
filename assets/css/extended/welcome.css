@@ -58,10 +58,11 @@
    =============================== */
 
 @media (max-width: 900px) {
-
-    .welcome-hero-grid{
-    grid-template-columns:1fr;
-    justify-items:center;
+  .welcome-hero-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 2rem;
+    text-align: center;
   }
 
   .welcome-hero-wrapper {
@@ -72,6 +73,12 @@
   .hero-text-stack {
     align-items: center;
     max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-left-text,
+  .hero-bottom-text {
+    text-align: center;
   }
 
   .post-content {
@@ -79,25 +86,13 @@
     margin: 3rem auto 4rem;
   }
 
-  .hero-anchor{
-    width:100%;
-    display:flex;
-    justify-content:center;
+  .hero-anchor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
-
-  .hero-anchor img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .hero-anchor{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:0 auto;
-  }
-
 }
 
 /* ===============================
@@ -118,18 +113,7 @@
    MOBILE
    =============================== */
 
-@media (max-width: 900px) {
-  .welcome-hero-grid {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-    text-align: center;
-  }
 
-  .hero-left-text,
-  .hero-bottom-text {
-    text-align: center;
-  }
-}
 
 /* ===============================
    ANNOTATIONS
