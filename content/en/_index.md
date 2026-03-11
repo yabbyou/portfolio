@@ -46,14 +46,13 @@ Lorem ipsum dolor sit amet <span class="annotated" data-note="Mostly brand, film
 work
 </span> , consectetur adipiscing elit. Aliquam gravida, massa ut ultrices elementum, elit dolor tempor libero, ac viverra enim velit eget nisl. Vestibulum sodales nisi erat, eget semper ligula lobortis eget. Etiam orci turpis, ullamcorper sit amet magna quis, blandit laoreet ipsum. Duis quis tempor justo. Proin non augue a urna finibus varius. Nullam pretium tempor erat consequat rutrum. Aenean a felis vel purus porttitor ullamcorper. Mauris a tortor accumsan, blandit turpis sed, malesuada nibh. Etiam pharetra metus et ex elementum, et laoreet sem venenatis. Pellentesque dapibus suscipit arcu, eu varius arcu ornare id. Praesent lacinia velit est, vel luctus dui auctor et. Curabitur at vestibulum nibh. Vestibulum porta ultricies lacus ac consectetur. Etiam id gravida velit, nec posuere eros. Suspendisse pulvinar dui eget ipsum suscipit molestie.
 
-{{< accordion-group type="info" >}}
+<div id="contact"></div>
 
+{{< accordion-group type="info" >}}
 {{< accordion-item title="CONTACT" >}}
 - +46707903023
 - lundgrenen23@gmail.com
 {{< /accordion-item >}}
-
-
 {{< /accordion-group >}}
 
 </div>

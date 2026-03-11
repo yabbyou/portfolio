@@ -227,12 +227,6 @@ html.has-hero:not(.scrolled-past-hero) .header {
     color: inherit;
 }
 
-/* hide scroll-to-top button by default — JS shows it only near bottom */
-#top-link {
-    visibility: hidden;
-    opacity: 0;
-}
-
 /* ======================================================
    MOBILE NAV
    ====================================================== */
@@ -271,7 +265,7 @@ html.has-hero:not(.scrolled-past-hero) .header {
         line-height: 1;
         padding: 0;
         align-self: center;
-        transform: translateY(-4px);
+        transform: translateY(-8px);
     }
 
     #menu:not(.mobile-open) {
@@ -350,6 +344,41 @@ html.has-hero:not(.scrolled-past-hero) .header {
     /* suppress on home page */
     .is-home #menu.mobile-open li span.active::before {
         opacity: 0;
+    }
+
+    /* mobile-only contact item — hidden on desktop */
+    .menu-contact-mobile {
+        display: none;
+    }
+
+    #menu.mobile-open .menu-contact-mobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 4px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    #menu.mobile-open .menu-contact-mobile a {
+        display: block;
+        text-align: center;
+        transform: none;
+    }
+
+    #menu.mobile-open .menu-contact-mobile .contact-label {
+        font-family: "Gilroy";
+        font-size: 0.705rem;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        opacity: 0.5;          /* visually distinct — dimmed vs regular items */
+        padding-left: 0;       /* no dot indent */
+    }
+
+    /* no dot indicator for contact */
+    #menu.mobile-open .menu-contact-mobile .contact-label::before {
+        display: none !important;
     }
 
 }
