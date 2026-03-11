@@ -46,19 +46,14 @@ Lorem ipsum dolor sit amet <span class="annotated" data-note="Mostly brand, film
 work
 </span> , consectetur adipiscing elit. Aliquam gravida, massa ut ultrices elementum, elit dolor tempor libero, ac viverra enim velit eget nisl. Vestibulum sodales nisi erat, eget semper ligula lobortis eget. Etiam orci turpis, ullamcorper sit amet magna quis, blandit laoreet ipsum. Duis quis tempor justo. Proin non augue a urna finibus varius. Nullam pretium tempor erat consequat rutrum. Aenean a felis vel purus porttitor ullamcorper. Mauris a tortor accumsan, blandit turpis sed, malesuada nibh. Etiam pharetra metus et ex elementum, et laoreet sem venenatis. Pellentesque dapibus suscipit arcu, eu varius arcu ornare id. Praesent lacinia velit est, vel luctus dui auctor et. Curabitur at vestibulum nibh. Vestibulum porta ultricies lacus ac consectetur. Etiam id gravida velit, nec posuere eros. Suspendisse pulvinar dui eget ipsum suscipit molestie.
 
-##### Employment
+{{< accordion-group type="info" >}}
 
-HERLIN-WIDERBERG
-ABBY_WORLD
-APE_CC
+{{< accordion-item title="CONTACT" >}}
+- +46707903023
+- lundgrenen23@gmail.com
+{{< /accordion-item >}}
 
 
-##### Education
-
-Berghs School of Communication 2021-2023
-
-##### Clients
-
-Aenean fringilla malesuada pharetra. Maecenas id est nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent a augue urna. Ut placerat ante non laoreet suscipit. Donec nec convallis mi, non sagittis urna. Vestibulum blandit ex neque, ac facilisis nisl fringilla vel. Suspendisse dignissim purus facilisis quam ornare rhoncus.
+{{< /accordion-group >}}
 
 </div>

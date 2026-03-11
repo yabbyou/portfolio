@@ -227,6 +227,12 @@ html.has-hero:not(.scrolled-past-hero) .header {
     color: inherit;
 }
 
+/* hide scroll-to-top button by default — JS shows it only near bottom */
+#top-link {
+    visibility: hidden;
+    opacity: 0;
+}
+
 /* ======================================================
    MOBILE NAV
    ====================================================== */
