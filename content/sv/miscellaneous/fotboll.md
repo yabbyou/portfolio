@@ -14,7 +14,7 @@ heroExtra: 2021
   
 ---
  
-{{< slider disableOverlay="true" >}}
+{{< slider type="video" height="" >}}
 {{< slide type="video" src="img/nya_drommar/nya_drommar.mp4" poster="img/nya_drommar/ullevi2.png" caption="" >}}
 {{< /slider >}}
 

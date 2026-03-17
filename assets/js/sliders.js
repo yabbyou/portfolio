@@ -5,7 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
      HARD FIX — ENSURE OVERLAY LIVES UNDER <body>
      ========================================================= */
   const overlay = document.querySelector(".slider-overlay");
-  if (overlay && overlay.parentElement !== document.body) {
+  if (!overlay) {
+    console.warn("sliders.js: no .slider-overlay found in DOM");
+    return;
+  }
+  if (overlay.parentElement !== document.body) {
     document.body.appendChild(overlay);
   }
 
@@ -189,7 +193,9 @@ document.addEventListener("DOMContentLoaded", () => {
     slide.closest(".slider-frame")?.classList.add("video-playing");
 
     if (playBtn) playBtn.style.display = "none";
-    video.controls = true;
+    // keep controls off for hero/inline play — overlay has full controls
+    const inHero = !!slide.closest(".post-hero-slider");
+    video.controls = !inHero;
     video.classList.add("playing");
     video.play();
   }
@@ -282,13 +288,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   overlay.addEventListener("click", e => {
     if (
-      e.target.closest(".slider-lightbox-img") ||
       e.target.closest(".slider-lightbox-video") ||
       e.target.closest(".overlay-prev") ||
       e.target.closest(".overlay-next") ||
       e.target.closest(".slider-close") ||
       e.target.closest(".slider-caption")
     ) return;
+
+    // click on image → open full bleed in new tab
+    if (e.target.closest(".slider-lightbox-img")) {
+      const src = overlayImg.src;
+      if (src) window.open(src, "_blank");
+      return;
+    }
 
     closeOverlay();
   });

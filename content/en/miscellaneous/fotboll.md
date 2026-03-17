@@ -11,10 +11,12 @@ layout: wide-mini
 row: 1
 order: 1
 heroExtra: 2021
+heroSliderHeight: 55vh
+heroOffsetY: -40px
   
 ---
  
-{{< slider disableOverlay="true" >}}
+{{< slider >}}
 {{< slide type="video" src="img/nya_drommar/nya_drommar.mp4" poster="img/nya_drommar/ullevi2.png" caption="" >}}
 {{< /slider >}}
 

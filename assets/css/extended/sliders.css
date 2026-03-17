@@ -301,7 +301,7 @@
 .slider-lightbox-img,
 .slider-lightbox-video {
   max-width: 100%;
-  max-height: 80vh;
+  max-height: 90vh;
   object-fit: contain;
   border-radius: 3px;
 }
@@ -418,4 +418,94 @@ body.overlay-open {
 
 .slide-image-thumb img {
   display: block;
+}
+
+
+/* =========================================================
+   SIMPLE HERO SLIDER
+   — height-driven, width follows naturally
+   — handles image (default), tall, video types
+   ========================================================= */
+
+/* Slider wrapper — sized by CSS var, centered in hero */
+.post-hero-slider {
+  position: relative;  /* badge anchors here */
+}
+
+.post-hero-slider .slider-frame {
+  margin: 0 auto;
+}
+
+/* All hero sliders: fixed height, auto width */
+.post-hero-slider .custom-slider {
+  aspect-ratio: unset !important;
+  height: var(--hero-slider-height, 70vh) !important;
+  width: auto !important;
+  max-width: 90vw;
+}
+
+/* Non-tall: explicit 16:9 width so video/image is always centered correctly */
+.post-hero-slider .custom-slider:not(.tall) {
+  width: calc(var(--hero-slider-height, 70vh) * (16 / 9)) !important;
+  max-width: 90vw;
+}
+
+.post-hero-slider .swiper {
+  width: auto !important;
+  height: 100% !important;
+}
+
+.post-hero-slider .swiper-wrapper {
+  height: 100% !important;
+  width: auto !important;
+}
+
+.post-hero-slider .swiper-slide {
+  width: auto !important;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image slides */
+.post-hero-slider .slide-image-thumb {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-hero-slider .slide-image-thumb img {
+  height: 100%;
+  width: auto;
+  max-width: 90vw;
+  object-fit: contain;
+  display: block;
+}
+
+/* Video slides */
+.post-hero-slider .slide-video-thumb {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-hero-slider .slide-video-thumb video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* badge position handled by post-header.css */
+
+/* =========================================================
+   OVERLAY IMAGE — zoom-in cursor to hint new tab on click
+   ========================================================= */
+
+.slider-lightbox-img {
+  cursor: zoom-in;
 }

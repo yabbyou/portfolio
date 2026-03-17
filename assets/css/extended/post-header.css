@@ -184,11 +184,39 @@ html.has-hero body.is-simple .post-hero-overlay {
   justify-content: var(--hero-align-y);
   align-items: var(--hero-align-x);
 
-  /* 🔥 vertical offset only */
   transform: translateY(var(--hero-offset-y));
 
   color: #fff;
   text-shadow: 0 2px 14px rgba(0,0,0,0.75);
+}
+
+/* title row */
+html.has-hero body.is-simple .post-hero-row {
+  display: block;
+  width: 100%;
+}
+
+/* badge — sibling of post-hero-inner, matched to title baseline */
+html.has-hero body.is-simple .post-hero-extra {
+  position: absolute;
+  /* same vertical as title: padding-bottom 4rem + translateY offset -10px */
+  bottom: calc(4rem - var(--hero-offset-y, -10px));
+  /* horizontally: same distance from center as title's left padding (15rem) */
+  right: calc(50% - 480px);   /* 480px = half of max-width 960px */
+  transform: translateY(var(--hero-offset-y, -10px));
+  padding: 0.45rem 0.7rem;
+  font-family: 'CodeSaver';
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgb(40, 40, 40);
+  backdrop-filter: blur(6px);
+  border-radius: 3px;
+  white-space: nowrap;
+  text-shadow: none;
+  z-index: 4;
 }
 
 .has-hero .post-hero-title {
@@ -216,19 +244,14 @@ html.has-hero body.is-simple .post-hero-overlay {
 
 html.has-hero body.is-simple .post-hero-slider {
   position: absolute;
-  inset: 50% auto auto 50%;
-  transform: translate(-50%, -60%);
-  width: min(1040px, 90vw);
-  z-index: 2;
-}
-
-/* Slider contents scale naturally */
-html.has-hero body.is-simple .post-hero-slider > *,
-html.has-hero body.is-simple .post-hero-slider video,
-html.has-hero body.is-simple .post-hero-slider img {
-  width: 100%;
-  height: auto;
-  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, calc(-50% + var(--hero-slider-y, -4%)));
+  z-index: 5;
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ======================================================
@@ -254,17 +277,12 @@ html::-webkit-scrollbar {
 
 html.has-hero body.is-simple .post-hero-extra {
   position: absolute;
-  right: -1.25rem;
-  bottom: -1.25rem;
-  transform: translate(90%, 350%);
+  bottom: 4.9rem;
+  right: 18rem;
+  transform: none;
 
   display: inline-flex;
   align-items: center;
-
-  width: max-content;
-  max-width: max-content;
-  flex: 0 0 auto;
-  align-self: flex-start;
 
   padding: 0.45rem 0.7rem;
 
@@ -280,7 +298,7 @@ html.has-hero body.is-simple .post-hero-extra {
   border-radius: 3px;
 
   white-space: nowrap;
-  z-index: 4;
+  z-index: 6;
 }
 
 .has-hero .post-hero-title,

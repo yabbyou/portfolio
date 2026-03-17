@@ -42,17 +42,17 @@
 
   </div>
 
+  {{- with .Params.heroExtra }}
+  <div class="post-hero-extra">{{ . | markdownify }}</div>
+  {{- end }}
+
   {{- if eq .Params.variant "simple" }}
-    <div class="post-hero-slider">
+    {{- $offsetY := .Params.heroOffsetY | default "0px" -}}
+    {{- $sliderH := .Params.heroSliderHeight | default "68vh" -}}
+    <div class="post-hero-slider" style="--hero-slider-y: {{ $offsetY }}; --hero-slider-height: {{ $sliderH }};">
 
       {{- with .Scratch.Get "hero_slider" }}
         {{ . | safeHTML }}
-      {{- end }}
-
-      {{- with .Params.heroExtra }}
-        <div class="post-hero-extra">
-          {{ . | markdownify }}
-        </div>
       {{- end }}
 
     </div>
