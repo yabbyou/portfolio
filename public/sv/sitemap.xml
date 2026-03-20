@@ -94,11 +94,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/portfolio/en/miscellaneous/postr/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="sv-SV"
                 href="http://localhost:1313/portfolio/sv/miscellaneous/mbp/"
                 />

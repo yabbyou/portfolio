@@ -1,266 +1,160 @@
 ---
-draft: false
 title: 'PETA Block'
 description: 'Never buy an animal online again.'
-
 cover:
     image: img/peta_block/mammakobabyko.jpeg
-
 tags: 
  - CASE
-
 variant: "case"
 layout: wide
-
 summary: 'PETA ville ha en idé som skulle hjälpa djur som används som kläder. Det visade sig att marknadens efterfrågan faktiskt är låg, men också att det är svårt för folk att se alla tillgängliga alternativ som gömmer sig bland djurliken. Lösningen blev ett plugin som gör din webbläsare helt vegansk och tar bort alla brutala alternativ.'
-
 translationKey: petablock
-
 row: 1
 order: 1
-
 badge: 
+imagePosition: left
 ---
-&nbsp; 
- 
-&nbsp; 
-#### *» Brief:  Stop animals used for clothing ‎‎‎‎ ‎ » Solution:  A browser extension that hides animal products*
-──────────────────────────────────────────
-&nbsp; 
- 
-## | JANUARY 2023 
-## | REVISITED NOV. 2025 ‎ ⭍
-&nbsp; 
- 
-# The market doesn't care about you.
-This became apparent when PETA requested an idea that would stop animals being used for clothing. Because it turns out that the solution didn't require us to change peoples minds. We just needed to provide a tool that could help people live their lives in accordence with their already existing values. Luckily, the required tech is already available, simple and familiar to consumers.
+### Brief: Stop animals used for clothing
+### Insight: The market doesn't reflect consumer demand
+### Solution: A browser extension that hides animal products
 
-In 2021, UK based *The Vegan Society* released their report "The Rise of Vegan Fashion". The report shows an awareness and attitude change among the public that may come as a suprise to some. The report contains a survey aimed at men and women of working age all throughout the UK where the participents reveal an interesting discrepancy in consumer will and consumer behaviour:
+---
+
+## + JANUARY 2023 
+## REVISITED MAR. 2025
+
+ &nbsp; 
+
+
+# The market does not care about what you want.
+# This became apparent when PETA requested an idea that would stop animals being used for clothing. Because it turns out that the solution didn't require us to change peoples minds. We just needed to provide a tool that could help people live in accordence with their already existing values. Luckily, the tech is already available, simple and familiar to consumers.
+
+{{< slider >}}
+{{< slide type="video" src="img/peta_block/pb_casefilm.mp4" poster="img/peta_block/case-thumb.png" caption="Demo film" >}}
+{{< slide type="image" src="img/peta_block/pb_ooh.webp" caption="s" >}}
+{{< slide type="image" src="img/peta_block/pb_muhu.jpg" caption="a" >}}
+{{< /slider >}}
+
+ &nbsp; 
+
+ &nbsp; 
+❧
+
+In 2021, *The Vegan Society* released their report “The Rise of Vegan Fashion” which shows that the public has gone through a change in attitude and awareness of animal rights in fashion. The report contains a survey aimed at men and women of working age all throughout the UK where participants reveal a discrepancy in consumer will and consumer behaviour:
 
 > ##### ⓘ *95%* want more vegan clothing options
 
-Vegan clothing *is* a rapidly growing market. *But honestly,* the lack of vegan options isn't the reason the people in the survey are still buying garments made from animals. They probably do sympathize with the issue when facing with the question, but since they're not hard-core vegans, it won't cross their mind next time they're buying a new sweater. I believe they're being honest though. I interpret their answer as that they don't want to wear dead animals, but since the market is so saturated with them, going vegan would require a lot of dedication.
-# So what if you could make it a one-time-choice?
-Personally I'm not a big believer in consumer power. Life is full of choices that require thorough consideration while consumerism is more like an itch in need of quick a thoughtless scratch. When you need a sweater – you pick one from the options presented to you. I am however a big believer in the internet and in this case it presents an opportunity to do something you can't do to a physical store: ‎**Change their supply before you go through the door.**
+So when facing the question of *vegan* vs. *non-vegan clothing*, people intuitively sympathize with the animals. 
 
-{{< figure
-  src="/img/peta_block/pb_ooh.webp"
-  width="700"
-  class="ma0 w-75"
->}}
-# The Solution
+The question is how we can help them change their lifestyle.
+
+{{< accordion-group type="default" >}}
+
+{{% accordion-item title="DATA | SENTIMENT ON VEGAN CLOTHING" %}}
+- 61% BELIEVE THE USE OF FUR IS CRUEL  
+- 37% BELIEVE THE USE OF LEATHER IS CRUEL  
+- 74% ARE WILLING TO PAY MORE FOR PLANT-BASED LEATHER COMPARED TO ANIMAL LEATHER  
+
+## [The Rise of Vegan Fashion ☍](https://www.vegansociety.com/news/news/new-report-shows-brits-want-more-vegan-verified-fashion)
+{{% /accordion-item %}}
+
+{{< /accordion-group >}}
+
+Personally, I’m not a big believer in consumer power. Life is full of choices that require thorough consideration while consumerism is more like an itch in need of a quick scratch, e.g. when you need a new sweater – you pick one from the options presented to you. I am however a big believer in the internet, and in this case it presents an opportunity to do something you can’t do when visiting a physical store:
+
+Change their supply before you go through the door.
+
+ &nbsp; 
+
+{{< slider type="tall" height="" >}}
+  {{< slide type="image" src="img/peta_block/pb_ooh.webp" caption="" >}}
+{{< /slider >}}
+
+ &nbsp; 
+
+ 
+
 # Peta Block is a browser extension that removes animal-based clothing from online stores. 
-The plugin works like a traditional ad-blocker by automatically removing unwanted content before the site has been fully loaded onto your computer. This results in a fully vegan browsing experience and no more dead bodies available to order.
+Like ad blockers it works by automatically removing unwanted content before it is shown on your screen. The result is a fully vegan browsing experience with no more cadavers available for order.
 
-The technique is easy to deploy and the concept of ad-blockers is familiar to consumers with [42% of internet users already utilizing them](https://cropink.com/ad-blockers-usage-statistics).
+We believe this is an issue where Peta doesn’t need to change peoples minds. Most of us already share their sentiment. Instead, we should help people to break free and stop swallowing what the market has been feeding them. 
 
+One click could make it all go away. 
 
-{{< figure
-  src="/img/peta_block/pb_tablets.png"
-  alt="A white kitten"
-  width="900"
->}}
+ &nbsp; 
 
-&nbsp; 
+{{< slider type="single" >}}
+  {{< slide type="image" src="img/peta_block/redpillbluepill.png" caption="" >}}
+{{< /slider >}}
 
-&nbsp; 
+##### Keep scrolling *or* never buy an animal online again
+ &nbsp; 
 
-&nbsp; 
+ &nbsp; 
 
-&nbsp; 
-## This leads to a choice:
+ 
 
+# Modding the experience
 
-&nbsp; 
+This technique is easy to deploy and the concept of ad-blockers is already familiar to consumers, with almost 32% of all internet users utilizing them.
 
-&nbsp; 
+Multiple sources claim that they are most popular in Asia with Indonesia, Vietnam and China topping the list. In Indonesia, a common reason is that mobile phone users don't want to waste their limited data plans on advertising and in China, according to this one comment ([🤷](https://news.ycombinator.com/item?id=41496255)), ad blocking compatibility has become a sales argument for phone retailers.
 
-&nbsp; 
+{{< accordion-group type="default" >}}
 
+{{% accordion-item title="DATA | ADBLOCKER USAGE" %}}
+- 31.5% OF INTERNET USERS WORLDWIDE USE AD BLOCKING TOOLS  
+- 41% OF U.S. INTERNET USERS IN THE 18–24 AGE GROUP  
+- IN 2024, AD BLOCKING SOLUTIONS WERE FORECASTED TO COST PUBLISHERS $54 BILLION IN LOST ADVERTISING REVENUE, EQUALING AROUND 8% OF TOTAL DIGITAL AD SPEND  
 
-###### *Keep scrolling..*
-{{< figure
-  src="/img/peta_block/red-blue-pill.jpg"
-  width="450"
->}}
- *or never buy an animal online again?*
+## [Source ☍](https://backlinko.com/ad-blockers-users)
+{{% /accordion-item %}}
 
-### The Campaign 
+{{< /accordion-group >}}
 
-# The campaign talks about how most clothes *already are vegan.* How most clothes never had a sibling and never felt love nor pain.
+Asia is a part of the world where animals enjoy very little protection while humans there, more than anywhere else, understand that you can control what you want to see on the internet. Even on your phone. 
 
-{{< figure
-  src="/img/peta_block/pb_love.png"
-  width="1000"
->}}
+That is an opportunity that shouldn’t be neglected.
 
-{{< figure
-  src="/img/peta_block/pb_poster.webp"
-  width="500"
->}}
+# The Campaign 
 
-### Personally, I'm not a big believer in consumer power. I am however a big believer in the internet. People hate caseertising. So much so that nearly half of all young people use ad blockers to escape them. Indications say they rather not wear animals either. One survey states that 95% want more vegan clothing options and another that 60% are willing to pay more for it. But they’re still forced to browse through items they don’t want. With shopping moving online however, this is an easy fix – we simply take them away. It's not about changing peoples minds.
+The display of a murdered animal is a shocking sight. Even more so when sold *en masse* as something tacky you’d wear two times to a cheap night club before it's starting to feel dirty and destined for the ever growing mountain of garment garbage.
 
-❦
+We don’t want to see animals that way. We want to see animals as they should be seen. As someone who is incredibly important to others around them. Someone you play with, learn from and can’t imagine living without.
 
+{{< slider >}}
+  {{< slide type="single" src="img/peta_block/pb_love.png" caption="" >}}
+{{< /slider >}}
 
-&nbsp; 
+The campaign seeks to invoke the feeling of not wanting to wear animals by highlighting our similarities. All while explaining that most clothes already are vegan and that Peta is offering a low effort solution that can change your habits.
 
-&nbsp; 
+At a later stage we use the collected data to compile a naughty list from which we can target some of the worst culprits.
 
-&nbsp; 
 
+{{< slider type="tall" >}}
+  {{< slide type="image" src="img/peta_block/pb_poster.webp" caption="" >}}
+{{< /slider >}}
 
-&nbsp; 
+# Closing thoughts
 
-&nbsp; 
+Slacktivism is a term that has received a lot of ridicule. When people are following each other to create hollow movements instead of actually doing something, it’s deserved, since that’s a misuse of the great tool that the internet can be. But even at that low point, it’s a good way to highlight issues where people long for something different, even if their feelings aren’t strong enough to keep them in pursuit of the change they want.
 
-&nbsp; 
+Peta Block is a solution that requires nothing more than slacktivism, where a simple click actually makes a big difference. 
 
+The subject of animals used for clothing provoke strong feelings and I believe many people at some point have felt disgusted by it. In this case the antidote is available in seconds and in a years time, your mind should be completely cleansed from the horrors that the market has been feeding you.
 
-&nbsp; 
+I get that Peta feels the need to shock the public, but I also think they should recognize that people are being shocked all the time and provide an alternative. After all, this seems to be what people want.
 
-&nbsp; 
 
-&nbsp; 
+I also believe that this plugin is a great tool for collecting tangible data without compromising the integrity of its users. It would provide Peta with great insight on how the market of animal remains is behaving and evolving. They could detect sudden spikes and drops or notice how one animal silently replaces another, using nothing but information already provided by retailers. As of writing this, that sort of data isn't available, which is a shame, since I believe that simply sharing it is an easy method for gaining mainstream media traction to issues that are currently struggling to stay relevant.
 
+ &nbsp; 
 
-&nbsp; 
+{{< copyurl >}}
 
-&nbsp; 
 
-&nbsp; 
-
-
-{{< figure
-  src="/img/peta_block/pb_logo.png"
-  width="250"
->}}
-indipendent from the market
-
-https://cropink.com/ad-blockers-usage-statistics
-
-is just an itch
-
-So PETA's task is not to change peoples minds. It's about getting consumers to act according to their values. But honestly, there a
-
-
-{{< figure
-  src="/img/peta_block/pb_love.png"
-  width="1000"
->}}
-
-So. Why don't they?
-
-It's svårt att stå emot.
-När du får frågan svarar du efter dina värderingar. Men för människor som inte är hardcore är det ingenting man tänker på.
-
-
-
-
-, A [2021 study from Vegan Society](https://www.vegansociety.com/news/news/new-report-shows-brits-want-more-vegan-verified-fashion) suggests that ***95%*** of shoppers want more vegan clothing options while 74% are willing to pay more for it. So the issue for PETA isn't about convincing people that animal garments are bad. It's about helping people to act according to their beliefs.
-
-> 95% of shoppers want more vegan options
-
-> 74% are willing to pay *more* for it
-
-### Personally, I'm not a big believer in consumer power. I am however a big believer in the internet. People hate caseertising. So much so that nearly half of all young people use ad blockers to escape them. Indications say they rather not wear animals either. One survey states that 95% want more vegan clothing options and another that 60% are willing to pay more for it. But they’re still forced to browse through items they don’t want. With shopping moving online however, this is an easy fix – we simply take them away. It's not about changing peoples minds.
-
-{{< figure
-  src="/img/peta_block/pb_poster.webp"
-  width="500"
->}}
-
-{{< figure
-  src="/img/peta_block/pb_ooh.webp"
-  width="500"
->}}
-
-{{< figure
-  src="/img/peta_block/pb_print.webp"
-  width="500"
->}}
-
-{{< figure
-  src="/img/peta_block/pb_casefilm.mp4"
-  width=""
->}}
-
-{{< figure
-  src="/img/peta_block/pb_chrome.png"
-  width="500"
->}}
-
-{{< figure
-  src="/img/peta_block/pb_tablets.png"
-  width="500"
->}}
-
-{{< figure
-  src="/img/peta_block/pb_naughty.png"
-  width="500"
->}}
-
-{{< figure
-  src="/img/peta_block/pb_love.png"
-  width="500"
->}}
-
-{{< figure
-  src="/img/peta_block/pb_func.png"
-  width="500"
->}}
-
-{{< figure
-  src="/img/peta_block/pb_restricted.png"
-  width="500"
->}}
-
-» 
-
-<table border="0">
- <tr>
-    <td><b style="font-size:30px">Title</b></td>
-    <td><b style="font-size:30px">Title 2</b></td>
- </tr>
- <tr>
-    <td>Lorem ipsum ...</td>
-    <td>Lorem ipsum ...</td>
- </tr>
-</table>
-
-## • ‎ ‎ ‎ ‎ Brief: Stop animals used for clothing ‎ ‎ ‎ ‎ • ‎ ‎ ‎ ‎ Solution: A browser extension that removes animal products
-
-
-### Peta Block is a browser extension that removes animal-based clothing from online stores. Using javascript it detects animal materials in item descriptions provided by retailers and removes them before you ever have to see them, making it easy to shop cruelty-free. The campaign talks about how most clothes are vegan already, while using data to poke at retailers. Stressing that most clothes never had a mother or siblings. 
-
-#### Never felt pain, fear or love and that a simple click can filter out all those who once did. Giving people an opportunity to make a big difference with minimal effort. Helping you to never buy an animal online again.
-
+ &nbsp; 
 
 ---
-##### CLIENT: People for the ethical treatment of animals (PETA)
-##### BRIEF: Stop animals used for clothing
-##### SOLUTION: A browser extension that removes animal products
 ##### ``BERGHS 2023`` ``COPYWRITER`` ``ADAM LUNDGREN`` ``ELIAS KARLSSON`` ``ART DIRECTOR`` ``CHRISTOPHER RUNSTRÖM``
-##### ``CLIENT`` ``PEOPLE FOR THE ETHICAL TREATMENT OF ANIMALS (PETA)``
-##### ``BRIEF`` ``STOP ANIMALS USED FOR CLOTHING``
-##### ``SOLUTION`` ``A BROWSER EXTENSION THAT HIDES ANIMAL PRODUCTS``
 ---
-
-#### Employment: 
-#### Food & Friends
-#### Abby World
-#### APE_CC
-
-#### School:
-#### Berghs Alumni 2023
-#### Frans Schartaus Gymnasium
-#### Årstaskolan 0-9
-![](/img/border3.png "")
-![](/img/border3.png "")
-
-‎ [U+200E] ·
-
-⛆
-
-☁

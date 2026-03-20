@@ -67,8 +67,8 @@
     max-width: 650px;
     color: var(--content);
     align-items: center;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     margin-right: auto;
     margin-left: auto;
     text-align: left;
@@ -162,19 +162,19 @@
     margin-right: auto;
     align-self: center;
     text-align: center;
-    margin-top: 1.0000em;
-    margin-bottom: 1.0000em;
+    margin-top: 0.0000em;
+    margin-bottom: 0.0000em;
     line-height: 2;
     font-family: "CodeSaver";
     letter-spacing: 0.0155em;
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .post-content h6 {
     align-items: right;
-    margin-top: 0%;
+    margin-top: -5%;
     margin-bottom: 0%;
     margin-right: auto;
     margin-left: auto;
@@ -182,7 +182,7 @@
     line-height: 1.9;
     font-family: "Banto";
     letter-spacing: 0.0100em;
-    font-weight: 200;
+    font-weight: 100;
     font-style: normal;
     font-size: 16px;
     max-width: 700px;
@@ -330,21 +330,15 @@
 }
 
 .post-content blockquote {
-    max-width: 480px;
+    max-width: 700px;
+    display: flex;
     align-items: center;
-    margin: 70px 0;
+    justify-content: center;
+    margin: 2.5em auto;
     padding: 35px 30px;
-    background: var(--code-block-bg) !important;
-    border-left: 0px solid var(--primary);
-    border-top: 0px solid var(--primary);
-    border-right: 0px solid var(--primary);
-    border-bottom: 0px solid var(--primary);
+    background: var(--entry) !important;
     border-radius: 5px;
-    text-align: left;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 1.0000em;
-    margin-bottom: 1.0000em;
+    text-align: center;
     line-height: 1.5;
     font-family: "CodeSaver";
     letter-spacing: 0.0155em;
@@ -352,6 +346,7 @@
     font-style: normal;
     font-size: 13px;
     border: 1px solid var(--border);
+    min-height: 80px;
 }
 
 .post-content hr {
@@ -563,4 +558,25 @@ html.has-hero .main {
 /* Hide tags on single post pages */
 .post-tags {
     display: none;
+}
+
+.post-content p + .container {
+    margin-top: calc(var(--content-gap) * -1);
+}
+
+.post-content blockquote p {
+    margin: 0;
+    padding: 0;
+}
+
+.post-content p + .slider-frame {
+    margin-top: calc(var(--content-gap) * -1 + 2rem);
+}
+
+.post-content .slider-frame {
+    margin-bottom: 10px;
+}
+
+.post-content blockquote {
+    min-height: 120px;
 }

@@ -67,6 +67,15 @@
 
 </script>
 
+<script>
+document.querySelectorAll('a[href^="http"]').forEach(a => {
+  if (!a.href.includes(window.location.hostname)) {
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener noreferrer');
+  }
+});
+</script>
+
 {{- if (not site.Params.disableScrollToTop) }}
 <script>
     var mybutton = document.getElementById("top-link");
