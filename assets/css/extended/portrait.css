@@ -38,6 +38,6 @@
 @media (max-width: 900px) {
   #portrait-frame {
     max-width: var(--portrait-max-mobile);
-    margin-top: -50px;
+    margin-top: -35px;
   }
 }
