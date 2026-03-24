@@ -15,9 +15,11 @@
 
 .welcome-hero-grid {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 420px 1fr;
   column-gap: 5rem;
   align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 /* Portrait */
