@@ -3,7 +3,7 @@
    ================================ */
 :root {
   --portrait-max-desktop: 340px;  /* max width on desktop */
-  --portrait-max-mobile: 340px;   /* max width on mobile */
+  --portrait-max-mobile: 300px;   /* max width on mobile */
 }
 
 #portrait-frame {
