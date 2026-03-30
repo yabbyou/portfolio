@@ -25,18 +25,6 @@ intro_image: "/img/me.jpg"
 
 <!-- BODY -->
 
-**Reklam kan vara många saker.** 
-
-Oftast bara ett pågående brus. 
-
-I värsta fall ett påträngande tjat. 
-
-Men plötsligt en överraskning. 
-
-En påminnelse om att allt inte är förbestämt. 
-
-*Verkligheten är elastisk.*
-
 {{< accordion-group type="info" >}}
 
 {{< accordion-item title="EMPLOYMENT" >}}
