@@ -201,8 +201,6 @@ html.has-hero body.is-simple .post-hero-extra {
   position: absolute;
   /* same vertical as title: padding-bottom 4rem + translateY offset -10px */
   bottom: calc(4rem - var(--hero-offset-y, -10px));
-  /* horizontally: same distance from center as title's left padding (15rem) */
-  right: calc(50% - 480px);   /* 480px = half of max-width 960px */
   transform: translateY(var(--hero-offset-y, -10px));
   padding: 0.45rem 0.7rem;
   font-family: 'CodeSaver';
@@ -246,7 +244,7 @@ html.has-hero body.is-simple .post-hero-slider {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, calc(-50% + var(--hero-slider-y, -4%)));
+  transform: translateX(-50%) translateY(calc(-50% + var(--hero-slider-y, -4%)));
   z-index: 5;
   pointer-events: auto;
   display: flex;
@@ -278,27 +276,8 @@ html::-webkit-scrollbar {
 html.has-hero body.is-simple .post-hero-extra {
   position: absolute;
   bottom: 4.9rem;
-  right: 18rem;
+  right: 15rem; /* matches desktop padding */
   transform: none;
-
-  display: inline-flex;
-  align-items: center;
-
-  padding: 0.45rem 0.7rem;
-
-  font-family: 'CodeSaver';
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-  background: rgb(40, 40, 40);
-  backdrop-filter: blur(6px);
-  border-radius: 3px;
-
-  white-space: nowrap;
-  z-index: 6;
 }
 
 .has-hero .post-hero-title,
@@ -328,6 +307,11 @@ html.has-hero .main {
 
   .has-hero .post-hero-title {
     font-size: 28px;
+  }
+
+  html.has-hero body.is-simple .post-hero-extra {
+  right: 1.5rem;   /* matches mobile padding */
+  bottom: 3rem;    /* tweak visually if needed */
   }
 
   .has-hero .post-hero-description {

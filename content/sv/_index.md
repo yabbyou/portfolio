@@ -12,12 +12,12 @@ intro_image: "/img/me.jpg"
 
   <div class="hero-text-stack">
     <div class="hero-left-text">
-      I do reklam for jobb  
-      and other prylar for kul.
+      Jag jobbar med reklam och roar mig med liknande saker.
     </div>
 
-    <div class="hero-bottom-text">
-      Here's more about mig
+  
+  <div class="hero-bottom-text">
+      Helst vill jag göra staden smartare, roligare och mindre förutsägbar.
     </div>
   </div>
 
@@ -25,7 +25,17 @@ intro_image: "/img/me.jpg"
 
 <!-- BODY -->
 
+**Reklam kan vara många saker.** 
 
+Oftast bara ett pågående brus. 
+
+I värsta fall ett påträngande tjat. 
+
+Men plötsligt en överraskning. 
+
+En påminnelse om att allt inte är förbestämt. 
+
+*Verkligheten är elastisk.*
 
 {{< accordion-group type="info" >}}
 

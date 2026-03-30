@@ -10,12 +10,14 @@
     <div class="slide-video-thumb">
       <video
         class="slide-inline-video"
-        src="{{ .Get "src" | relURL }}"
-        preload="metadata"
+        preload="auto"
         poster="{{ .Get "poster" | relURL }}"
         playsinline
+        muted
         controls
-      ></video>
+      >
+        <source src="{{ .Get "src" | relURL }}" type="video/mp4">
+      </video>
 
       <button class="video-play-overlay" type="button" aria-label="Play video">▶</button>
     </div>

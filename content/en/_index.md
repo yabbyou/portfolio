@@ -12,12 +12,12 @@ intro_image: "/img/me.jpg"
 
   <div class="hero-text-stack">
     <div class="hero-left-text">
-      I do advertising for work  
-      and other stuff for fun.
+      I do advertising for work and similar stuff for fun.
     </div>
 
-    <div class="hero-bottom-text">
-      Here's more about me
+  
+  <div class="hero-bottom-text">
+      Would be happy if I could make the city smarter, funnier and less predictable.
     </div>
   </div>
 
