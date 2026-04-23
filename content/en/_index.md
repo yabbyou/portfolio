@@ -17,7 +17,7 @@ intro_image: "/img/me.jpg"
 
   
   <div class="hero-bottom-text">
-      Would be happy if I could make the city smarter, funnier and less predictable.
+      Would be happy if I could make the city a little bit smarter, funnier and less predictable.
     </div>
   </div>
 
@@ -25,26 +25,30 @@ intro_image: "/img/me.jpg"
 
 <!-- BODY -->
 
+<br> 
+<br>
 
+**I’ve always wanted to create stuff.** Skits and battle scenes featuring a lot of blood in the snow. Pixel art that was sold for ”VIP-membership” on Playahead. Videos, shirts, sound loops, stickers and so on. 
+
+I’ve also always enjoyed writing. Stories, songs, radio drama, jokes and *advertising*. Just for fun at first and now for real. It took me a while to realize that the ad industry allows me to do all of these things, all while providing stimulation by constantly serving up new subjects that require thorough research. As a person I am constantly curious. Oddites are fun just like discussing, looking at maps and sports.
+
+The city is probably my greatest love. Playing a small part in shaping what it says, how it sounds and the way it looks is a great privilege. Hopefully I can making it just a little bit better.
+
+<br> 
+<br>
 
 {{< accordion-group type="info" >}}
 
-{{< accordion-item title="EMPLOYMENT" >}}
+{{< accordion-item title="EXPERIENCE" >}}
 - <span class="annotated" data-note="Cramo, Lanetalk, Nova Circle | Freelance">2024– Herlin–Widerberg</span>
 - <span class="annotated" data-note="Arvid Nordquist, Kexchoklad, Polly, Rydbergs | 3 Month Contract">2025 Food & Friends</span>
 - <span class="annotated" data-note="IQ-Initiativet, Cancerfonden | Internship">2023 ABBY.WORLD</span>
 - <span class="annotated" data-note="Internship">2022 APE_CC</span>
+- <span class="annotated" data-note="Copywriter">2021-2023 Berghs School of Communication</span>
 {{< /accordion-item >}}
 
 
 {{< /accordion-group >}}
-
-
-Lorem ipsum dolor sit amet…
-
-Lorem ipsum dolor sit amet <span class="annotated" data-note="Mostly brand, film, and digital work for agencies.">
-work
-</span> , consectetur adipiscing elit. Aliquam gravida, massa ut ultrices elementum, elit dolor tempor libero, ac viverra enim velit eget nisl. Vestibulum sodales nisi erat, eget semper ligula lobortis eget. Etiam orci turpis, ullamcorper sit amet magna quis, blandit laoreet ipsum. Duis quis tempor justo. Proin non augue a urna finibus varius. Nullam pretium tempor erat consequat rutrum. Aenean a felis vel purus porttitor ullamcorper. Mauris a tortor accumsan, blandit turpis sed, malesuada nibh. Etiam pharetra metus et ex elementum, et laoreet sem venenatis. Pellentesque dapibus suscipit arcu, eu varius arcu ornare id. Praesent lacinia velit est, vel luctus dui auctor et. Curabitur at vestibulum nibh. Vestibulum porta ultricies lacus ac consectetur. Etiam id gravida velit, nec posuere eros. Suspendisse pulvinar dui eget ipsum suscipit molestie.
 
 {{< accordion-group type="info" >}}
 

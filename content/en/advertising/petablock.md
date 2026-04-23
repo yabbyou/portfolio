@@ -7,7 +7,7 @@ tags:
  - CASE
 variant: "case"
 layout: wide
-summary: PETA asked for an idea that would stop animals being used for clothing. We found that consumer demand for garments made from dead animals actually is low, but also that people are having a hard time noticing all the alternatives hiding among the cadavers. The solution is a plugin that makes browsing completly vegan and take cruel shopping options away.
+summary: A browser extension that makes sure you never buy an animal online again.
 translationKey: petablock
 row: 1
 order: 1
@@ -21,7 +21,7 @@ imagePosition: left
 ---
 
 ## + JANUARY 2023 
-## REVISITED MAR. 2025
+## REVISITED APR. 2026
 
  &nbsp; 
 

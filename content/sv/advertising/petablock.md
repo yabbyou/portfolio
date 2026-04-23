@@ -7,27 +7,28 @@ tags:
  - CASE
 variant: "case"
 layout: wide
-summary: 'PETA ville ha en idé som skulle hjälpa djur som används som kläder. Det visade sig att marknadens efterfrågan faktiskt är låg, men också att det är svårt för folk att se alla tillgängliga alternativ som gömmer sig bland djurliken. Lösningen blev ett plugin som gör din webbläsare helt vegansk och tar bort alla brutala alternativ.'
+summary: Ett webbläsartillägg som gör att du aldrig behöver köpa ett dött djur igen.
 translationKey: petablock
 row: 1
 order: 1
 badge: 
 imagePosition: left
 ---
-### Brief: Stop animals used for clothing
-### Insight: The market doesn't reflect consumer demand
-### Solution: A browser extension that hides animal products
+### Brief: Stoppa användandet av djur som kläder
+### Insikt: Marknaden speglar inte konsumenternas efterfrågan
+### Lösning: Ett webbläsartillägg som döljer plagg gjorda av döda djur
 
 ---
 
-## + JANUARY 2023 
-## REVISITED MAR. 2025
+## + JANUARI 2023 
+## UPPDATERAD APR. 2026
 
  &nbsp; 
 
 
-# The market does not care about what you want.
-# This became apparent when PETA requested an idea that would stop animals being used for clothing. Because it turns out that the solution didn't require us to change peoples minds. We just needed to provide a tool that could help people live in accordence with their already existing values. Luckily, the tech is already available, simple and familiar to consumers.
+# Marknaden bryr sig inte om dig. 
+# Detta blev uppenbart när Peta bad om en idé som kunde sätta stopp för användandet av djur som kläder, då det visade sig att de flesta redan håller med i sakfrågan. Lösningen kräver alltså inte opinionsbildning, utan verktyg som kan hjälpa folk att leva i enlighet med sina värderingar. Lyckligtvis är tekniken redan tillgänglig, enkel och bekant för konsumenter.
+
 
 {{< slider >}}
 {{< slide type="video" src="img/peta_block/pb_casefilm.mp4" poster="img/peta_block/case-thumb.png" caption="Demo film" >}}
@@ -40,29 +41,27 @@ imagePosition: left
  &nbsp; 
 ❧
 
-In 2021, *The Vegan Society* released their report “The Rise of Vegan Fashion” which shows that the public has gone through a change in attitude and awareness of animal rights in fashion. The report contains a survey aimed at men and women of working age all throughout the UK where participants reveal a discrepancy in consumer will and consumer behaviour:
+2021 publicerade *The Vegan Society* rapporten ”The Rise of Vegan Fashion”. I den kan man se hur allmänheten genomgått stora förändringar vad gäller attityd och medvetenhet kring djurens rätt i modeindustrin. Rapporten innehåller en undersökning riktad mot brittiska kvinnor och män i arbetsför ålder där man, med tanke på att de flesta kläder redan är veganska, kan skönja en diskrepans mellan vad konsumenter *vill* och vad de *gör*:
 
-> ##### ⓘ *95%* want more vegan clothing options
+> ##### ⓘ *95%* vill ha fler veganska klädalternativ
 
-So when facing the question of *vegan* vs. *non-vegan clothing*, people intuitively sympathize with the animals. 
-
-The question is how we can help them change their lifestyle.
+När folk ställs inför frågan sympatiserar de instinktivt med djuren. Frågan är hur vi kan få dem att förändra sin livsstil.
 
 {{< accordion-group type="default" >}}
 
-{{% accordion-item title="DATA | SENTIMENT ON VEGAN CLOTHING" %}}
-- 61% BELIEVE THE USE OF FUR IS CRUEL  
-- 37% BELIEVE THE USE OF LEATHER IS CRUEL  
-- 74% ARE WILLING TO PAY MORE FOR PLANT-BASED LEATHER COMPARED TO ANIMAL LEATHER  
+{{% accordion-item title="KÄNSLOR KRING VEGANSKA KLÄDER" %}}
+- 61% TYCKER ATT ANVÄNDANDET AV PÄLS ÄR ELAKT
+- 37% TYCKER ATT ANVÄNDANDET AV LÄDER ÄR ELAKT 
+- 74% ÄR BEREDDA ATT BETALA MER FÖR VÄXTBASERAT LÄDER JÄMFÖRT MED DJURLÄDER 
 
 ## [The Rise of Vegan Fashion ☍](https://www.vegansociety.com/news/news/new-report-shows-brits-want-more-vegan-verified-fashion)
 {{% /accordion-item %}}
 
 {{< /accordion-group >}}
 
-Personally, I’m not a big believer in consumer power. Life is full of choices that require thorough consideration while consumerism is more like an itch in need of a quick scratch, e.g. when you need a new sweater – you pick one from the options presented to you. I am however a big believer in the internet, and in this case it presents an opportunity to do something you can’t do when visiting a physical store:
+Jag personligen tror inte så mycket på konsumentmakt. Livet är fullt av beslut som faktiskt kräver noggranna överväganden medan konsumism mer är att likna vid att klia sig i nacken. Alltså, när du behöver en ny tröja köper du en av dem som erbjuds dig. Däremot tror jag mycket på internet, som i det här fallet erbjuder en möjlighet du aldrig kan få i en fysisk butik: 
 
-Change their supply before you go through the door.
+Förändra utbudet redan innan du klivit genom dörren.
 
  &nbsp; 
 
@@ -73,13 +72,12 @@ Change their supply before you go through the door.
  &nbsp; 
 
  
+# Peta Block är ett webbläsartillägg som tar bort djurbaserade klädesplagg från onlinebutiker.
+Precis som annonsblockerare fungerar den genom att automatiskt ta bort oönskat innehåll redan innan det dyker upp på skärmen. Resultatet är en helt och hållet vegansk shoppingupplevelse fri från döda kroppar. 
 
-# Peta Block is a browser extension that removes animal-based clothing from online stores. 
-Like ad blockers it works by automatically removing unwanted content before it is shown on your screen. The result is a fully vegan browsing experience with no more cadavers available for order.
+Vi tror att det här är en fråga där Peta inte behöver anstränga sig för att förändra folks åsikter. De flesta av oss delar redan deras inställning. Istället borde vi fokusera på att hjälpa människor bryta sig loss från den sondmatning marknaden har vant dem vid.
 
-We believe this is an issue where Peta doesn’t need to change peoples minds. Most of us already share their sentiment. Instead, we should help people to break free and stop swallowing what the market has been feeding them. 
-
-One click could make it all go away. 
+Ett klick kan sätta stopp för alltihop.
 
  &nbsp; 
 
@@ -94,59 +92,56 @@ One click could make it all go away.
 
  
 
-# Modding the experience
+# Att modifiera upplevelsen
 
-This technique is easy to deploy and the concept of ad-blockers is already familiar to consumers, with almost 32% of all internet users utilizing them.
+Tekniken som behövs är enkel att sätta ihop. Konceptet *ad-blockers*, eller annonsblockerare, är dessutom bekant för konsumenter. Nästan 32% av alla internetanvändare använder dem redan.
 
-Multiple sources claim that they are most popular in Asia with Indonesia, Vietnam and China topping the list. In Indonesia, a common reason is that mobile phone users don't want to waste their limited data plans on advertising and in China, according to this one comment ([🤷](https://news.ycombinator.com/item?id=41496255)), ad blocking compatibility has become a sales argument for phone retailers.
+Flera källor gör gällande att annonsblockerare är mest populära i Asien där Indonesian, Vietnam och Kina toppar listan. I Indonesien är en vanlig anledning att mobilanvändare inte vill slösa bort sin begränsade surf genom att titta på reklam. Enligt en kommentar ([🤷](https://news.ycombinator.com/item?id=41496255)) har möjligheten till annonsblockering till och med blivit ett säljargument bland kinesiska mobilåterförsäljare.
 
 {{< accordion-group type="default" >}}
 
-{{% accordion-item title="DATA | ADBLOCKER USAGE" %}}
-- 31.5% OF INTERNET USERS WORLDWIDE USE AD BLOCKING TOOLS  
-- 41% OF U.S. INTERNET USERS IN THE 18–24 AGE GROUP  
-- IN 2024, AD BLOCKING SOLUTIONS WERE FORECASTED TO COST PUBLISHERS $54 BILLION IN LOST ADVERTISING REVENUE, EQUALING AROUND 8% OF TOTAL DIGITAL AD SPEND  
+{{% accordion-item title="ANVÄNDNING AV ANNONSBLOCKERARE" %}}
+- 31.5% AV VÄRLDENS INTERNETANVÄNDARE ANVÄNDER ANNONSBLOCKERARE
+- 41% AV AMERIKANSKA ANVÄNDARE I ÅLDERSGRUPPEN 18-24  
+- ÅR 2024 BERÄKNADES ANNONSBLOCKERARE KOSTA UTGIVARE 54 MILJARDER DOLLAR I UTEBLIVNA ANNONSINTÄKTER, CA 8% AV DEN TOTALA SUMMAN SOM SPENDERADES PÅ REKLAM
 
 ## [Source ☍](https://backlinko.com/ad-blockers-users)
 {{% /accordion-item %}}
 
 {{< /accordion-group >}}
 
-Asia is a part of the world where animals enjoy very little protection while humans there, more than anywhere else, understand that you can control what you want to see on the internet. Even on your phone. 
+Asien är en del av världen där djur åtnjuter väldigt knappa rättigheter samtidigt som människorna där, mer än någon annanstans, tycks ha förstått att de själva kan kontrollera vad de vill och inte vill se på internet. Även på telefonen. Det är en möjlighet som inte borde försummas.
 
-That is an opportunity that shouldn’t be neglected.
+# Kampanjen
 
-# The Campaign 
+Åsynen av ett mördat djur är i grunden chockerande. Särskilt när kadavren säljs *en masse* som något billigt du kan bära två gånger på en nattklubb innan det börjar kännas sunkigt och snart påväg mot vårt evigt växande sopberget av kläder.
 
-The display of a murdered animal is a shocking sight. Even more so when sold *en masse* as something tacky you’d wear two times to a cheap night club before it's starting to feel dirty and destined for the ever growing mountain of garment garbage.
-
-We don’t want to see animals that way. We want to see animals as they should be seen. As someone who is incredibly important to others around them. Someone you play with, learn from and can’t imagine living without.
+Ingen vill se djur på det sättet. Vi vill se djur som de förtjänar att bli sedda. Som någon som är obeskrivligt viktig för någon annan. Någon som leker, växer och blir otänkbar att leva utan.
 
 {{< slider >}}
   {{< slide type="single" src="img/peta_block/pb_love.png" caption="" >}}
 {{< /slider >}}
 
-The campaign seeks to invoke the feeling of not wanting to wear animals by highlighting our similarities. All while explaining that most clothes already are vegan and that Peta is offering a low effort solution that can change your habits.
+Kampanjen vill väcka en känsla av olust inför att bära djur genom att understryka våra likheter. Samtidigt förklarar vi att de flesta kläder *redan är veganska* och att Peta erbjuder en lösning som kan förändra dina vanor utan att kräva någon stor uppoffring i gengäld.
 
-At a later stage we use the collected data to compile a naughty list from which we can target some of the worst culprits.
+I ett senare stadie använder vi den insamlade datan för att komponera en *naughty list* från vilken vi kan rikta in oss på de värsta förbrytarna.
 
 
 {{< slider type="tall" >}}
   {{< slide type="image" src="img/peta_block/pb_poster.webp" caption="" >}}
 {{< /slider >}}
 
-# Closing thoughts
+# Avslutande tankar
 
-Slacktivism is a term that has received a lot of ridicule. When people are following each other to create hollow movements instead of actually doing something, it’s deserved, since that’s a misuse of the great tool that the internet can be. But even at that low point, it’s a good way to highlight issues where people long for something different, even if their feelings aren’t strong enough to keep them in pursuit of the change they want.
+*Slacktivism* är en term som ofta används förlöjligande. Ibland med rätta då människor mest leker följa John och skapar ihåliga rörelser istället för att faktiskt göra något. Det är att missbruka det fantastiska verktyg som internet kan vara. Men till och med då, på dess lägsta punkt, har det fungerat för att lyfta frågor där människor längtar efter någonting annat, även om deras känslor inte är tillräckligt starka för att hålla uppe drivet långsiktigt. 
 
-Peta Block is a solution that requires nothing more than slacktivism, where a simple click actually makes a big difference. 
+Peta Block är en lösning som inte kräver något mer än slacktivism, där ett enkelt klick faktiskt kan göra stor skillnad.
 
-The subject of animals used for clothing provoke strong feelings and I believe many people at some point have felt disgusted by it. In this case the antidote is available in seconds and in a years time, your mind should be completely cleansed from the horrors that the market has been feeding you.
+Användandet av djur som klädesplagg är ett ämne som väcker starka känslor och jag tror att de flesta någon gång har känt sig äcklade tanken. I det här fallet är botemedlet redan tillgängligt när olusten smyger sig på, och om något år borde ditt arma sinne vara renat från det äckel marknaden brukade mata dig med. 
 
-I get that Peta feels the need to shock the public, but I also think they should recognize that people are being shocked all the time and provide an alternative. After all, this seems to be what people want.
+Jag förstår att Peta vanligtvis vill chockera allmänheten. Men jag tycker också att de borde kännas vid de konstanta chockar vi alla utsätts för dagligen och istället erbjuda ett alternativ, vilket ju verkar vara vad folk längtar efter. 
 
-
-I also believe that this plugin is a great tool for collecting tangible data without compromising the integrity of its users. It would provide Peta with great insight on how the market of animal remains is behaving and evolving. They could detect sudden spikes and drops or notice how one animal silently replaces another, using nothing but information already provided by retailers. As of writing this, that sort of data isn't available, which is a shame, since I believe that simply sharing it is an easy method for gaining mainstream media traction to issues that are currently struggling to stay relevant.
+Jag tycker också att det här tillägget är ett bra sätt att samla in konkret data utan att behöva kompromissa användarens integritet. Statistiken kan ge Peta värdefulla insikter om hur marknaden för döda djur beter sig och utvecklas. Det går att upptäcka plötsliga toppar och dalar eller hur ett djur i tystnad ersätts av ett annat, bara genom att använda den information som modeföretagen redan tillhandahåller. Den typen av data går inte att hitta i dagsläget, vilket är synd, då jag tror att blotta tillgängliggörandet av den är ett enkelt sätt att skapa uppmärksamhet för frågor som har annars har svårt att skära genom bruset.
 
  &nbsp; 
 

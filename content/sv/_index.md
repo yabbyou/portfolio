@@ -17,7 +17,7 @@ intro_image: "/img/me.jpg"
 
   
   <div class="hero-bottom-text">
-      Helst vill jag göra staden smartare, roligare och mindre förutsägbar.
+      Helst vill jag göra staden lite smartare, roligare och mindre förutsägbar.
     </div>
   </div>
 
@@ -25,29 +25,53 @@ intro_image: "/img/me.jpg"
 
 <!-- BODY -->
 
+
+
+<br> 
+<br>
+
+**Jag har alltid velat göra saker.** Sketcher och krigsscener med stora mängder <span class="annotated" data-note="ketchup">
+blod
+</span> i snön. Pixel-ikoner som såldes mot “VIP” på Playahead. Videor, tröjor, ljud-loopar, klistermärken och så vidare.
+
+Jag har också alltid tyckt om att skriva. Berättelser, sånger, radiodrama, skämt och *reklam*. Först på låtsas och nu på riktigt. Det tog ett tag innan jag förstod att reklam låter mig göra allt det där som jag har hållit på med på fritiden, samtidigt som yrket stimulerar genom att hela tiden kräva grundliga utforskningar på nya områden. Som person är jag nyfiken på det mesta och tycker nästan alltid att humor väger tyngst. Allt som är udda är kul. Det är också kul att diskutera, titta på kartor och sport.
+
+Mest av allt älskar jag staden. Att få vara med på ett litet hörn och påverka vad den säger, hur den låter och ser ut är fantastiskt. Förhoppningsvis kan jag hjälpa den till att bli pyttelite bättre.
+
+<br> 
+<br>
+
 {{< accordion-group type="info" >}}
 
-{{< accordion-item title="EMPLOYMENT" >}}
-- <span class="annotated" data-note="Cramo, Lanetalk, Nova Circle | Freelance">2024– Herlin–Widerberg</span>
-- <span class="annotated" data-note="Arvid Nordquist, Kexchoklad, Polly, Rydbergs | 3 Month Contract">2025 Food & Friends</span>
-- <span class="annotated" data-note="IQ-Initiativet, Cancerfonden | Internship">2023 ABBY.WORLD</span>
-- <span class="annotated" data-note="Internship">2022 APE_CC</span>
+{{< accordion-item title="ERFARENHET" >}}
+- <span class="annotated" data-note="Cramo, Lanetalk, Nova Circle | Frilans">2024– Herlin–Widerberg</span>
+- <span class="annotated" data-note="Arvid Nordquist, Kexchoklad, Polly, Rydbergs | Kontrakt 3 månader">2025 Food & Friends</span>
+- <span class="annotated" data-note="IQ-Initiativet, Cancerfonden | Praktik">2023 ABBY.WORLD</span>
+- <span class="annotated" data-note="Praktik">2022 APE_CC</span>
+- <span class="annotated" data-note="Copywriter">2021-2023 Berghs School of Communication</span>
+{{< /accordion-item >}}
+
+{{< /accordion-group >}}
+
+
+
+{{< accordion-group type="info" >}}
+
+{{< accordion-item title="ERKÄNNANDEN" >}}
+- <span class="annotated" data-note="Volvo Fireward">2023 Future Lions Shortlist</span>
+- <span class="annotated" data-note="Equations for Aliens">2023 Berghs « Je ne sais quoi »</span>
+- <span class="annotated" data-note="Save Our Friends">2023 One Show Young Ones Merit</span>
+- <span class="annotated" data-note="Drömspegeln">2022 Ocean Outdoor DCC Student Winner</span>
+- <span class="annotated" data-note="Spotify Dream Mode">2022 One Show Young Ones Gold Pencil</span>
 {{< /accordion-item >}}
 
 
 {{< /accordion-group >}}
 
-
-Lorem ipsum dolor sit amet…
-
-Lorem ipsum dolor sit amet <span class="annotated" data-note="Mostly brand, film, and digital work for agencies.">
-work
-</span> , consectetur adipiscing elit. Aliquam gravida, massa ut ultrices elementum, elit dolor tempor libero, ac viverra enim velit eget nisl. Vestibulum sodales nisi erat, eget semper ligula lobortis eget. Etiam orci turpis, ullamcorper sit amet magna quis, blandit laoreet ipsum. Duis quis tempor justo. Proin non augue a urna finibus varius. Nullam pretium tempor erat consequat rutrum. Aenean a felis vel purus porttitor ullamcorper. Mauris a tortor accumsan, blandit turpis sed, malesuada nibh. Etiam pharetra metus et ex elementum, et laoreet sem venenatis. Pellentesque dapibus suscipit arcu, eu varius arcu ornare id. Praesent lacinia velit est, vel luctus dui auctor et. Curabitur at vestibulum nibh. Vestibulum porta ultricies lacus ac consectetur. Etiam id gravida velit, nec posuere eros. Suspendisse pulvinar dui eget ipsum suscipit molestie.
-
 <div id="contact"></div>
 
 {{< accordion-group type="info" >}}
-{{< accordion-item title="CONTACT" >}}
+{{< accordion-item title="KONTAKT" >}}
 - +46707903023
 - lundgrenen23@gmail.com
 {{< /accordion-item >}}
