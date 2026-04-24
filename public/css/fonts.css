@@ -66,7 +66,7 @@
   font-family: "Banto";
   font-style: normal;
   font-weight: 300;
-  src: url("/portfolio/fonts/Banto-Light.woff2") format("woff2");
+  src: url("/portfolio/fonts/BantoTrial-Light.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -74,7 +74,7 @@
   font-family: "Banto";
   font-style: italic;
   font-weight: 300;
-  src: url("/portfolio/fonts/Banto-LightItalic.woff2") format("woff2");
+  src: url("/portfolio/fonts/BantoTrial-LightItalic.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -82,7 +82,7 @@
   font-family: "Banto";
   font-style: normal;
   font-weight: 400;
-  src: url("/portfolio/fonts/Banto-Regular.woff2") format("woff2");
+  src: url("/portfolio/fonts/BantoTrial-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -90,7 +90,7 @@
   font-family: "Banto";
   font-style: italic;
   font-weight: 400;
-  src: url("/portfolio/fonts/Banto-RegularItalic.woff2") format("woff2");
+  src: url("/portfolio/fonts/BantoTrial-RegularItalic.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -98,7 +98,7 @@
   font-family: "Banto";
   font-style: normal;
   font-weight: 500;
-  src: url("/portfolio/fonts/Banto-Medium.woff2") format("woff2");
+  src: url("/portfolio/fonts/BantoTrial-Medium.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -106,7 +106,7 @@
   font-family: "Banto";
   font-style: italic;
   font-weight: 500;
-  src: url("/portfolio/fonts/Banto-MediumItalic.woff2") format("woff2");
+  src: url("/portfolio/fonts/BantoTrial-MediumItalic.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -114,7 +114,7 @@
   font-family: "Banto";
   font-style: normal;
   font-weight: 700;
-  src: url("/portfolio/fonts/Banto-Bold.woff2") format("woff2");
+  src: url("/portfolio/fonts/BantoTrial-Bold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -122,7 +122,7 @@
   font-family: "Banto";
   font-style: italic;
   font-weight: 700;
-  src: url("/portfolio/fonts/Banto-BoldItalic.woff2") format("woff2");
+  src: url("/portfolio/fonts/BantoTrial-BoldItalic.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -130,7 +130,7 @@
   font-family: "Banto";
   font-style: normal;
   font-weight: 800;
-  src: url("/portfolio/fonts/Banto-ExtraBold.woff2") format("woff2");
+  src: url("/portfolio/fonts/BantoTrial-ExtraBold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -138,7 +138,7 @@
   font-family: "Banto";
   font-style: italic;
   font-weight: 800;
-  src: url("/portfolio/fonts/Banto-ExtraBoldItalic.woff2") format("woff2");
+  src: url("/portfolio/fonts/BantoTrial-ExtraBoldItalic.woff2") format("woff2");
   font-display: swap;
 }
 

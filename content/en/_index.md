@@ -32,7 +32,7 @@ intro_image: "/img/me.jpg"
 
 I’ve also always enjoyed writing. Stories, songs, radio drama, jokes and *advertising*. Just for fun at first and now for real. It took me a while to realize that the ad industry allows me to do all of these things, all while providing stimulation by constantly serving up new subjects that require thorough research. As a person I am constantly curious. Oddites are fun just like discussing, looking at maps and sports.
 
-The city is probably my greatest love. Playing a small part in shaping what it says, how it sounds and the way it looks is a great privilege. Hopefully I can making it just a little bit better.
+My greatest love of all is probably the city. Being able to partly shape what it says, how it sounds and the way it looks is a great privilege. Hopefully I can making it just a little bit better.
 
 <br> 
 <br>
