@@ -41,7 +41,7 @@ imagePosition: left
  &nbsp; 
 ❧
 
-2021 publicerade *The Vegan Society* rapporten ”The Rise of Vegan Fashion”. I den kan man se hur allmänheten genomgått stora förändringar vad gäller attityd och medvetenhet kring djurens rätt i modeindustrin. Rapporten innehåller en undersökning riktad mot brittiska kvinnor och män i arbetsför ålder där man, med tanke på att de flesta kläder redan är veganska, kan skönja en diskrepans mellan vad konsumenter *vill* och vad de *gör*:
+2021 publicerade *The Vegan Society* sin rapport ”The Rise of Vegan Fashion”. I den kan man se hur allmänheten genomgått stora förändringar vad gäller attityd och medvetenhet kring djurens rätt i modeindustrin. Rapporten innehåller en undersökning riktad mot brittiska kvinnor och män i arbetsför ålder där man, med tanke på att de flesta kläder redan är veganska, kan skönja en diskrepans mellan vad konsumenter *vill* och vad de *gör*:
 
 > ##### ⓘ *95%* vill ha fler veganska klädalternativ
 

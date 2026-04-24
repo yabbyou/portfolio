@@ -1,18 +1,37 @@
 ---
 draft: false
 title: 'Spotify Dream Mode'
-description: 'yo'
+description: 'Ljudböcker som pausar när du somnar'
 cover:
     image: img/dream_mode/headphonesinbed.jpg
-summary: snark
+summary: Ljudböcker som pausar när du somnar
 variant: "case"
 translationKey: spotifydreammode
 layout: wide
 row: 2
 imagePosition: right
+tags: 
+ - CASE
 ---
 
-The bedtime story. That's how many of us grew up with books.
+### Brief: Hjälp Spotify att slå sig in på marknaden för ljudböcker
+### Insikt: Många lyssnar på ljudböcker innan de ska sova
+### Lösning: Ljudböcker som pausar när du somnar
+
+---
+
+## + JANUARI 2022
+
+ &nbsp; 
+
+{{< slider >}}
+{{< slide type="video" src="img/dream_mode/dm_film.mp4" poster="img/dream_mode/dm_film_cover.png" caption="" >}}
+{{< slide type="image" src="img/dream_mode/dm_billboard.png" caption="" >}}
+{{< /slider >}}
+
+<br>
+
+# The bedtime story. That's how many of us grew up with books.
 
 Yet we can't make audiobooks fit within that space. Because audiobooks differs from podcasts and music in the way it demands long-term continuity from its listener. And unlike childhood, there is no one there to stop the book for you, when you fall asleep. You can try to roughly estimate with the help of a sleep timer. But that comes with skimming through hours of slept-through material while dodging spoilers, trying to pinpoint when you fell asleep; with every sleep cycle creating a more and more disjointed experience.
 
@@ -22,10 +41,14 @@ According to the journal of clinical sleep medicine 96% of young adults use a sm
 
 Where books fade into dreams.
 
-Copywriter
-Adam Lundgren
-Elias Karlsson
 
-Art Director
-Christopher Runström
-Filip Xu
+ &nbsp; 
+
+{{< copyurl >}}
+
+
+ &nbsp; 
+
+---
+##### ``BERGHS 2022`` ``COPYWRITER`` ``ADAM LUNDGREN`` ``ELIAS KARLSSON`` ``ART DIRECTOR`` ``CHRISTOPHER RUNSTRÖM`` ``FILIP XU``
+---

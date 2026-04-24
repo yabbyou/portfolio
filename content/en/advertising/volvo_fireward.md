@@ -4,7 +4,7 @@ title: 'Volvo Fireward'
 description: 'For Life Between Our Roads'
 cover:
     image: img/fireward/forestroad.jpg
-summary: An idea that extends Volvos safety first philosophy beyond the car
+summary: Using Volvo's air quality sensor to protect the environment
 variant: "case"
 translationKey: volvofireward
 row: 4
