@@ -45,7 +45,9 @@ imagePosition: left
 
 > ##### ⓘ *95%* vill ha fler veganska klädalternativ
 
-När folk ställs inför frågan sympatiserar de instinktivt med djuren. Frågan är hur vi kan få dem att förändra sin livsstil.
+När folk ställs inför frågan sympatiserar de instinktivt med djuren. 
+
+Frågan är hur man kan få dem att förändra sin livsstil.
 
 {{< accordion-group type="default" >}}
 
