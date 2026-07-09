@@ -10,8 +10,6 @@ layout: wide
 translationKey: gearforhell
 row: 5
 order:
-tags:
-- Case
 badge: 
 imagePosition: right
 tags: 
