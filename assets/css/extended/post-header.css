@@ -61,10 +61,12 @@ button#theme-toggle {
 
 #menu a,
 #menu .active {
-  font-family: "Gilroy";
-  font-size: 0.605rem;
-  letter-spacing: 0.12em;
-  text-decoration: none;
+    font-family: "Urbanist";
+    font-size: 0.645rem;
+    font-weight: 500;
+    letter-spacing: 0.095em;   /* removed duplicate 0.12em rule */
+    text-transform: uppercase;
+    transform: translateY(0.2%);
 }
 
 #menu li span {
