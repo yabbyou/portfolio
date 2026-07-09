@@ -28,7 +28,7 @@ jobs:
           extended: true
 
       - name: Build site
-        run: hugo --minify --baseURL "https://yabbyou.github.io/portfolio/"
+        run: hugo --minify --baseURL "https://adamlundgren.se/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
