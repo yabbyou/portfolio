@@ -10,8 +10,6 @@ layout: wide
 translationKey: spotifydreammode
 row: 2
 order:
-tags:
-- Case
 badge: 
 imagePosition: right
 tags: 
