@@ -4,7 +4,7 @@ title: 'Volvo Fireward'
 description: 'For Life Between Our Roads'
 cover:
     image: img/fireward/forestroad.jpg
-summary: Ett sätt att använda Volvos luftkvalitetssensor för att skydda naturen
+summary: Motverka skogsbränder med Volvos inbyggda luftkvalitetssensor
 variant: "case"
 translationKey: volvofireward
 layout: wide

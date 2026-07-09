@@ -4,7 +4,7 @@ title: 'Gear 4 Hell'
 description: 'Fight through authenticity'
 cover:
     image: img/gear_for_hell/gfh_cairo.webp
-summary: Visit museums to find in-game loot
+summary: Visit museums to retrieve historically accurate in-game loot
 variant: "case"
 layout: wide
 translationKey: gearforhell
