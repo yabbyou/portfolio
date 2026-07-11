@@ -55,7 +55,7 @@ Mest av allt älskar jag staden. Att få vara med på ett litet hörn och påver
 
 
 {{< accordion-group type="info" >}}
-{{< accordion-item title="ERKÄNNANDEN" open="true" >}}
+{{< accordion-item title="ERKÄNNANDEN" open="false" >}}
 - <span class="annotated" data-note="Volvo Fireward">2023 Future Lions Shortlist</span>
 - <span class="annotated" data-note="Equations for Aliens">2023 Berghs « Je ne sais quoi »</span>
 - <span class="annotated" data-note="Save Our Friends">2023 One Show Young Ones Merit</span>
