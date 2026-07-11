@@ -395,3 +395,13 @@ html.has-hero:not(.scrolled-past-hero) .header {
         display: none !important;
     }
 }
+
+#menu a {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+#menu li span.active {
+    text-decoration: none;
+    border-bottom: none;
+}
