@@ -3,8 +3,8 @@ draft: false
 title: "Rydbergs"
 description: 'Genvägen till svensk sommar'
 cover:
-    image: img/eclipse/eclipse_mag.webp
-summary: Poster for some shit
+    image: img/
+summary: 
 variant: "case"
 layout: tall
 translationKey: rydbergs
