@@ -38,37 +38,31 @@ My greatest love of all is probably the city. Being able to partly shape what it
 <br>
 
 {{< accordion-group type="info" >}}
-
-{{< accordion-item title="EXPERIENCE" >}}
+{{< accordion-item title="EXPERIENCE" open="true" >}}
 - <span class="annotated" data-note="Cramo, Lanetalk, Nova Circle | Freelance">2024– Herlin–Widerberg</span>
-- <span class="annotated" data-note="Arvid Nordquist, Kexchoklad, Polly, Rydbergs | 3 Month Contract">2025 Food & Friends</span>
+- <span class="annotated" data-note="Arvid Nordquist, Kexchoklad, Polly, Rydbergs | 3 Month Contract">2025 Food & Friends</span>
 - <span class="annotated" data-note="IQ-Initiativet, Cancerfonden | Internship">2023 ABBY.WORLD</span>
 - <span class="annotated" data-note="Internship">2022 APE_CC</span>
 - <span class="annotated" data-note="Copywriter">2021-2023 Berghs School of Communication</span>
 {{< /accordion-item >}}
-
-
 {{< /accordion-group >}}
 
 {{< accordion-group type="info" >}}
-
-{{< accordion-item title="RECOGNITION" >}}
+{{< accordion-item title="RECOGNITION" open="false" >}}
 - <span class="annotated" data-note="Volvo Fireward">2023 Future Lions Shortlist</span>
 - <span class="annotated" data-note="Equations for Aliens">2023 Berghs « Je ne sais quoi »</span>
 - <span class="annotated" data-note="Save Our Friends">2023 One Show Young Ones Merit</span>
 - <span class="annotated" data-note="Drömspegeln">2022 Ocean Outdoor DCC Student Winner</span>
 - <span class="annotated" data-note="Spotify Dream Mode">2022 One Show Young Ones Gold Pencil</span>
 {{< /accordion-item >}}
-
-
 {{< /accordion-group >}}
 
 <div id="contact"></div>
 
 {{< accordion-group type="info" >}}
-{{< accordion-item title="CONTACT" >}}
+{{< accordion-item title="CONTACT" open="true" >}}
 - +46707903023
-- lundgrenen23@gmail.com
+- adam@adamlundgren.se
 {{< /accordion-item >}}
 {{< /accordion-group >}}
 

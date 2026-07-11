@@ -36,14 +36,13 @@ blod
 
 Jag har också alltid tyckt om att skriva. Berättelser, sånger, radiodrama, skämt och *reklam*. Först på låtsas och nu på riktigt. Det tog ett tag innan jag förstod att reklam låter mig göra allt det där som jag har hållit på med på fritiden, samtidigt som yrket stimulerar genom att hela tiden kräva grundliga utforskningar på nya områden. Som person är jag nyfiken på det mesta och tycker nästan alltid att humor väger tyngst. Allt som är udda är kul. Det är också kul att diskutera, titta på kartor och sport.
 
-Mest av allt älskar jag staden. Att få vara med på ett litet hörn och påverka vad den säger, hur den låter och ser ut är fantastiskt. Förhoppningsvis kan jag hjälpa den bli pyttelite bättre.
+Mest av allt älskar jag staden. Att få vara med på ett litet hörn och påverka vad den säger, hur den låter och ser ut är fantastiskt. Förhoppningsvis kan jag hjälpa den till det bättre.
 
 <br> 
 <br>
 
 {{< accordion-group type="info" >}}
-
-{{< accordion-item title="ERFARENHET" >}}
+{{< accordion-item title="ERFARENHET" open="true" >}}
 - <span class="annotated" data-note="Cramo, Lanetalk, Nova Circle | Frilans">2024– Herlin–Widerberg</span>
 - <span class="annotated" data-note="Arvid Nordquist, Kexchoklad, Polly, Rydbergs | Kontrakt 3 månader">2025 Food & Friends</span>
 - <span class="annotated" data-note="IQ-Initiativet, Cancerfonden | Praktik">2023 ABBY.WORLD</span>
@@ -56,8 +55,7 @@ Mest av allt älskar jag staden. Att få vara med på ett litet hörn och påver
 
 
 {{< accordion-group type="info" >}}
-
-{{< accordion-item title="ERKÄNNANDEN" >}}
+{{< accordion-item title="ERKÄNNANDEN" open="true" >}}
 - <span class="annotated" data-note="Volvo Fireward">2023 Future Lions Shortlist</span>
 - <span class="annotated" data-note="Equations for Aliens">2023 Berghs « Je ne sais quoi »</span>
 - <span class="annotated" data-note="Save Our Friends">2023 One Show Young Ones Merit</span>
@@ -71,9 +69,9 @@ Mest av allt älskar jag staden. Att få vara med på ett litet hörn och påver
 <div id="contact"></div>
 
 {{< accordion-group type="info" >}}
-{{< accordion-item title="KONTAKT" >}}
+{{< accordion-item title="KONTAKT" open="true" >}}
 - +46707903023
-- lundgrenen23@gmail.com
+- adam@adamlundgren.se
 {{< /accordion-item >}}
 {{< /accordion-group >}}
 

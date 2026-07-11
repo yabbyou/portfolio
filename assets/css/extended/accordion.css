@@ -16,7 +16,7 @@
   border: 1px solid var(--border);
   border-radius: 3px;
   overflow: hidden;
-  background: var(--entry); /* theme-aware */
+  background: var(--entry);
 
   max-width: 700px;
   margin: 0 auto;
@@ -60,11 +60,11 @@
   line-height: 1.5;
   letter-spacing: 0.0155em;
 
-  color: var(--primary); /* theme-aware */
+  color: var(--primary);
 }
 
 .faq-accordion button:hover {
-  opacity: 0.85; /* replaces hard-coded hover color */
+  opacity: 0.85;
 }
 
 .faq-accordion .accordion-title {
@@ -139,24 +139,16 @@
 }
 
 /* ================================
-   INFO VARIANT (Always Open)
+   INFO VARIANT
 ================================ */
 
-.faq-accordion--info .icon {
-  display: none;
-}
-
 .faq-accordion--info .accordion-content {
-  max-height: none !important;
-  opacity: 1 !important;
-  transform: none !important;
-  padding: 0 1.5rem;
   max-width: 700px;
   min-width: 700px;
 }
 
 /* ================================
-   FORCE LEFT ALIGNMENT 
+   FORCE LEFT ALIGNMENT
 ================================ */
 
 .post-content .faq-accordion .accordion-content,
@@ -182,13 +174,11 @@
    BULLET CONTROL
 ================================ */
 
-/* DATA variant (default) keeps bullets */
 .faq-accordion .accordion-content ul {
   list-style: disc;
   padding-left: 1.2rem;
 }
 
-/* INFO variant removes bullets */
 .faq-accordion--info .accordion-content ul {
   list-style: none;
   padding-left: 0;

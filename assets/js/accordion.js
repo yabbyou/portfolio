@@ -2,10 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const accordions = document.querySelectorAll(".faq-accordion");
 
   accordions.forEach(accordion => {
-    if (accordion.classList.contains("faq-accordion--info")) {
-      return;
-    }
-
     const buttons = accordion.querySelectorAll("button");
 
     buttons.forEach(button => {

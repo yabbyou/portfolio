@@ -27,7 +27,7 @@
 .hero-anchor {
   display: flex;
   justify-content: center;
-  width: 420px;   /* explicit width so width:100% on #portrait-frame has something to fill */
+  width: 420px;
   flex-shrink: 0;
 }
 
@@ -47,7 +47,7 @@
   font-size: 30px;
   line-height: 1.45;
   font-weight: 700;
-  margin-top: -120px;
+  margin-top: -20px;
 }
 
 /* Subline */
@@ -116,12 +116,6 @@
 }
 
 /* ===============================
-   MOBILE
-   =============================== */
-
-
-
-/* ===============================
    ANNOTATIONS
    =============================== */
 
@@ -137,28 +131,26 @@
 .post-single.home {
   overflow: visible;
 }
+
 /* ===============================
-   HERO → BODY ARROW
+   HERO SCROLL INDICATOR
    =============================== */
 
 .hero-scroll-indicator {
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  gap: 8px;
   width: 100%;
-  margin: 3rem auto;
-
-  font-family: 'Albertus Nova', serif;
-  font-size: 56px;
-  line-height: 1;
-  font-weight: 300;
-
+  margin: 9rem auto;
   color: var(--primary);
-
-  pointer-events: none;
-  user-select: none;
 }
+
+/* ===============================
+   ANNOTATED
+   =============================== */
 
 .annotated {
   cursor: help;
@@ -177,8 +169,8 @@
   max-width: 340px;
   padding: 0.4rem 0.65rem;
 
-  background: rgb(31, 31, 31); /* LIGHT BG */
-  color: rgb(243, 243, 242);      /* LIGHT TEXT */
+  background: rgb(31, 31, 31);
+  color: rgb(243, 243, 242);
 
   font-family: 'CodeSaver';
   font-size: 12px;
@@ -199,6 +191,6 @@
 }
 
 :root[data-theme="dark"] .annotation-tooltip {
-  background: rgb(65, 66, 68);   /* DARK BG */
-  color: rgb(218,218,219);        /* DARK TEXT */
+  background: rgb(65, 66, 68);
+  color: rgb(218, 218, 219);
 }

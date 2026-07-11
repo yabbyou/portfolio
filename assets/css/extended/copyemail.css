@@ -1,0 +1,41 @@
+.copy-email-wrapper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80px; /* reserves space so tooltip never pushes content */
+}
+
+.copy-email-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-email-icon {
+  height: 60px;
+  display: none;
+}
+
+[data-theme="light"] .copy-email-icon.light-icon { display: block; }
+[data-theme="dark"]  .copy-email-icon.dark-icon  { display: block; }
+
+.copy-email-tooltip {
+  position: absolute;
+  top: 90px;
+  font-family: "CodeSaver", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.01s ease;
+}
+
+.copy-email-tooltip.visible {
+  opacity: 1;
+}

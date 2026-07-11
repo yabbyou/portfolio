@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const li = document.createElement('li');
     li.className = 'menu-contact-mobile';
     // get current lang prefix from <html lang> attribute
-    const lang = document.documentElement.lang || 'en';
-    const base = window.location.pathname.includes('/sv/') ? '/portfolio/sv/' : '/portfolio/en/';
+    const lang = document.documentElement.lang || 'sv';
+    const base = '/' + lang + '/';
     li.innerHTML = `<a href="${base}#contact"><span class="contact-label">Contact</span></a>`;
     menu.appendChild(li);
     li.querySelector('a').addEventListener('click', () => closeMenu());
@@ -92,4 +92,21 @@ window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
     closeMenu();
   }
+});
+
+/* copy email to clipboard */
+document.addEventListener('DOMContentLoaded', () => {
+  const btn     = document.getElementById('copy-email-btn');
+  const tooltip = document.getElementById('copy-email-status');
+  if (!btn) return;
+
+  btn.addEventListener('click', () => {
+    const email = 'lundgrenen23@gmail.com';
+    navigator.clipboard.writeText(email).then(() => {
+      tooltip.classList.add('visible');
+      setTimeout(() => {
+        tooltip.classList.remove('visible');
+      }, 2000);
+    });
+  });
 });

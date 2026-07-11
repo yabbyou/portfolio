@@ -1,0 +1,9 @@
+<div class="copy-email-wrapper">
+  <button id="copy-email-btn" class="copy-email-btn" aria-label="Copy email address">
+    <img src="{{ "img/mail-lightmode.png" | relURL }}" alt="Copy email" class="copy-email-icon light-icon">
+    <img src="{{ "img/mail-darkmode.png"  | relURL }}" alt="Copy email" class="copy-email-icon dark-icon">
+  </button>
+  <span id="copy-email-status" class="copy-email-tooltip">
+    {{ if eq .Lang "sv" }}E-postadress kopierad till urklipp{{ else }}E-mail address copied to clipboard{{ end }}
+  </span>
+</div>
