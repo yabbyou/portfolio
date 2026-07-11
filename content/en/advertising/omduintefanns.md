@@ -9,7 +9,7 @@ variant: simple
 layout: tall
 translationKey: omduintefanns
 row: 3
-order: 3
+order: 1
 tags:
 - INDIE AD
 heroExtra: 2024
