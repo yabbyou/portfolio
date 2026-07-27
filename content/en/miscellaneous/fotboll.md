@@ -1,10 +1,10 @@
 ---
-title: 'Sweden 2020'
+title: 'The National Team'
 description: 'Euros 2020'
 cover:
     image: img/nya_drommar/1958.jpg
 tags: 
-summary: 'Video edit'
+summary: 'Video Montage'
 variant: simple
 translationKey: fotboll
 layout: wide-mini

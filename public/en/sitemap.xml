@@ -186,18 +186,6 @@
                 href="http://localhost:1313/en/advertising/spotifydreammode/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/miscellaneous/fotboll/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="sv-SV"
-                href="http://localhost:1313/sv/miscellaneous/fotboll/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/miscellaneous/fotboll/"
-                />
-  </url><url>
     <loc>http://localhost:1313/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -208,6 +196,18 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="http://localhost:1313/en/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/miscellaneous/fotboll/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv-SV"
+                href="http://localhost:1313/sv/miscellaneous/fotboll/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/miscellaneous/fotboll/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/miscellaneous/site/</loc>

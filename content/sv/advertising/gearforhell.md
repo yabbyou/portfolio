@@ -1,7 +1,7 @@
 ---
 draft: false
 title: 'Gear 4 Hell'
-description: 'Fight through authenticity'
+description: 'Slåss med autenticitet'
 cover:
     image: img/gear_for_hell/gfh_cairo.webp
 summary: Besök museum för att hitta historiskt korrekt utrustning och vapen

@@ -100,6 +100,18 @@
                 href="http://localhost:1313/sv/advertising/gearforhell/"
                 />
   </url><url>
+    <loc>http://localhost:1313/sv/miscellaneous/fotboll/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/miscellaneous/fotboll/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv-SV"
+                href="http://localhost:1313/sv/miscellaneous/fotboll/"
+                />
+  </url><url>
     <loc>http://localhost:1313/sv/tags/indieannons/</loc>
   </url><url>
     <loc>http://localhost:1313/sv/advertising/omduintefanns/</loc>
@@ -112,6 +124,18 @@
                 rel="alternate"
                 hreflang="sv-SV"
                 href="http://localhost:1313/sv/advertising/omduintefanns/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/sv/miscellaneous/site/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/miscellaneous/site/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv-SV"
+                href="http://localhost:1313/sv/miscellaneous/site/"
                 />
   </url><url>
     <loc>http://localhost:1313/sv/advertising/petablock/</loc>
@@ -186,18 +210,6 @@
                 href="http://localhost:1313/sv/advertising/spotifydreammode/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/miscellaneous/fotboll/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/miscellaneous/fotboll/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="sv-SV"
-                href="http://localhost:1313/sv/miscellaneous/fotboll/"
-                />
-  </url><url>
     <loc>http://localhost:1313/sv/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -208,18 +220,6 @@
                 rel="alternate"
                 hreflang="sv-SV"
                 href="http://localhost:1313/sv/tags/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/sv/miscellaneous/site/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/miscellaneous/site/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="sv-SV"
-                href="http://localhost:1313/sv/miscellaneous/site/"
                 />
   </url><url>
     <loc>http://localhost:1313/sv/advertising/volvo_fireward/</loc>

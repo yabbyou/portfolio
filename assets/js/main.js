@@ -101,12 +101,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!btn) return;
 
   btn.addEventListener('click', () => {
-    const email = 'lundgrenen23@gmail.com';
+    const email = 'adam@adamlundgren.se';
     navigator.clipboard.writeText(email).then(() => {
       tooltip.classList.add('visible');
       setTimeout(() => {
         tooltip.classList.remove('visible');
-      }, 2000);
+      }, 7000);
     });
   });
 });

@@ -1,10 +1,10 @@
 ---
-title: 'Fake Ad'
+title: 'Fejk annons'
 description: 'Plantagen'
 cover:
     image: img/mix/mbp.png
 tags: 
-summary: 'The tables have turned'
+summary: 'Ombytta roller'
 variant: simple
 translationKey: mbp
 layout: wide-mini

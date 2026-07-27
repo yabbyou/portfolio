@@ -1,10 +1,10 @@
 ---
-title: 'Sweden 2020'
-description: 'Euros 2020'
+title: 'Herrlandslaget'
+description: 'EM 2020'
 cover:
     image: img/nya_drommar/1958.jpg
 tags: 
-summary: 'Video edit'
+summary: 'Videomontage'
 variant: simple
 translationKey: fotboll
 layout: wide-mini

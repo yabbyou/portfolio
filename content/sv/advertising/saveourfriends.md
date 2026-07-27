@@ -4,7 +4,7 @@ title: 'Save Our Friends!'
 description: 'Algoritmerna har mördat dem'
 cover:
     image: img/save_our_friends/sof_emoji.png
-summary: Change the way animals are portrayed on the internet
+summary: Förändra hur djur framställs på internet
 variant: "case"
 layout: wide
 translationKey: saveourfriends
