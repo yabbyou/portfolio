@@ -4,7 +4,7 @@ title: 'Eclipse 2024'
 description: 'Natures greatest spectacle'
 cover:
     image: img/eclipse/eclipse_shades.webp
-summary: Solglasögon när jorden ligger i skugga
+summary: Solglasögon för när jorden ligger i skugga
 variant: "case"
 layout: wide
 translationKey: eclipse
