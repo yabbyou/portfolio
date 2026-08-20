@@ -20,10 +20,9 @@ heroExtra: 2021
 
  &nbsp; 
 
-# My previous knowledge was poor. I could recognize html and had made a website using Dreamweaver in my early teens, but basically; none.
 # Min tidigare erfarenhet var begränsad. Jag kände igen html och hade byggt hemsidor med Dreamweaver i mina tidiga tonår, men inte mer än så.
 
-Den här hemsidan är byggt utifrån Hugo-mallen "PaperMod" och är *hostad* på GitHub. Från början jobbade jag gammeldags genom att söka svar på StackOverflow varje gång jag ville göra någon liten ändring. Även om jag förstod att det var ett daterat arbetssätt så ville jag titta på koden och åtminstonde förstå dess grundläggande struktur. 
+Den här hemsidan bygger på en Hugo-mall som heter "PaperMod" och är *hostad* på GitHub. Från början jobbade jag gammeldags genom att söka svar på StackOverflow varje gång jag ville göra någon liten ändring. Även om jag förstod att det var ett daterat arbetssätt så ville jag titta på koden och åtminstonde förstå dess grundläggande struktur. 
 
 När jag ville addera Javascript-element vände jag mig till AI. Först Chat GPT 5.2 och senare Claude Sonnet 4.6. Jag har noterat att det finns en diskurs online där den senare av dessa höjds till skyarna jämfört med den tidigare. Claude har fått ett sorts kult-följe där användarna ser produkten som en jämlik kollega snarare än någonting annat. Enligt min erfarenhet (vilken som sagt är ytterst begränsad) är Claude nog det bättre alternativet av dem två. Mest för att den är befriad från den motbjudande inställamhet som ChatGPT lider av.
 
