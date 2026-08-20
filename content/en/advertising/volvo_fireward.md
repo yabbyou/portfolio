@@ -4,7 +4,7 @@ title: 'Volvo Fireward'
 description: 'For Life Between Our Roads'
 cover:
     image: img/fireward/forestroad.jpg
-summary: Using Volvo's air quality sensor to protect nature against wildfires
+summary: Using Volvo's air quality sensor to detect wildfires
 variant: "case"
 translationKey: volvofireward
 row: 4
@@ -35,7 +35,7 @@ layout: wide
  &nbsp; 
 # This idea haunts me everytime I see a headline about a wildfire. 
 
-Modern Volvo's carry a "air quality sensor" (AQS). This is a great feature in areas with poor air quality as it purifies the air inside your car before you enter it. It also provides the current status of air quality, determined by the amount of particles caught by the car's built-in PM2.5 filter.
+Modern Volvo's carry a "Air Quality Sensor" (AQS). This is a great feature in areas with poor air quality as it purifies the air inside your car before you enter it. It also provides the current status of air quality, determined by the amount of particles caught by the car's built-in PM2.5 filter.
 
 PM2.5 particles is a major component of wildfire smoke, meaning that the AQS could detect wildfire in its early stage if a Volvo happens to pass by and notice the sudden spike.
 
