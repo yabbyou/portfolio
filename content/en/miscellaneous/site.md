@@ -21,9 +21,9 @@ heroExtra: 2021
 
 # My previous knowledge was poor. I could recognize html and had made a website using Dreamweaver in my early teens, but basically; none.
 
-The site is built on a Hugo template called PaperMod and hosted on GitHub. In the beginning I was working old school, scraping Stack Overflow for solutions every time I wanted to alter the site. Mostly because I wanted to be able to look at the code and at least understand the basic structure. en liknelse.
+The site is built on a Hugo template called PaperMod and hosted on GitHub. In the beginning I was working old school, scraping StackOverflow for solutions every time I wanted to alter the site. Mostly because I wanted to be able to look at the code and at least understand the basic structure.
 
-When I wanted to add Javascript-elements I first turned to AI. First Chat GPT-5.2 and later Claude Sonnet 4.6. I've noticed an online discourse where the latter is praised as opposed to the former. It also seems to have gained somewhat of a cult following where users are broing down with Claude. In my experience, which like I said is next to none when it comes to coding, Claude might be the slightly better alternative. Mostly because it lacks the annoying kiss ass personality of Chat GPT. 
+When I wanted to add Javascript-elements I first turned to AI. First Chat GPT 5.2 and later Claude Sonnet 4.6. I've noticed an online discourse where the latter is praised as opposed to the former. It also seems to have gained somewhat of a cult following where users are broing down with Claude. In my experience, which like I said is next to none when it comes to coding, Claude might be the slightly better alternative. Mostly because it lacks the annoying kiss ass personality of Chat GPT. 
 
 But both alternatives tend to hit dead ends where they start to recycle solutions that already failed. Sometimes the solution is to forward the issue to the other model, but for the most part it requires you to find a path that's been ignored, basically doing this:
 

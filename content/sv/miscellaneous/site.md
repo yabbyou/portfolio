@@ -14,19 +14,20 @@ heroExtra: 2021
   
 ---
  
-### I wanted to break free from website builders in order to gain freedom, reduce costs and learn some basics of coding. It also led me to a usage of AI that didn't seem forced, unnecessary or stupid while giving me a better sense of how to work the current tools.
+### Ambition var att bryta mig loss från webbsidebyggare för att få större frihet, reducera kostnader och lära mig grunder i kodning. Det ledde till ett användande av AI som inte kändes forcerat eller onödigt, samtidigt som jag fått större förståelse för de nuvarande verktygens kapacitet.
 ---
-## + JUNE 2026
+## + JUNI 2026
 
  &nbsp; 
 
 # My previous knowledge was poor. I could recognize html and had made a website using Dreamweaver in my early teens, but basically; none.
+# Min tidigare erfarenhet var begränsad. Jag kände igen html och hade byggt hemsidor med Dreamweaver i mina tidiga tonår, men inte mer än så.
 
-The site is built on a Hugo template called PaperMod and hosted on GitHub. In the beginning I was working old school, scraping Stack Overflow for solutions every time I wanted to alter the site. Mostly because I wanted to be able to look at the code and at least understand the basic structure. en liknelse.
+Den här hemsidan är byggt utifrån Hugo-mallen "PaperMod" och är *hostad* på GitHub. Från början jobbade jag gammeldags genom att söka svar på StackOverflow varje gång jag ville göra någon liten ändring. Även om jag förstod att det var ett daterat arbetssätt så ville jag titta på koden och åtminstonde förstå dess grundläggande struktur. 
 
-When I wanted to add Javascript-elements I first turned to AI. First Chat GPT-5.2 and later Claude Sonnet 4.6. I've noticed an online discourse where the latter is praised as opposed to the former. It also seems to have gained somewhat of a cult following where users are broing down with Claude. In my experience, which like I said is next to none when it comes to coding, Claude might be the slightly better alternative. Mostly because it lacks the annoying kiss ass personality of Chat GPT. 
+När jag ville addera Javascript-element vände jag mig till AI. Först Chat GPT 5.2 och senare Claude Sonnet 4.6. Jag har noterat att det finns en diskurs online där den senare av dessa höjds till skyarna jämfört med den tidigare. Claude har fått ett sorts kult-följe där användarna ser produkten som en jämlik kollega snarare än någonting annat. Enligt min erfarenhet (vilken som sagt är ytterst begränsad) är Claude nog det bättre alternativet av dem två. Mest för att den är befriad från den motbjudande inställamhet som ChatGPT lider av.
 
-But both alternatives tend to hit dead ends where they start to recycle solutions that already failed. Sometimes the solution is to forward the issue to the other model, but for the most part it requires you to find a path that's been ignored, basically doing this:
+Samtidigt tenderar båda modellerna att hamna i återvändsgränder där de går i cirklar genom att föreslå lösningar som redan har misslyckats. Vissa gånger har det gå att lösa detta genom att vidarebefodra problemet till den andra modellen, men oftast har jag behövt hittat vägar som den nuvarande inte har velat utforska. Ungefär såhär:
 
 {{< slider >}}
 {{< slide type="video" src="img/mix/aiworkflow.mp4" poster="img/mix/aiworkflowthumb.png" caption="" >}}
@@ -34,11 +35,10 @@ But both alternatives tend to hit dead ends where they start to recycle solution
 
 
 
+Här blev jag belönat för mina manuella felsökningar i början av projektet.
 
-This is where I was rewarded for the time spent trying to find solutions on my own early on in the project.
+Jag är fortfarande nybörjare vad gäller AI-kodning, men känner ändå att jag nu behärskar grunderna. De senaste åren har jag sett många användningsområden för LLM:er som i bästa fall varit onödiga och i värsta fall direkt skadliga, men för kodning har det varit toppen. För mig har det möjliggjort digitalt skapande som annars vore praktiskt omöjligt. Härnäst skulle jag vilja bygga ett enkelt spel. Eller en *beatmaker* med förinspelade ljud, vilket var en idé jag hade för en kund när detta uppfattades som för tidskrävande och avancerat. Eller ett plugin som ersätter bilder av politiker med fiskmåsar. 
 
-I'm still very new to AI coding, but at least I've now grasped the basics. You see a lot of bullshit usage of LLMs but for coding it's been great. For me it unlocked possibilites of digital creation that otherwise would've been impossible. Next up I'd like to create a simple game. Or a beatmaker with preloaded sounds, which is an idea I had for a customer that at the time was percieved as too advanced. Or a plugin that replaces news article portraits of politicians with images of seagulls.
-
-I don't know. We'll see.
+Jag vet inte. Vi får se.
 
 /Adam
