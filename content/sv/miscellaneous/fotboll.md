@@ -25,4 +25,4 @@ heroOffsetY: -40px
  &nbsp; 
 
 
-##### Under EM 2020 störde jag mig på de oinspirerade montage som visades på TV4. Själv satt jag på Discord och streamade matcher åt mina vänner, så jag klippte ihop något som kändes vettigare att visa inför Sveriges matcher.
+##### Under EM 2020 störde jag mig på de oinspirerade montage som visades på TV4. Själv satt jag på Discord och streamade matcher, så jag klippte ihop något som kändes vettigare att visa inför Sveriges matcher.
