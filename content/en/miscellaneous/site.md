@@ -36,6 +36,8 @@ But both alternatives tend to hit dead ends where they start to recycle solution
 
 This is where I was rewarded for the time spent trying to find solutions on my own early on in the project.
 
+My favorite feature is the animated portrait at the landing page which blinks by itself every five seconds and everytime it detects a click. In an earlier version I got the eyes to follow the movements of the pointer but that turned out way to scary and made me look psychotic.
+
 I'm still very new to AI coding, but at least I've now grasped the basics. You see a lot of bullshit usage of LLMs but for coding it's been great. For me it unlocked possibilites of digital creation that otherwise would've been impossible. Next up I'd like to create a simple game. Or a beatmaker with preloaded sounds, which is an idea I had for a customer that at the time was percieved as too advanced. Or a plugin that replaces news article portraits of politicians with images of seagulls.
 
 I don't know. We'll see.

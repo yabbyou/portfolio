@@ -36,6 +36,8 @@ Samtidigt tenderar båda modellerna att hamna i återvändsgränder där de går
 
 Här blev jag belönat för mina manuella felsökningar i början av projektet.
 
+Mest nöjd är jag med det levande porträttet på landningssidan som dels blinkar var femte sekund men också varje gång ett klick registreras. Först gjorde jag en version där ögonen följde muspekarens rörelser, men resultatet blev alldeles för läskigt och fick mig att se psykotisk ut.
+
 Jag är fortfarande nybörjare vad gäller AI-kodning, men känner ändå att jag nu behärskar grunderna. De senaste åren har jag sett många användningsområden för LLM:er som i bästa fall varit onödiga och i värsta fall direkt skadliga, men för kodning har det varit toppen. För mig har det möjliggjort digitalt skapande som annars vore praktiskt omöjligt. Härnäst skulle jag vilja bygga ett enkelt spel. Eller en *beatmaker* med förinspelade ljud, vilket var en idé jag hade för en kund när detta uppfattades som för tidskrävande och avancerat. Eller ett plugin som ersätter bilder på politiker med fiskmåsar. 
 
 Jag vet inte. Vi får se.
