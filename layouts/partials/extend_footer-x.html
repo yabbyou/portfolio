@@ -1,0 +1,198 @@
+{{/* layouts/partials/extend_footer.html */}}
+
+<!-- Swiper JS (external CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+{{/* Hugo Pipes: bundle all custom scripts */}}
+{{ $js := slice
+    (resources.Get "js/main.js")
+    (resources.Get "js/header-hero.js")
+    (resources.Get "js/header-compact.js")
+    (resources.Get "js/sliders.js")
+    (resources.Get "js/accordion.js")
+    (resources.Get "js/copyurl.js")
+    (resources.Get "js/portrait-eyes.js")
+    (resources.Get "js/annotation.js")
+    (resources.Get "js/scroll-indicator.js")
+    | resources.Concat "js/script.js"
+    | minify
+    | fingerprint
+}}
+
+<script
+  src="{{ $js.RelPermalink }}"
+  integrity="{{ $js.Data.Integrity }}"
+  defer>
+</script>
+
+{{/* Escaped popup — fires 1s after returning from the deadend trap */}}
+{{ if eq .Kind "section" }}
+{{ if eq .Section "miscellaneous" }}
+<style>
+  /* Sits above nav, hamburger menu, everything */
+  #escaped-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    background: rgba(0,0,0,0.01);
+  }
+  #escaped-overlay.active { display: block; }
+
+  #escaped-dialog {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    width: 320px;
+    background: #ece9d8;
+    border: 1px solid #716f64;
+    box-shadow: 2px 2px 0 #fff inset, -1px -1px 0 #716f64 inset, 4px 4px 8px rgba(0,0,0,0.4);
+    font-family: 'Tahoma', 'Segoe UI', sans-serif;
+    font-size: 11px;
+    color: #000 !important;
+    user-select: none;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #escaped-dialog.active {
+    display: block;
+    animation: xp-escaped-pop 0.15s ease-out both;
+  }
+  @keyframes xp-escaped-pop {
+    from { opacity: 0; transform: translateX(-50%) scale(0.95); }
+    to   { opacity: 1; transform: translateX(-50%) scale(1); }
+  }
+  #escaped-dialog .xp-titlebar {
+    height: 25px;
+    background: linear-gradient(to bottom, #9d9d9d 0%, #6e6e6e 4%, #7a7a7a 6%, #5c5c5c 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6px 0 8px;
+  }
+  #escaped-dialog .xp-title {
+    color: #fff !important;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'Tahoma', sans-serif;
+    line-height: 1;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  #escaped-dialog .xp-close {
+    width: 21px;
+    height: 21px;
+    background: linear-gradient(to bottom, #e04040 0%, #b02020 100%);
+    border: 1px solid #7a1010;
+    box-shadow: 1px 1px 0 rgba(255,255,255,0.3) inset;
+    color: #fff !important;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  #escaped-dialog .xp-close:hover  { background: linear-gradient(to bottom, #ff5555 0%, #cc2222 100%); }
+  #escaped-dialog .xp-close:active { background: linear-gradient(to bottom, #cc2020 0%, #991515 100%); }
+  #escaped-dialog .xp-body {
+    padding: 16px 16px 12px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  #escaped-dialog .xp-icon {
+    font-size: 32px;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+  #escaped-dialog .xp-msg {
+    font-size: 11px;
+    line-height: 1.5;
+    padding-top: 4px;
+    color: #000 !important;
+  }
+  #escaped-dialog .xp-footer {
+    padding: 4px 16px 12px;
+    display: flex;
+    justify-content: center;
+  }
+  #escaped-dialog .xp-btn {
+    background: linear-gradient(to bottom, #fff 0%, #ece9d8 100%) !important;
+    border: 1px solid #716f64 !important;
+    box-shadow: 1px 1px 0 rgba(255,255,255,0.8) inset;
+    padding: 3px 20px;
+    font-family: 'Tahoma', sans-serif !important;
+    font-size: 11px !important;
+    cursor: pointer;
+    min-width: 90px;
+    color: #000 !important;
+  }
+  #escaped-dialog .xp-btn:hover  { background: linear-gradient(to bottom, #fff 0%, #ddd9c8 100%) !important; }
+  #escaped-dialog .xp-btn:active { background: linear-gradient(to bottom, #ddd9c8 0%, #ece9d8 100%) !important; }
+</style>
+
+<div id="escaped-overlay"></div>
+
+<div id="escaped-dialog">
+  <div class="xp-titlebar">
+    <span class="xp-title">Sorry</span>
+    <div class="xp-close" onclick="dismissEscaped()">✕</div>
+  </div>
+  <div class="xp-body">
+    <span class="xp-icon">🐛</span>
+    <div class="xp-msg" id="escaped-msg">Something's going around</div>
+  </div>
+  <div class="xp-footer">
+    <button class="xp-btn" id="escaped-btn" onclick="dismissEscaped()">Mi hear yuh</button>
+  </div>
+</div>
+
+<script>
+  // Language strings
+  var escapedStrings = {
+    en: { msg: "Something's going around", btn: 'Mi hear yuh' },
+    sv: { msg: 'Det är nån skit som går',          btn: 'Mi hear yuh'  }
+  };
+
+  function showEscapedDialog(lang) {
+    var s = escapedStrings[lang] || escapedStrings.en;
+    document.getElementById('escaped-msg').textContent = s.msg;
+    document.getElementById('escaped-btn').textContent = s.btn;
+    document.getElementById('escaped-overlay').classList.add('active');
+    document.getElementById('escaped-dialog').classList.add('active');
+  }
+
+  function dismissEscaped() {
+    document.getElementById('escaped-dialog').classList.remove('active');
+    document.getElementById('escaped-overlay').classList.remove('active');
+    // Clear the flag so it only shows once per trap completion
+    try { localStorage.removeItem('roots_virus_escaped'); } catch(e) {}
+  }
+
+  (function() {
+    // Priority 1: URL param (direct return from trap)
+    var params = new URLSearchParams(window.location.search);
+    var escapedParam = params.get('escaped');
+    if (escapedParam === 'en' || escapedParam === 'sv') {
+      history.replaceState(null, '', window.location.pathname);
+      try { localStorage.removeItem('roots_virus_escaped'); } catch(e) {}
+      setTimeout(function() { showEscapedDialog(escapedParam); }, 1000);
+      return;
+    }
+
+    // Priority 2: localStorage (tab was closed mid-trap)
+    var stored;
+    try { stored = localStorage.getItem('roots_virus_escaped'); } catch(e) {}
+    if (stored === 'en' || stored === 'sv') {
+      // Detect which language version of the page we're on right now
+      var pageLang = window.location.pathname.match(/^\/(en|sv)\//);
+      var lang = pageLang ? pageLang[1] : stored;
+      setTimeout(function() { showEscapedDialog(lang); }, 1000);
+    }
+  })();
+</script>
+{{ end }}
+{{ end }}

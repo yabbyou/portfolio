@@ -4,12 +4,12 @@ description: 'Euros 2020'
 cover:
     image: img/nya_drommar/1958.jpg
 tags: 
-summary: 'Video Montage'
+summary: 'Video montage'
 variant: simple
 translationKey: fotboll
 layout: wide-mini
 row: 1
-order: 1
+order: 2
 heroExtra: 2021
 heroSliderHeight: 55vh
 heroOffsetY: -40px

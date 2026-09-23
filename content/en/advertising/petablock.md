@@ -7,9 +7,9 @@ tags:
  - CASE
 variant: "case"
 layout: wide
-summary: A browser extension that makes sure you never buy an animal online again.
+summary: A browser extension that makes sure you never buy an animal online again
 translationKey: petablock
-row: 1
+row: 2
 order: 1
 badge: 
 imagePosition: left

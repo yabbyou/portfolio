@@ -8,7 +8,7 @@ summary: Besök museum för att hitta historiskt korrekt utrustning och vapen
 variant: "case"
 layout: wide
 translationKey: gearforhell
-row: 5
+row: 8
 order:
 badge: 
 imagePosition: right

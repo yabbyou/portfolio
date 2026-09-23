@@ -1,17 +1,20 @@
 ---
 draft: false
 title: "You don't know Tony"
-description: ""
+description: "Tony doesn't know you"
 cover:
     image: img/tony/tony3.webp
-summary: Ta inte med honom på semester
+summary: Lämna honom hemma
 variant: simple
 layout: tall
 translationKey: tony
 row: 3
-order: 1
+order: 3
 tags:
 - 10 sek
+heroExtra: 2024
+heroSliderHeight: 65vh
+heroOffsetY: -40px
 
 ---
 

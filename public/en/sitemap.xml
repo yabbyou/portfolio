@@ -76,6 +76,20 @@
                 href="http://localhost:1313/en/categories/"
                 />
   </url><url>
+    <loc>http://localhost:1313/en/tags/concept/</loc>
+  </url><url>
+    <loc>http://localhost:1313/en/advertising/lanetalk/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv-SV"
+                href="http://localhost:1313/sv/advertising/lanetalk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/advertising/lanetalk/"
+                />
+  </url><url>
     <loc>http://localhost:1313/en/advertising/eclipse/</loc>
     <xhtml:link
                 rel="alternate"
@@ -148,6 +162,18 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="http://localhost:1313/en/tags/poster/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/miscellaneous/roots_virus/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv-SV"
+                href="http://localhost:1313/sv/miscellaneous/roots_virus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/miscellaneous/roots_virus/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/advertising/rydbergs/</loc>

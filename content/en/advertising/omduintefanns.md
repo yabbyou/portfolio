@@ -57,9 +57,9 @@ For a long time I'd been wanting to do something with the old tv that's sitting 
 
 But before we got the chance to excecute, the TV broke. We talked to the owners about our idea and that we would be happy to repair the tv, for free, but that just seemed to make them suspicious and confused.
 
-Instead we got into contact with *Bar Europa*, another Södermalm bar that runs retro video on a tv. They where into the idea and willing to take part, and so we made it happen. 
+Instead we got into contact with *Bar Europa*, another Södermalm bar that runs retro video on an old tv. They liked the idea and were willing to take part so we finally made it happen. 
 
-A local tv ad for a local project.
+A very local tv ad for a very local project.
 
 
  &nbsp; 

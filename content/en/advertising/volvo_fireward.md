@@ -7,7 +7,7 @@ cover:
 summary: Using Volvo's air quality sensor to detect wildfires
 variant: "case"
 translationKey: volvofireward
-row: 4
+row: 5
 order: 1
 tags:
 - case

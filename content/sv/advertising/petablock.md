@@ -7,9 +7,9 @@ tags:
  - CASE
 variant: "case"
 layout: wide
-summary: Ett webbläsartillägg som gör att du aldrig behöver köpa ett dött djur igen.
+summary: Ett webbläsartillägg som gör att du aldrig behöver köpa ett dött djur igen
 translationKey: petablock
-row: 1
+row: 2
 order: 1
 badge: 
 imagePosition: left

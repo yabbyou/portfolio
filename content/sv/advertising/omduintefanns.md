@@ -9,9 +9,9 @@ variant: simple
 layout: tall
 translationKey: omduintefanns
 row: 3
-order: 3
+order: 1
 tags:
-- INDIEANNONS
+- INDIE-ANNONS
 heroExtra: 2024
 heroSliderHeight: 55vh
 heroOffsetY: -40px

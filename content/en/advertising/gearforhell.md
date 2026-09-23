@@ -8,7 +8,7 @@ summary: Visit museums to retrieve historically accurate in-game loot
 variant: "case"
 layout: wide
 translationKey: gearforhell
-row: 5
+row: 8
 order:
 badge: 
 imagePosition: right

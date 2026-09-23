@@ -9,7 +9,7 @@ variant: simple
 translationKey: fotboll
 layout: wide-mini
 row: 1
-order: 1
+order: 2
 heroExtra: 2021
 heroSliderHeight: 55vh
 heroOffsetY: -40px

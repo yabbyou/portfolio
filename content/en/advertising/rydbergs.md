@@ -1,11 +1,11 @@
 ---
 draft: false
-title: "Rydbergs"
-description: 'Genvägen till svensk sommar'
+title: 'Rydbergs'
+description: ''
 cover:
-    image: img/
-summary: 
-variant: "case"
+    image: img/rydbergs/cov.jpg
+summary: The shortcut to summer
+variant: simple
 layout: tall
 translationKey: rydbergs
 row: 3
@@ -13,5 +13,16 @@ order: 2
 tags:
 - Poster
 imagePosition: top
+heroExtra: 2025
 ---
 
+{{< slider type="tall" height="" >}}
+{{< slide type="image" src="img/rydbergs/Rydbergs_PotatissalladCF_SoMe_still_9x16.jpg" caption="" >}}
+{{< /slider >}}
+
+ &nbsp; 
+
+ &nbsp; 
+
+
+##### FOOD & FRIENDS 2025

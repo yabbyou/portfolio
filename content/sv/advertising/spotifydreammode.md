@@ -8,7 +8,7 @@ summary: Ljudböcker som pausar när du somnar
 variant: "case"
 translationKey: spotifydreammode
 layout: wide
-row: 2
+row: 4
 imagePosition: right
 tags: 
  - CASE

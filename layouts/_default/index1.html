@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<article class="post-single home">
+
+  {{ $parts := split .RawContent "<!-- BODY SPLIT MARKER -->" }}
+
+  <!-- HERO -->
+  {{ index $parts 0 | markdownify }}
+
+  <!-- BODY -->
+  <section class="post-content">
+    {{ index $parts 1 | markdownify }}
+  </section>
+
+</article>
+
+{{ end }}

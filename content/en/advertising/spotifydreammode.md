@@ -8,7 +8,7 @@ summary: Audiobooks that pause when you fall asleep
 variant: "case"
 layout: wide
 translationKey: spotifydreammode
-row: 2
+row: 4
 order:
 badge: 
 imagePosition: right
