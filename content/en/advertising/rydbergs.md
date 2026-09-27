@@ -14,7 +14,6 @@ tags:
 - Poster
 imagePosition: top
 heroExtra: 2025
-heroSliderHeight: 55vh
 ---
 
 {{< slider type="tall" ratio="0.5625" >}}
