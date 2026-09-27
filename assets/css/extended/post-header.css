@@ -393,6 +393,11 @@ html.has-hero body.is-case .post-hero-inner {
   html.has-hero body.is-simple .post-hero-slider .custom-slider.tall {
   width: min(85vw, calc(72vh * var(--slide-ratio, calc(9 / 16)))) !important;
   height: min(72vh, calc(85vw / var(--slide-ratio, calc(9 / 16)))) !important;
+  max-height: none !important;
+  }
+
+  html.has-hero body.is-simple .post-hero {
+  overflow: visible;
   }
 
   /* Text: anchored to bottom of hero, never overlaps media */
