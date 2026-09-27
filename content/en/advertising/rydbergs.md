@@ -4,7 +4,7 @@ title: 'Rydbergs'
 description: ''
 cover:
     image: img/rydbergs/cov.jpg
-summary: The shortcut to summer
+summary: The shortcut to swedish summer
 variant: simple
 layout: tall
 translationKey: rydbergs
@@ -14,6 +14,7 @@ tags:
 - Poster
 imagePosition: top
 heroExtra: 2025
+heroSliderHeight: 55vh
 ---
 
 {{< slider type="tall" height="" >}}
