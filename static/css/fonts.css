@@ -30,7 +30,7 @@
   font-family: "Albertus Nova";
   font-style: normal;
   font-weight: 700;
-  src: url("/portfolio/fonts/albertusnovabold.woff2") format("woff2");
+  src: url("/fonts/albertusnovabold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -174,7 +174,7 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
-  src: url("/portfolio/fonts/Gilroy-Medium.woff2") format("woff2");
+  src: url("/fonts/Gilroy-Medium.woff2") format("woff2");
   font-display: swap;
 }
 
