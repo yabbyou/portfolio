@@ -391,8 +391,8 @@ html.has-hero body.is-case .post-hero-inner {
   }
 
   html.has-hero body.is-simple .post-hero-slider .custom-slider.tall {
-  width: min(85vw, calc(58vh * var(--slide-ratio, calc(9 / 16)))) !important;
-  height: min(58vh, calc(85vw / var(--slide-ratio, calc(9 / 16)))) !important;
+  width: min(85vw, calc(52vh * var(--slide-ratio, calc(9 / 16)))) !important;
+  height: min(52vh, calc(85vw / var(--slide-ratio, calc(9 / 16)))) !important;
   max-height: none !important;
   }
 
@@ -425,8 +425,8 @@ html.has-hero body.is-case .post-hero-inner {
 
   /* Year badge */
   html.has-hero body.is-simple .post-hero-extra {
-    right: 1.5rem;
-    bottom: 1.2rem;
-    transform: none;
+  right: 1.5rem;
+  bottom: 3.5rem;
+  transform: none;
   }
 }
