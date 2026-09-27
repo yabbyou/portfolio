@@ -412,11 +412,11 @@ html.has-hero body.is-case .post-hero-inner {
 
   /* Title + description size */
   html.has-hero body.is-simple .post-hero-title {
-    font-size: 26px;
+    font-size: 34px;
   }
 
   html.has-hero body.is-simple .post-hero-description {
-    font-size: 15px;
+    font-size: 19px;
   }
 
   /* Year badge */
