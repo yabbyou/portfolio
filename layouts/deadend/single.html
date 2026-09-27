@@ -67,7 +67,6 @@
     let free     = false;
 
     history.pushState(null, '', window.location.href);
-    history.pushState(null, '', window.location.href);
 
     function handleAttempt() {
       if (free) {
@@ -76,7 +75,6 @@
       }
 
       attempts++;
-      history.pushState(null, '', '/lost/');
       history.pushState(null, '', '/lost/');
 
       if (attempts >= TOTAL) {
