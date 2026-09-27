@@ -1,5 +1,5 @@
 /* ======================================================
-   NAV / HEADER (UNCHANGED)
+   NAV / HEADER
    ====================================================== */
 
 .nav {
@@ -46,7 +46,7 @@ button#theme-toggle {
 }
 
 [data-theme="dark"] #moon { display: none; }
-[data-theme="light"] #sun { display: none; }
+[data-theme="light"] #sun  { display: none; }
 
 /* MENU */
 
@@ -61,12 +61,12 @@ button#theme-toggle {
 
 #menu a,
 #menu .active {
-    font-family: "Urbanist";
-    font-size: 0.645rem;
-    font-weight: 500;
-    letter-spacing: 0.095em;
-    text-transform: uppercase;
-    transform: translateY(0.2%);
+  font-family: "Urbanist";
+  font-size: 0.645rem;
+  font-weight: 500;
+  letter-spacing: 0.095em;
+  text-transform: uppercase;
+  transform: translateY(0.2%);
 }
 
 #menu li span {
@@ -130,7 +130,7 @@ body:not(.has-hero) .header,
 }
 
 /* ======================================================
-   HERO CONTAINER
+   HERO CONTAINER — DESKTOP
    ====================================================== */
 
 .has-hero .post-hero {
@@ -145,6 +145,14 @@ body:not(.has-hero) .header,
   display: flex;
   color-scheme: dark;
   overflow: hidden;
+}
+
+.has-hero .post-hero {
+  margin-bottom: 2rem;
+}
+
+html.has-hero .main {
+  padding-top: 0;
 }
 
 /* ======================================================
@@ -168,7 +176,7 @@ html.has-hero body.is-simple .post-hero-overlay {
 }
 
 /* ======================================================
-   HERO TEXT (CASE + SIMPLE)
+   HERO TEXT — DESKTOP
    ====================================================== */
 
 .has-hero .post-hero-inner {
@@ -190,14 +198,33 @@ html.has-hero body.is-simple .post-hero-overlay {
   text-shadow: 0 2px 14px rgba(0,0,0,0.75);
 }
 
-/* title row */
 html.has-hero body.is-simple .post-hero-row {
   display: block;
   width: 100%;
 }
 
+.has-hero .post-hero-title {
+  font-family: "Albertus Nova";
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 0.0155em;
+  margin-bottom: var(--hero-title-gap);
+}
+
+.has-hero .post-hero-description {
+  font-family: "Gilroy";
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.has-hero .post-hero-title,
+.has-hero .post-hero-description {
+  color: #fff !important;
+}
+
 /* ======================================================
-   HERO EXTRA (year badge) — DESKTOP
+   YEAR BADGE — DESKTOP
    ====================================================== */
 
 html.has-hero body.is-simple .post-hero-extra {
@@ -220,23 +247,26 @@ html.has-hero body.is-simple .post-hero-extra {
   z-index: 4;
 }
 
-.has-hero .post-hero-title {
-  font-family: "Albertus Nova";
-  font-size: 34px;
-  text-transform: uppercase;
-  letter-spacing: 0.0155em;
-  margin-bottom: var(--hero-title-gap);
+/* ======================================================
+   HIDE DUPLICATE ARTICLE HEADER
+   ====================================================== */
+
+.has-hero .post-hero + .header + .main .post-header--inner {
+  display: none;
 }
 
-.has-hero .post-hero-description {
-  font-family: "Gilroy";
-  font-size: 19px;
-  font-weight: 300;
-  line-height: 1.3;
+html {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
 }
 
 /* ======================================================
-   SIMPLE HERO — CENTERED SLIDER WRAPPER
+   SIMPLE HERO — SLIDER WRAPPER (DESKTOP)
+   Vertically centered in the hero viewport
    ====================================================== */
 
 html.has-hero body.is-simple .post-hero-slider {
@@ -263,13 +293,12 @@ html.has-hero body.is-simple .post-hero-slider {
 }
 
 /* ======================================================
-   SIMPLE HERO — SLIDER BOX SIZING
-   Height-driven on desktop; ratio set per-article via
-   --slide-ratio custom property (width / height of source).
-   Defaults: tall → 9/16, otherwise → 16/9
+   SIMPLE HERO — SLIDER BOX (DESKTOP)
+   Height-driven; width = height × --slide-ratio
+   Set --slide-ratio per article via shortcode ratio param
+   Defaults: .tall → 9/16, plain → 16/9
    ====================================================== */
 
-/* Default (landscape / 16:9 video) */
 .post-hero-slider .custom-slider {
   aspect-ratio: unset !important;
   height: var(--hero-slider-height, 60vh) !important;
@@ -277,14 +306,13 @@ html.has-hero body.is-simple .post-hero-slider {
   max-width: 90vw;
 }
 
-/* tall class: default ratio 9:16, overridden by inline --slide-ratio if set */
 .post-hero-slider .custom-slider.tall {
   --slide-ratio: calc(9 / 16);
 }
 
 /* ======================================================
    SIMPLE HERO — SWIPER INTERNALS
-   Explicit 100% on all axes — Safari needs this
+   All 100% — Safari collapses auto widths in abs containers
    ====================================================== */
 
 .post-hero-slider .swiper,
@@ -302,7 +330,8 @@ html.has-hero body.is-simple .post-hero-slider {
 }
 
 /* ======================================================
-   SIMPLE HERO — MEDIA: always contain, never crop
+   SIMPLE HERO — MEDIA (CSS fallback; JS sets object-fit
+   to contain for hero images, so these just back it up)
    ====================================================== */
 
 .post-hero-slider .slide-image-thumb {
@@ -336,80 +365,67 @@ html.has-hero body.is-simple .post-hero-slider {
 }
 
 /* ======================================================
-   HIDE DUPLICATE ARTICLE HEADER
-   ====================================================== */
-
-.has-hero .post-hero + .header + .main .post-header--inner {
-  display: none;
-}
-
-html {
-  overflow-y: scroll;
-  scrollbar-width: none;
-}
-
-html::-webkit-scrollbar {
-  width: 0;
-}
-
-.has-hero .post-hero-title,
-.has-hero .post-hero-description {
-  color: #fff !important;
-}
-
-.has-hero .post-hero {
-  min-height: 100vh;
-  margin-bottom: 2rem;
-}
-
-html.has-hero .main {
-  padding-top: 0;
-}
-
-/* ======================================================
    MOBILE  (≤ 900px)
-   Layout: [nav] → [media, centered] → [title + desc] → [year tag]
-   Media is width-driven; text anchored to bottom of hero.
+
+   Stack: [nav bar] → [media] → [text] → [year badge]
+
+   Hero shrinks to fit content instead of forcing 100vh.
+   Slider is in normal flow (position: relative), not
+   absolute — this eliminates the gap entirely.
+   Text follows immediately below in the flex column.
    ====================================================== */
 
 @media (max-width: 900px) {
 
-  /* ── Slider wrapper: pin below nav, centered ── */
+  /* Hero: shrink to content, keep blurred bg */
+  html.has-hero body.is-simple .post-hero {
+    min-height: 0;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px; /* nav clearance — adjust if --header-height differs */
+    padding-bottom: 3.5rem;
+    overflow: visible;
+  }
+
+  /* Slider wrapper: back to normal flow, centered */
   html.has-hero body.is-simple .post-hero-slider {
-    position: absolute;
-    top: calc(var(--header-height, 56px) + 12px);
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 92vw;
-    /* reset desktop vertical centering */
-  }
-
-  /* ── Default (landscape/video): fill width, height from ratio ── */
-  .post-hero-slider .custom-slider {
-    width: 82vw !important;
-    height: calc(82vw / var(--slide-ratio, calc(16 / 9))) !important;
-    max-height: 52vh !important;
-  }
-
-  /* ── Tall (portrait images/video): constrain to viewport ── */
-  .post-hero-slider .custom-slider.tall {
-    /* width = height × ratio, capped so it never overflows */
-    width:  min(56vw, calc(52vh * var(--slide-ratio, calc(9 / 16)))) !important;
-    height: min(52vh, calc(56vw  / var(--slide-ratio, calc(9 / 16)))) !important;
-  }
-
-  /* ── Text: anchored to bottom of hero ── */
-  html.has-hero body.is-simple .post-hero-inner {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     top: auto;
-    padding: 1.5rem 1.5rem 3.5rem;
-    max-width: 100%;
-    justify-content: flex-end;
-    align-items: flex-start;
+    left: auto;
     transform: none;
+    width: 100%;
+    max-width: 92vw;
+    margin: 0 auto 1.5rem;
+    flex-shrink: 0;
+  }
+
+  /* Default (landscape / 16:9): width-driven */
+  .post-hero-slider .custom-slider {
+    width: 88vw !important;
+    height: calc(88vw / var(--slide-ratio, calc(16 / 9))) !important;
+    max-height: 56vh !important;
+  }
+
+  /* Tall (portrait): narrow, height-capped */
+  .post-hero-slider .custom-slider.tall {
+    width:  calc(min(70vw, 56vh * var(--slide-ratio, calc(9 / 16)))) !important;
+    height: calc(min(70vw / var(--slide-ratio, calc(9 / 16)), 56vh)) !important;
+  }
+
+  /* Text: normal flow below the slider */
+  html.has-hero body.is-simple .post-hero-inner {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    padding: 0 1.5rem;
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .has-hero .post-hero-title {
@@ -420,10 +436,15 @@ html.has-hero .main {
     font-size: 15px;
   }
 
-  /* ── Year badge: bottom-right, above text baseline ── */
+  /* Year badge: below the description, left-aligned */
   html.has-hero body.is-simple .post-hero-extra {
-    right: 1.5rem;
-    bottom: 1.2rem;
+    position: relative;
+    bottom: auto;
+    right: auto;
+    top: auto;
+    left: auto;
     transform: none;
+    margin-top: 0.75rem;
+    display: inline-block;
   }
 }

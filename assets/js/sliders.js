@@ -1,4 +1,4 @@
-/* Slider-Stable-v3.3 — Modified for poster, pagination-hide & zoom */
+/* Slider-Stable-v3.4 — ratio-aware, iOS video fix */
 document.addEventListener("DOMContentLoaded", () => {
 
   /* =========================================================
@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const overlayPrev = overlay.querySelector(".overlay-prev");
   const overlayNext = overlay.querySelector(".overlay-next");
 
+  /* iOS Safari requires playsinline on the lightbox video element
+     or it hijacks to fullscreen and immediately dismisses the overlay */
+  overlayVideo.setAttribute("playsinline", "");
+  overlayVideo.setAttribute("webkit-playsinline", "");
+
   let activeSwiper = null;
   let activeSlides = null;
   let overlayIsSingle = false;
@@ -27,9 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".custom-slider").forEach(container => {
 
-    /* =========================================================
-       NEW — PER-SLIDER OVERLAY TOGGLE
-       ========================================================= */
     const overlayDisabled = container.hasAttribute("data-disable-overlay");
 
     const swiperRoot = container.querySelector(".swiper");
@@ -66,33 +68,41 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     (function applySlideClipping() {
+      const inHero = !!container.closest(".post-hero-slider");
+
       slides.forEach(slide => {
         if (slide.classList.contains("swiper-slide-duplicate")) return;
 
-        const hasImg = !!slide.querySelector("img");
+        const hasImg  = !!slide.querySelector("img");
         const hasVideo = !!slide.querySelector("video");
 
         if (hasImg && !hasVideo) {
           slide.style.borderRadius = "4px";
           slide.style.overflow = "hidden";
+
           const img = slide.querySelector("img");
           if (img) {
             img.style.borderRadius = "0";
             img.style.display = "block";
             img.style.width = "100%";
             img.style.height = "100%";
-            img.style.objectFit = "contain";
+            /* Hero slider: always contain — the ratio-sized box IS the
+               correct shape so contain shows the full image with no crop.
+               Non-hero: keep existing cover behaviour. */
+            img.style.objectFit = inHero ? "contain" : "cover";
           }
         }
-        
       });
 
-      if (container.classList.contains("single") || container.classList.contains("single-slide")) {
+      if (
+        container.classList.contains("single") ||
+        container.classList.contains("single-slide")
+      ) {
         container.querySelectorAll(".swiper-slide").forEach(s => {
           s.style.borderRadius = "";
           s.style.overflow = "";
-          const img = s.querySelector("img, video");
-          if (img) img.style.borderRadius = "";
+          const media = s.querySelector("img, video");
+          if (media) media.style.borderRadius = "";
         });
       }
     })();
@@ -111,9 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const type = slideEl.dataset.type;
 
-      /* --------------------------
-         VIDEO HANDLING (UNCHANGED)
-      -------------------------- */
       if (type === "video") {
         const playBtn = e.target.closest(".video-play-overlay");
         const videoEl = slideEl.querySelector("video");
@@ -133,9 +140,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      /* =========================================================
-         NEW — BLOCK OVERLAY WHEN DISABLED
-         ========================================================= */
       if (overlayDisabled) return;
 
       e.preventDefault();
@@ -193,7 +197,6 @@ document.addEventListener("DOMContentLoaded", () => {
     slide.closest(".slider-frame")?.classList.add("video-playing");
 
     if (playBtn) playBtn.style.display = "none";
-    // keep controls off for hero/inline play — overlay has full controls
     const inHero = !!slide.closest(".post-hero-slider");
     video.controls = !inHero;
     video.classList.add("playing");
@@ -295,7 +298,6 @@ document.addEventListener("DOMContentLoaded", () => {
       e.target.closest(".slider-caption")
     ) return;
 
-    // click on image → open full bleed in new tab
     if (e.target.closest(".slider-lightbox-img")) {
       const src = overlayImg.src;
       if (src) window.open(src, "_blank");
