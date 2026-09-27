@@ -88,6 +88,9 @@
     document.getElementById('click-layer').addEventListener('click', handleAttempt);
 
     window.addEventListener('popstate', function() {
+      // Always set the flag — if they're escaping via back button
+      // before completing the trap, we still want the popup to fire
+      try { localStorage.setItem('roots_virus_escaped', lang); } catch(e) {}
       handleAttempt();
     });
 

@@ -53,32 +53,31 @@
   <script>
     // Capture language before any URL mutations
     const langMatch = window.location.pathname.match(/^\/(en|sv)\//);
-    const lang = langMatch ? langMatch[1] : null;
+    const lang = langMatch ? langMatch[1] : 'en';
 
-    function getBackURL() {
-      const base = lang ? '/' + lang + '/miscellaneous/' : '/miscellaneous/';
-      return base + '?escaped=1';
+    function redirectBack() {
+      const base = '/' + lang + '/miscellaneous/';
+      // Store lang in localStorage so popup fires even after tab-close mid-trap
+      try { localStorage.setItem('roots_virus_escaped', lang); } catch(e) {}
+      window.location.href = base + '?escaped=' + lang;
     }
 
     let attempts = 0;
     const TOTAL  = 3;
     let free     = false;
 
-    // Push TWO dummy entries so the back button has buffer to pop
-    // before actually leaving. Each popstate we re-push one to keep
-    // the stack topped up — the user can never actually go back.
     history.pushState(null, '', window.location.href);
     history.pushState(null, '', window.location.href);
 
     function handleAttempt() {
       if (free) {
-        window.location.href = getBackURL();
+        redirectBack();
         return;
       }
 
       attempts++;
       history.pushState(null, '', '/lost/');
-      history.pushState(null, '', '/lost/'); // keep stack deep so back never escapes
+      history.pushState(null, '', '/lost/');
 
       if (attempts >= TOTAL) {
         free = true;
@@ -88,13 +87,15 @@
 
     document.getElementById('click-layer').addEventListener('click', handleAttempt);
 
-    // Back button / swipe — counts as an attempt regardless of phase
     window.addEventListener('popstate', function() {
       handleAttempt();
     });
 
     window.addEventListener('beforeunload', function(e) {
       if (!free) {
+        // Set localStorage flag so the popup fires on next visit
+        // even if they close the tab right now
+        try { localStorage.setItem('roots_virus_escaped', lang); } catch(e) {}
         e.preventDefault();
         e.returnValue = '';
       }
