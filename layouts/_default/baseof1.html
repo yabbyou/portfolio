@@ -199,50 +199,40 @@
   }
 
   (function() {
-    function checkAndShow() {
-      // Priority 1: URL param — direct return from trap
-      var params = new URLSearchParams(window.location.search);
-      var escapedParam = params.get('escaped');
-      if (escapedParam === 'en' || escapedParam === 'sv') {
-        history.replaceState(null, '', window.location.pathname);
-        setTimeout(showEscapedDialog, 1000);
-        return;
-      }
-
-      // Check localStorage flag
-      var stored;
-      try { stored = localStorage.getItem('roots_virus_escaped'); } catch(e) {}
-      if (!stored) return;
-
-      // Root redirect page — hand off via sessionStorage
-      var path = window.location.pathname;
-      if (path === '/' || path === '') {
-        try { sessionStorage.setItem('roots_virus_pending', '1'); } catch(e) {}
-        return;
-      }
-
-      // sessionStorage handoff from root redirect
-      var pending;
-      try { pending = sessionStorage.getItem('roots_virus_pending'); } catch(e) {}
-      if (pending) {
-        try { sessionStorage.removeItem('roots_virus_pending'); } catch(e) {}
-        setTimeout(showEscapedDialog, 1000);
-        return;
-      }
-
-      // Normal page — show popup
+    // Priority 1: URL param — direct return from trap
+    var params = new URLSearchParams(window.location.search);
+    var escapedParam = params.get('escaped');
+    if (escapedParam === 'en' || escapedParam === 'sv') {
+      history.replaceState(null, '', window.location.pathname);
       setTimeout(showEscapedDialog, 1000);
+      return;
     }
 
-    // Runs on normal page load
-    checkAndShow();
+    // Check localStorage flag
+    var stored;
+    try { stored = localStorage.getItem('roots_virus_escaped'); } catch(e) {}
+    if (!stored) return;
 
-    // Runs when page is restored from bfcache (back/forward navigation)
-    window.addEventListener('pageshow', function(e) {
-      if (e.persisted) {
-        checkAndShow();
-      }
-    });
+    // If we're at the root / (Hugo redirect page), the page will navigate away
+    // before 1s is up. Set a sessionStorage handoff flag and let the
+    // destination page pick it up instantly.
+    var path = window.location.pathname;
+    if (path === '/' || path === '') {
+      try { sessionStorage.setItem('roots_virus_pending', '1'); } catch(e) {}
+      return;
+    }
+
+    // Priority 2: sessionStorage handoff (arrived from root redirect)
+    var pending;
+    try { pending = sessionStorage.getItem('roots_virus_pending'); } catch(e) {}
+    if (pending) {
+      try { sessionStorage.removeItem('roots_virus_pending'); } catch(e) {}
+      setTimeout(showEscapedDialog, 1000);
+      return;
+    }
+
+    // Priority 3: normal localStorage check on any other page
+    setTimeout(showEscapedDialog, 1000);
   })();
 </script>
 
