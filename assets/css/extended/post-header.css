@@ -391,7 +391,7 @@ html.has-hero body.is-case .post-hero-inner {
   }
 
   html.has-hero body.is-simple .post-hero-slider .custom-slider.tall {
-  width: min(75vw, calc(85vh * var(--slide-ratio, calc(9 / 16)))) !important;
+  width: min(85vw, calc(85vh * var(--slide-ratio, calc(9 / 16)))) !important;
   height: min(55vh, calc(75vw / var(--slide-ratio, calc(9 / 16)))) !important;
   }
 
