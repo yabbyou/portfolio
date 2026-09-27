@@ -368,6 +368,12 @@ html.has-hero .main {
 
 @media (max-width: 900px) {
 
+  /* Fix case variant inner padding on mobile */
+html.has-hero body.is-case .post-hero-inner {
+  padding: 6rem 1.5rem 4rem;
+  max-width: 100%;
+  }
+
   /* Media: top-anchored below nav, centered */
   html.has-hero body.is-simple .post-hero-slider {
     position: absolute;
