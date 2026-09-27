@@ -376,11 +376,11 @@ html.has-hero body.is-case .post-hero-inner {
 
   /* Media: top-anchored below nav, centered */
   html.has-hero body.is-simple .post-hero-slider {
-    position: absolute;
-    top: calc(var(--header-height, 56px) + 24px);
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 92vw;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 92vw;
   }
 
   /* Landscape / video: width-driven, height from ratio */
@@ -391,8 +391,8 @@ html.has-hero body.is-case .post-hero-inner {
   }
 
   html.has-hero body.is-simple .post-hero-slider .custom-slider.tall {
-  width: min(85vw, calc(85vh * var(--slide-ratio, calc(9 / 16)))) !important;
-  height: min(55vh, calc(75vw / var(--slide-ratio, calc(9 / 16)))) !important;
+  width: min(85vw, calc(72vh * var(--slide-ratio, calc(9 / 16)))) !important;
+  height: min(72vh, calc(85vw / var(--slide-ratio, calc(9 / 16)))) !important;
   }
 
   /* Text: anchored to bottom of hero, never overlaps media */
