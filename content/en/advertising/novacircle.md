@@ -13,8 +13,7 @@ order: 3
 tags:
 - 10 sec ad
 heroExtra: 2024
-heroSliderHeight: 65vh
-heroOffsetY: -40px
+heroSliderHeight: 52vh
 
 ---
 
