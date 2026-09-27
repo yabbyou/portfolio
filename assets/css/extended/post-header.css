@@ -377,7 +377,7 @@ html.has-hero body.is-case .post-hero-inner {
   /* Media: top-anchored below nav, centered */
   html.has-hero body.is-simple .post-hero-slider {
   position: absolute;
-  top: 120px;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   max-width: 92vw;
@@ -424,4 +424,8 @@ html.has-hero body.is-case .post-hero-inner {
     bottom: 1.2rem;
     transform: none;
   }
+
+  background: red !important {
+  }
+  
 }
