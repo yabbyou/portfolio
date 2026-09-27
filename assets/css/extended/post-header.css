@@ -400,6 +400,10 @@ html.has-hero body.is-case .post-hero-inner {
   overflow: visible;
   }
 
+  html.has-hero body.is-simple .post-hero-slider .custom-slider:not(.tall) {
+  margin-top: 80px;
+  }
+
   /* Text: anchored to bottom of hero, never overlaps media */
   html.has-hero body.is-simple .post-hero-inner {
     position: absolute;
