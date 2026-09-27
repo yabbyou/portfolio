@@ -1,4 +1,4 @@
-/* Slider-Stable-v3.4 — ratio-aware, iOS video fix */
+/* Slider-Stable-v3.3 — Modified for poster, pagination-hide & zoom */
 document.addEventListener("DOMContentLoaded", () => {
 
   /* =========================================================
@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const overlayPrev = overlay.querySelector(".overlay-prev");
   const overlayNext = overlay.querySelector(".overlay-next");
 
-  /* iOS Safari requires playsinline on the lightbox video element
-     or it hijacks to fullscreen and immediately dismisses the overlay */
+  /* iOS Safari: set playsinline on the lightbox video element so it
+     doesn't hijack to native fullscreen and dismiss the overlay */
   overlayVideo.setAttribute("playsinline", "");
   overlayVideo.setAttribute("webkit-playsinline", "");
 
@@ -32,6 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".custom-slider").forEach(container => {
 
+    /* =========================================================
+       PER-SLIDER OVERLAY TOGGLE
+       ========================================================= */
     const overlayDisabled = container.hasAttribute("data-disable-overlay");
 
     const swiperRoot = container.querySelector(".swiper");
@@ -68,41 +71,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     (function applySlideClipping() {
-      const inHero = !!container.closest(".post-hero-slider");
-
       slides.forEach(slide => {
         if (slide.classList.contains("swiper-slide-duplicate")) return;
 
-        const hasImg  = !!slide.querySelector("img");
+        const hasImg = !!slide.querySelector("img");
         const hasVideo = !!slide.querySelector("video");
 
         if (hasImg && !hasVideo) {
           slide.style.borderRadius = "4px";
           slide.style.overflow = "hidden";
-
           const img = slide.querySelector("img");
           if (img) {
             img.style.borderRadius = "0";
             img.style.display = "block";
             img.style.width = "100%";
             img.style.height = "100%";
-            /* Hero slider: always contain — the ratio-sized box IS the
-               correct shape so contain shows the full image with no crop.
-               Non-hero: keep existing cover behaviour. */
-            img.style.objectFit = inHero ? "contain" : "cover";
+            img.style.objectFit = "contain";
           }
         }
       });
 
-      if (
-        container.classList.contains("single") ||
-        container.classList.contains("single-slide")
-      ) {
+      if (container.classList.contains("single") || container.classList.contains("single-slide")) {
         container.querySelectorAll(".swiper-slide").forEach(s => {
           s.style.borderRadius = "";
           s.style.overflow = "";
-          const media = s.querySelector("img, video");
-          if (media) media.style.borderRadius = "";
+          const img = s.querySelector("img, video");
+          if (img) img.style.borderRadius = "";
         });
       }
     })();
@@ -121,6 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const type = slideEl.dataset.type;
 
+      /* VIDEO HANDLING */
       if (type === "video") {
         const playBtn = e.target.closest(".video-play-overlay");
         const videoEl = slideEl.querySelector("video");
@@ -140,6 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
+      /* BLOCK OVERLAY WHEN DISABLED */
       if (overlayDisabled) return;
 
       e.preventDefault();
@@ -198,9 +194,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (playBtn) playBtn.style.display = "none";
     const inHero = !!slide.closest(".post-hero-slider");
+    /* In hero: no native controls (overlay has none either for hero videos).
+       Outside hero: show native controls so user can scrub/fullscreen. */
     video.controls = !inHero;
     video.classList.add("playing");
-    video.play();
+    video.play().catch(() => {
+      /* Autoplay blocked — show play button again so user can retry */
+      if (playBtn) playBtn.style.display = "flex";
+    });
   }
 
   /* =========================
