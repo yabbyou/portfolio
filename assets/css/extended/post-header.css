@@ -385,15 +385,20 @@ html.has-hero body.is-case .post-hero-inner {
 
   /* Landscape / video: width-driven, height from ratio */
   html.has-hero body.is-simple .post-hero-slider .custom-slider {
-    width: 82vw !important;
-    height: calc(82vw / var(--slide-ratio, calc(16 / 9))) !important;
-    max-height: 45vh !important;
+  width: 88vw !important;
+  height: calc(88vw / var(--slide-ratio, calc(16 / 9))) !important;
+  max-height: 55vh !important;
+  }
+
+  html.has-hero body.is-simple .post-hero-slider .custom-slider.tall {
+  width: min(62vw, calc(55vh * var(--slide-ratio, calc(9 / 16)))) !important;
+  height: min(55vh, calc(62vw / var(--slide-ratio, calc(9 / 16)))) !important;
   }
 
   /* Portrait: narrow column, height-capped */
   html.has-hero body.is-simple .post-hero-slider .custom-slider.tall {
-    width: min(52vw, calc(45vh * var(--slide-ratio, calc(9 / 16)))) !important;
-    height: min(45vh, calc(52vw / var(--slide-ratio, calc(9 / 16)))) !important;
+  width: min(62vw, calc(55vh * var(--slide-ratio, calc(9 / 16)))) !important;
+  height: min(55vh, calc(62vw / var(--slide-ratio, calc(9 / 16)))) !important;
   }
 
   /* Text: anchored to bottom of hero, never overlaps media */
