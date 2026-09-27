@@ -1,9 +1,8 @@
-{{/* Optional size parameters from shortcode: width / height / ratio */}}
+{{/* Optional size parameters from shortcode: width / height */}}
 {{- $width := .Get "width" -}}
 {{- $height := .Get "height" -}}
 {{- $align := .Get "align" | default "center" -}}
 {{- $type := .Get "type" | default "" -}}
-{{- $ratio := .Get "ratio" | default "" -}}
 
 {{- $isSimple := eq $.Page.Params.variant "simple" -}}
 
@@ -17,21 +16,13 @@
 {{- with $height }}{{ $sliderStyleParts = $sliderStyleParts | append (printf "height:%s" .) }}{{ end }}
 {{- $sliderStyle := delimit $sliderStyleParts ";" -}}
 
-{{/* Build custom-slider inline style: --slide-ratio if provided */}}
-{{- $sliderInlineStyle := "" -}}
-{{- if $ratio -}}
-  {{- $sliderInlineStyle = printf "style=\"--slide-ratio:%s\"" $ratio -}}
-{{- else if $sliderStyle -}}
-  {{- $sliderInlineStyle = printf "style=\"%s\"" $sliderStyle -}}
-{{- end -}}
-
 {{/* START: capture slider markup */}}
 {{- $slider := printf `
 <div class="slider-frame slider-align-%s"
   %s>
 
   <div class="slider-main-row">
-    <button class="slider-arrow prev" type="button">〈</button>
+    <button class="slider-arrow prev" type="button">〈</button>
 
     <div class="custom-slider %s"
          %s
@@ -43,7 +34,7 @@
       </div>
     </div>
 
-    <button class="slider-arrow next" type="button">〉</button>
+    <button class="slider-arrow next" type="button">〉</button>
   </div>
 
   <div class="swiper-pagination"></div>
@@ -52,7 +43,7 @@
   $align
   (cond $frameStyle (printf `style="%s;"` $frameStyle) "")
   $type
-  $sliderInlineStyle
+  (cond $sliderStyle (printf `style="%s;"` $sliderStyle) "")
   (cond (eq (.Get "disableOverlay") "true") "data-disable-overlay" "")
   .Inner
 -}}

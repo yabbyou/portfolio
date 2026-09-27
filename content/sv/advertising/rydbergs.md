@@ -16,7 +16,7 @@ imagePosition: top
 heroExtra: 2025
 ---
 
-{{< slider type="tall" height="" >}}
+{{< slider type="tall" ratio="0.5625" >}}
 {{< slide type="image" src="img/rydbergs/Rydbergs_PotatissalladCF_SoMe_still_9x16.jpg" caption="" >}}
 {{< /slider >}}
 

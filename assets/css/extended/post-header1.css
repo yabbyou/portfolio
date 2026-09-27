@@ -64,7 +64,7 @@ button#theme-toggle {
     font-family: "Urbanist";
     font-size: 0.645rem;
     font-weight: 500;
-    letter-spacing: 0.095em;
+    letter-spacing: 0.095em;   /* removed duplicate 0.12em rule */
     text-transform: uppercase;
     transform: translateY(0.2%);
 }
@@ -98,7 +98,7 @@ button#theme-toggle {
 }
 
 /* ======================================================
-   HERO HEADER BEHAVIOR
+   HERO HEADER BEHAVIOR (STABLE)
    ====================================================== */
 
 body:not(.has-hero) .header,
@@ -118,14 +118,16 @@ body:not(.has-hero) .header,
 }
 
 /* ======================================================
-   HERO LAYOUT CONTROLS
+   HERO LAYOUT CONTROLS (CLEANED — NO X TRANSLATE)
    ====================================================== */
 
 .has-hero .post-hero-inner {
   --hero-align-x: flex-start;
   --hero-align-y: flex-end;
   --hero-text-align: left;
+
   --hero-offset-y: -10px;
+
   --hero-title-gap: 0%;
 }
 
@@ -196,15 +198,12 @@ html.has-hero body.is-simple .post-hero-row {
   width: 100%;
 }
 
-/* ======================================================
-   HERO EXTRA (year badge) — DESKTOP
-   ====================================================== */
-
+/* badge — sibling of post-hero-inner, matched to title baseline */
 html.has-hero body.is-simple .post-hero-extra {
   position: absolute;
-  bottom: 4.9rem;
-  right: 15rem;
-  transform: none;
+  /* same vertical as title: padding-bottom 4rem + translateY offset -10px */
+  bottom: calc(4rem - var(--hero-offset-y, -10px));
+  transform: translateY(var(--hero-offset-y, -10px));
   padding: 0.45rem 0.7rem;
   font-family: 'CodeSaver';
   font-size: 12px;
@@ -236,103 +235,23 @@ html.has-hero body.is-simple .post-hero-extra {
 }
 
 /* ======================================================
-   SIMPLE HERO — CENTERED SLIDER WRAPPER
+   SIMPLE HERO — CENTERED SLIDER (UNCHANGED)
    ====================================================== */
+
+.has-hero .post-hero {
+  position: relative;
+}
 
 html.has-hero body.is-simple .post-hero-slider {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateX(-50%) translateY(calc(-50% + var(--hero-slider-y, 0px)));
+  transform: translateX(-50%) translateY(calc(-50% + var(--hero-slider-y, -4%)));
   z-index: 5;
   pointer-events: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 92vw;
-}
-
-.post-hero-slider .slider-frame {
-  margin: 0;
-  width: auto;
-  max-width: 92vw;
-}
-
-.post-hero-slider .slider-main-row {
-  width: auto;
-}
-
-/* ======================================================
-   SIMPLE HERO — SLIDER BOX SIZING
-   Height-driven on desktop; ratio set per-article via
-   --slide-ratio custom property (width / height of source).
-   Defaults: tall → 9/16, otherwise → 16/9
-   ====================================================== */
-
-/* Default (landscape / 16:9 video) */
-.post-hero-slider .custom-slider {
-  aspect-ratio: unset !important;
-  height: var(--hero-slider-height, 60vh) !important;
-  width: calc(var(--hero-slider-height, 60vh) * var(--slide-ratio, calc(16 / 9))) !important;
-  max-width: 90vw;
-}
-
-/* tall class: default ratio 9:16, overridden by inline --slide-ratio if set */
-.post-hero-slider .custom-slider.tall {
-  --slide-ratio: calc(9 / 16);
-}
-
-/* ======================================================
-   SIMPLE HERO — SWIPER INTERNALS
-   Explicit 100% on all axes — Safari needs this
-   ====================================================== */
-
-.post-hero-slider .swiper,
-.post-hero-slider .swiper-wrapper {
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.post-hero-slider .swiper-slide {
-  width: 100% !important;
-  height: 100% !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* ======================================================
-   SIMPLE HERO — MEDIA: always contain, never crop
-   ====================================================== */
-
-.post-hero-slider .slide-image-thumb {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.post-hero-slider .slide-image-thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-.post-hero-slider .slide-video-thumb {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.post-hero-slider .slide-video-thumb video {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 
 /* ======================================================
@@ -352,6 +271,17 @@ html::-webkit-scrollbar {
   width: 0;
 }
 
+/* ======================================================
+   SIMPLE HERO — HERO EXTRA
+   ====================================================== */
+
+html.has-hero body.is-simple .post-hero-extra {
+  position: absolute;
+  bottom: 4.9rem;
+  right: 15rem; /* matches desktop padding */
+  transform: none;
+}
+
 .has-hero .post-hero-title,
 .has-hero .post-hero-description {
   color: #fff !important;
@@ -359,7 +289,7 @@ html::-webkit-scrollbar {
 
 .has-hero .post-hero {
   min-height: 100vh;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; /* ensures scroll space exists */
 }
 
 html.has-hero .main {
@@ -367,63 +297,40 @@ html.has-hero .main {
 }
 
 /* ======================================================
-   MOBILE  (≤ 900px)
-   Layout: [nav] → [media, centered] → [title + desc] → [year tag]
-   Media is width-driven; text anchored to bottom of hero.
+   MOBILE HERO TEXT FIX
    ====================================================== */
 
-@media (max-width: 900px) {
+  @media (max-width: 900px) {
 
-  /* ── Slider wrapper: pin below nav, centered ── */
-  html.has-hero body.is-simple .post-hero-slider {
-    position: absolute;
-    top: calc(var(--header-height, 56px) + 12px);
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 92vw;
-    /* reset desktop vertical centering */
-  }
-
-  /* ── Default (landscape/video): fill width, height from ratio ── */
-  .post-hero-slider .custom-slider {
-    width: 82vw !important;
-    height: calc(82vw / var(--slide-ratio, calc(16 / 9))) !important;
-    max-height: 52vh !important;
-  }
-
-  /* ── Tall (portrait images/video): constrain to viewport ── */
-  .post-hero-slider .custom-slider.tall {
-    /* width = height × ratio, capped so it never overflows */
-    width:  min(56vw, calc(52vh * var(--slide-ratio, calc(9 / 16)))) !important;
-    height: min(52vh, calc(56vw  / var(--slide-ratio, calc(9 / 16)))) !important;
-  }
-
-  /* ── Text: anchored to bottom of hero ── */
-  html.has-hero body.is-simple .post-hero-inner {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: auto;
-    padding: 1.5rem 1.5rem 3.5rem;
+  .has-hero .post-hero-inner {
+    padding: 6rem 1.5rem 3rem;
     max-width: 100%;
-    justify-content: flex-end;
-    align-items: flex-start;
-    transform: none;
   }
 
   .has-hero .post-hero-title {
-    font-size: 26px;
+    font-size: 28px;
+  }
+
+  html.has-hero body.is-simple .post-hero-extra {
+  right: 1.5rem;   /* matches mobile padding */
+  bottom: 3rem;    /* tweak visually if needed */
   }
 
   .has-hero .post-hero-description {
-    font-size: 15px;
+    font-size: 16px;
   }
 
-  /* ── Year badge: bottom-right, above text baseline ── */
-  html.has-hero body.is-simple .post-hero-extra {
-    right: 1.5rem;
-    bottom: 1.2rem;
-    transform: none;
+  .has-hero .post-hero-inner{
+    --hero-offset-y: -80px;
   }
+
+  .has-hero .post-hero-inner{
+    --hero-align-y:center;
+  }
+
+  .has-hero .post-hero-inner{
+    --hero-align-y: center;
+    --hero-offset-y: 150px;
+  }
+
 }

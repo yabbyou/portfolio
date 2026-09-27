@@ -14,7 +14,7 @@ heroExtra: 2022
   
 ---
  
-{{< slider type="tall" height="" >}}
+{{< slider type="tall" ratio="0.817" >}}
 {{< slide type="image" src="img/mix/mbp.png" caption="" >}}
 {{< /slider >}}
 

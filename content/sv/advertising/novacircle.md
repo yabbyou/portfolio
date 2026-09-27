@@ -18,7 +18,7 @@ heroOffsetY: -40px
 
 ---
 
-{{< slider type="tall" height="" >}}
+{{< slider type="tall" ratio="0.5625" >}}
 {{< slide type="video" src="img/tony/tony9x16.mp4" poster="img/tony/tonythumb.png" caption="" >}}
 {{< /slider >}}
 
