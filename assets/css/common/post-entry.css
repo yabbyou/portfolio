@@ -360,7 +360,8 @@ figure {
     .post-entry.post-wide .entry-tags,
     .post-entry.post-wide-mini .entry-tags {
         position: static;
-        margin-top: 12px;
+        margin-top: 14px;
+        margin-left: -28px;
     }
 
     .post-entry.post-wide .entry-text,

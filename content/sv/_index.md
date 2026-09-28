@@ -17,7 +17,7 @@ intro_image: "/img/me.jpg"
 
   
   <div class="hero-bottom-text">
-      Helst vill jag göra staden lite smartare, roligare och mindre förutsägbar.
+      Helst vill jag göra staden smartare, roligare och lite mindre förutsägbar.
     </div>
   </div>
 
