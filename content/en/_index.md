@@ -32,7 +32,7 @@ intro_image: "/img/me.jpg"
 blood
 </span>out in the snow. Pixel art that was sold for ”VIP-membership” on Playahead. Videos, shirts, sound loops, stickers and so on. 
 
-I also always enjoyed writing. Stories, songs, radio drama, jokes and *advertising*. Just for fun at first and now professionally. It took me a while to realize that the ad industry allows me to do all of these things, all while providing stimulation by constantly serving up new subjects that require thorough research. As a person I am constantly curious. Oddites are fun and so are discussions, looking at maps and sports.
+I also always enjoyed writing. Stories, songs, radio drama, jokes and *advertising*. Just for fun at first and now professionally. It took me a while to realize that the ad industry allows me to do all of these things, all while providing stimulation by constantly serving up new subjects that require thorough research. As a person I am constantly curious. Oddites are fun and so is discussing, sports and looking at maps.
 
 My greatest love of all is probably the city. Being able to shape what it says, how it sounds and the way it looks is a great privilege. 
 
