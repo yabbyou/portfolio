@@ -2,274 +2,274 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/sv/tags/10-sek/</loc>
+    <loc>//192.168.0.142:1313/sv/tags/10-sek/</loc>
   </url><url>
-    <loc>http://localhost:1313/sv/</loc>
+    <loc>//192.168.0.142:1313/sv/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/"
+                href="//192.168.0.142:1313/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/"
+                href="//192.168.0.142:1313/sv/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/archives/</loc>
+    <loc>//192.168.0.142:1313/sv/archives/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/archives/"
+                href="//192.168.0.142:1313/en/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/archives/"
+                href="//192.168.0.142:1313/sv/archives/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/miscellaneous/</loc>
+    <loc>//192.168.0.142:1313/sv/miscellaneous/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/miscellaneous/"
+                href="//192.168.0.142:1313/en/miscellaneous/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/miscellaneous/"
+                href="//192.168.0.142:1313/sv/miscellaneous/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/tags/case/</loc>
+    <loc>//192.168.0.142:1313/sv/tags/case/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/case/"
+                href="//192.168.0.142:1313/en/tags/case/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/tags/case/"
+                href="//192.168.0.142:1313/sv/tags/case/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/categories/</loc>
+    <loc>//192.168.0.142:1313/sv/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/categories/"
+                href="//192.168.0.142:1313/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/categories/"
+                href="//192.168.0.142:1313/sv/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/lanetalk/</loc>
+    <loc>//192.168.0.142:1313/sv/advertising/lanetalk/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/lanetalk/"
+                href="//192.168.0.142:1313/en/advertising/lanetalk/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/lanetalk/"
+                href="//192.168.0.142:1313/sv/advertising/lanetalk/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/eclipse/</loc>
+    <loc>//192.168.0.142:1313/sv/advertising/eclipse/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/eclipse/"
+                href="//192.168.0.142:1313/en/advertising/eclipse/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/eclipse/"
+                href="//192.168.0.142:1313/sv/advertising/eclipse/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/miscellaneous/mbp/</loc>
+    <loc>//192.168.0.142:1313/sv/miscellaneous/mbp/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/miscellaneous/mbp/"
+                href="//192.168.0.142:1313/en/miscellaneous/mbp/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/miscellaneous/mbp/"
+                href="//192.168.0.142:1313/sv/miscellaneous/mbp/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/gearforhell/</loc>
+    <loc>//192.168.0.142:1313/sv/advertising/gearforhell/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/gearforhell/"
+                href="//192.168.0.142:1313/en/advertising/gearforhell/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/gearforhell/"
+                href="//192.168.0.142:1313/sv/advertising/gearforhell/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/miscellaneous/fotboll/</loc>
+    <loc>//192.168.0.142:1313/sv/miscellaneous/fotboll/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/miscellaneous/fotboll/"
+                href="//192.168.0.142:1313/en/miscellaneous/fotboll/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/miscellaneous/fotboll/"
+                href="//192.168.0.142:1313/sv/miscellaneous/fotboll/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/tags/indie-annons/</loc>
+    <loc>//192.168.0.142:1313/sv/tags/indie-annons/</loc>
   </url><url>
-    <loc>http://localhost:1313/sv/tags/koncept/</loc>
+    <loc>//192.168.0.142:1313/sv/tags/koncept/</loc>
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/omduintefanns/</loc>
+    <loc>//192.168.0.142:1313/sv/advertising/omduintefanns/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/omduintefanns/"
+                href="//192.168.0.142:1313/en/advertising/omduintefanns/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/omduintefanns/"
+                href="//192.168.0.142:1313/sv/advertising/omduintefanns/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/miscellaneous/site/</loc>
+    <loc>//192.168.0.142:1313/sv/miscellaneous/site/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/miscellaneous/site/"
+                href="//192.168.0.142:1313/en/miscellaneous/site/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/miscellaneous/site/"
+                href="//192.168.0.142:1313/sv/miscellaneous/site/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/petablock/</loc>
+    <loc>//192.168.0.142:1313/sv/advertising/petablock/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/petablock/"
+                href="//192.168.0.142:1313/en/advertising/petablock/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/petablock/"
+                href="//192.168.0.142:1313/sv/advertising/petablock/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/tags/poster/</loc>
+    <loc>//192.168.0.142:1313/sv/tags/poster/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/poster/"
+                href="//192.168.0.142:1313/en/tags/poster/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/tags/poster/"
+                href="//192.168.0.142:1313/sv/tags/poster/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/</loc>
+    <loc>//192.168.0.142:1313/sv/advertising/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/"
+                href="//192.168.0.142:1313/en/advertising/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/"
+                href="//192.168.0.142:1313/sv/advertising/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/miscellaneous/roots_virus/</loc>
+    <loc>//192.168.0.142:1313/sv/miscellaneous/roots_virus/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/miscellaneous/roots_virus/"
+                href="//192.168.0.142:1313/en/miscellaneous/roots_virus/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/miscellaneous/roots_virus/"
+                href="//192.168.0.142:1313/sv/miscellaneous/roots_virus/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/rydbergs/</loc>
+    <loc>//192.168.0.142:1313/sv/advertising/rydbergs/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/rydbergs/"
+                href="//192.168.0.142:1313/en/advertising/rydbergs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/rydbergs/"
+                href="//192.168.0.142:1313/sv/advertising/rydbergs/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/saveourfriends/</loc>
+    <loc>//192.168.0.142:1313/sv/advertising/saveourfriends/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/saveourfriends/"
+                href="//192.168.0.142:1313/en/advertising/saveourfriends/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/saveourfriends/"
+                href="//192.168.0.142:1313/sv/advertising/saveourfriends/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/spotifydreammode/</loc>
+    <loc>//192.168.0.142:1313/sv/advertising/spotifydreammode/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/spotifydreammode/"
+                href="//192.168.0.142:1313/en/advertising/spotifydreammode/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/spotifydreammode/"
+                href="//192.168.0.142:1313/sv/advertising/spotifydreammode/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/tags/</loc>
+    <loc>//192.168.0.142:1313/sv/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/"
+                href="//192.168.0.142:1313/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/tags/"
+                href="//192.168.0.142:1313/sv/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/volvo_fireward/</loc>
+    <loc>//192.168.0.142:1313/sv/advertising/volvo_fireward/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/volvo_fireward/"
+                href="//192.168.0.142:1313/en/advertising/volvo_fireward/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/volvo_fireward/"
+                href="//192.168.0.142:1313/sv/advertising/volvo_fireward/"
                 />
   </url><url>
-    <loc>http://localhost:1313/sv/advertising/novacircle/</loc>
+    <loc>//192.168.0.142:1313/sv/advertising/novacircle/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/advertising/novacircle/"
+                href="//192.168.0.142:1313/en/advertising/novacircle/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="sv-SV"
-                href="http://localhost:1313/sv/advertising/novacircle/"
+                href="//192.168.0.142:1313/sv/advertising/novacircle/"
                 />
   </url>
 </urlset>

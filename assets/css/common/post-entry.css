@@ -18,6 +18,11 @@
     transform: scale(0.99);
 }
 
+/* Reset browser default figure margin */
+figure {
+    margin: 0;
+}
+
 /* ============================================================
    ROW CONTAINERS
    ============================================================ */
@@ -40,12 +45,12 @@
 }
 
 .post-row-wide .post-entry.post-wide {
-  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-  min-height: 300px;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    min-height: 300px;
 }
 
 .post-row-wide .post-entry.post-wide.img-right {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
 }
 
 /* ---------- WIDE MINI ROW ---------- */
@@ -236,6 +241,7 @@
     margin-bottom: 18px;
     padding: 6px 10px;
     border-radius: 3px;
+    background: rgba(255, 255, 255, 0.06);
 }
 
 :root .entry-tag {
@@ -261,78 +267,69 @@
 }
 
 /* ============================================================
-   RESPONSIVE — MOBILE
-   All layouts collapse to: image on top, text below.
-   Fixed image height, compact text, no wasted space.
+   RESPONSIVE — MOBILE (≤ 900px)
    ============================================================ */
 
 @media (max-width: 900px) {
 
-    /* All row types become single column */
+    /* All row types: single column */
     .post-row-tall,
-    .post-row-wide-mini,
-    .post-row-wide {
-        display: flex;
-        flex-direction: column;
-        gap: var(--gap);
+    .post-row-wide-mini {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
     }
 
-    /* All card types become flex column */
+    /* Remove tall card size caps */
+    .post-row-tall .post-entry {
+        max-width: none;
+        max-height: none;
+    }
+
+    /* Wide cards: stack vertically */
     .post-entry.post-wide,
-    .post-entry.post-wide-mini,
-    .post-entry.post-tall {
+    .post-entry.post-wide-mini {
         display: flex;
         flex-direction: column;
         height: auto;
-        width: 100%;
     }
 
-    /* Image always on top */
-    .post-entry .entry-media {
-        order: -1 !important;
-        margin: 0 !important;
-        width: 100%;
+    /* Tall cards: stack vertically, image on top */
+    .post-entry.post-tall {
+        display: flex;
+        flex-direction: column;
     }
 
-    /* Fixed image height — same for all card types */
+    .post-entry.post-tall .entry-media {
+        order: -1;
+    }
+
+    .post-entry.post-tall .entry-text-wrap {
+        order: 1;
+    }
+
+    /* All images: 16:9, same height */
     .entry-cover img {
-        width: 100%;
-        height: 220px;
-        aspect-ratio: unset;
-        object-fit: cover;
+        aspect-ratio: 16 / 9;
+        height: auto;
     }
 
-    /* Text always below */
-    .post-entry .entry-text-wrap {
-    order: 1 !important;
-    height: auto;
-    padding: 12px 16px 16px;
+    /* Force image above text for img-right and variant-case */
+    .post-entry.img-right .entry-media,
+    .post-entry.variant-case .entry-media {
+        order: -1 !important;
     }
 
-    /* Header — flush, no extra top margin */
-    .entry-header h1,
-    .entry-header h2 {
-        margin: 0;
-        margin-inline: 0;
+    .post-entry.img-right .entry-text-wrap,
+    .post-entry.variant-case .entry-text-wrap {
+        order: 1 !important;
     }
 
-    /* Summary */
-    .entry-content {
-        margin-inline: 0;
-        margin-top: 8px;
+    /* Text section: shrink to content, reset desktop spacing */
+    .entry-text-wrap {
+        height: auto;
+        padding: var(--gap);
     }
 
-    /* Tags — inline, no left indent */
-    .entry-tags {
-        margin-top: 12px;
-    }
-
-    .entry-tag {
-        margin-left: 0;
-        margin-bottom: 0;
-    }
-
-    /* Reset absolute tag positioning from desktop */
     .post-entry.post-wide .entry-tags,
     .post-entry.post-wide-mini .entry-tags {
         position: static;
@@ -344,13 +341,29 @@
         padding-bottom: 0;
     }
 
-    /* Reset tall card image margin */
-    .post-tall .entry-cover {
-        margin: 0;
+    /* Override tall card desktop margin */
+    .post-entry.post-tall .entry-cover {
+    margin: 0 !important;
     }
 
-    .post-tall .entry-cover img {
-        aspect-ratio: unset;
+    /* Override tall card aspect-ratio with higher specificity */
+    .post-entry.post-tall .entry-cover img {
+    aspect-ratio: 16 / 9 !important;
+    height: auto;
+    }
+
+    .post-entry.post-tall .entry-media {
+    border-radius: 4px 4px 0 0;
+    margin: 0 !important;
+    }
+
+    .post-entry.post-tall {
+    overflow: hidden;
+    }
+
+    .post-entry.post-tall .entry-media {
+    width: 100%;
+    flex-shrink: 0;
     }
 }
 
@@ -450,4 +463,8 @@
 
 .post-entry.post-wide-mini .entry-header h2 {
     margin-top: 18px;
+}
+
+.entry-cover {
+    margin: 0;
 }
