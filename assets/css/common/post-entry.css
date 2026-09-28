@@ -291,7 +291,6 @@
     .post-entry .entry-media {
         order: -1 !important;
         margin: 0 !important;
-        border-radius: 0;
         width: 100%;
     }
 
@@ -305,9 +304,9 @@
 
     /* Text always below */
     .post-entry .entry-text-wrap {
-        order: 1 !important;
-        height: auto;
-        padding: 16px;
+    order: 1 !important;
+    height: auto;
+    padding: 12px 16px 16px;
     }
 
     /* Header — flush, no extra top margin */
