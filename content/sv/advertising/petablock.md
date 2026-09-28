@@ -49,9 +49,10 @@ När folk ställs inför frågan sympatiserar de instinktivt med djuren.
 
 Frågan är hur man kan få dem att förändra sin livsstil.
 
+ &nbsp; 
 {{< accordion-group type="default" >}}
 
-{{% accordion-item title="KÄNSLOR KRING VEGANSKA KLÄDER" %}}
+{{% accordion-item title="DATA: VEGANSKA KLÄDER OCH KÄNSLOR" %}}
 - 61% TYCKER ATT ANVÄNDANDET AV PÄLS ÄR ELAKT
 - 37% TYCKER ATT ANVÄNDANDET AV LÄDER ÄR ELAKT 
 - 74% ÄR BEREDDA ATT BETALA MER FÖR VÄXTBASERAT LÄDER JÄMFÖRT MED DJURLÄDER 
@@ -61,6 +62,7 @@ Frågan är hur man kan få dem att förändra sin livsstil.
 
 {{< /accordion-group >}}
 
+ &nbsp; 
 Jag personligen tror inte så mycket på konsumentmakt. Livet är fullt av beslut som faktiskt kräver noggranna överväganden medan konsumism mer är att likna vid att klia sig i nacken. Alltså, när du behöver en ny tröja köper du en av dem som erbjuds dig. Däremot tror jag mycket på internet, som i det här fallet erbjuder en möjlighet du aldrig kan få i en fysisk butik: 
 
 Förändra utbudet redan innan du klivit genom dörren.
@@ -100,9 +102,10 @@ Tekniken som behövs är enkel att sätta ihop. Konceptet *ad-blockers*, eller a
 
 Flera källor gör gällande att annonsblockerare är mest populära i Asien där Indonesian, Vietnam och Kina toppar listan. I Indonesien är en vanlig anledning att mobilanvändare inte vill slösa bort sin begränsade surf genom att titta på reklam. Enligt en kommentar ([🤷](https://news.ycombinator.com/item?id=41496255)) har möjligheten till annonsblockering till och med blivit ett säljargument bland kinesiska mobilåterförsäljare.
 
+ &nbsp; 
 {{< accordion-group type="default" >}}
 
-{{% accordion-item title="ANVÄNDNING AV ANNONSBLOCKERARE" %}}
+{{% accordion-item title="DATA: ANVÄNDNING AV ANNONSBLOCKERARE" %}}
 - 31.5% AV VÄRLDENS INTERNETANVÄNDARE ANVÄNDER ANNONSBLOCKERARE
 - 41% AV AMERIKANSKA ANVÄNDARE I ÅLDERSGRUPPEN 18-24  
 - ÅR 2024 BERÄKNADES ANNONSBLOCKERARE KOSTA UTGIVARE 54 MILJARDER DOLLAR I UTEBLIVNA ANNONSINTÄKTER, CA 8% AV DEN TOTALA SUMMAN SOM SPENDERADES PÅ REKLAM
@@ -112,6 +115,7 @@ Flera källor gör gällande att annonsblockerare är mest populära i Asien dä
 
 {{< /accordion-group >}}
 
+ &nbsp; 
 Asien är en del av världen där djur åtnjuter väldigt knappa rättigheter samtidigt som människorna där, mer än någon annanstans, tycks ha förstått att de själva kan kontrollera vad de vill och inte vill se på internet. Även på telefonen. Det är en möjlighet som inte borde försummas.
 
 # Kampanjen

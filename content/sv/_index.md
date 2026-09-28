@@ -34,12 +34,13 @@ intro_image: "/img/me.jpg"
 blod
 </span> i snön. Pixel-ikoner som såldes mot “VIP” på Playahead. Videor, tröjor, ljud-loopar, klistermärken och så vidare.
 
-Jag har också alltid tyckt om att skriva. Berättelser, sånger, radiodrama, skämt och *reklam*. Först på låtsas och nu på riktigt. Det tog ett tag innan jag förstod att reklam låter mig göra allt det där som jag har hållit på med på fritiden, samtidigt som yrket stimulerar genom att hela tiden kräva grundliga utforskningar på nya områden. Som person är jag nyfiken på det mesta och tycker nästan alltid att humor väger tyngst. Allt som är udda är kul. Det är också kul att diskutera, titta på kartor och sport.
+Jag har också alltid tyckt om att skriva. Berättelser, sånger, radiodrama, skämt och *reklam*. Först på låtsas och nu på riktigt. Det tog ett tag innan jag förstod att reklam låter mig göra allt det där jag har hållit på med på fritiden, samtidigt som yrket stimulerar genom att hela tiden kräva grundliga utforskningar av nya områden. Som person är jag nyfiken på det mesta och tycker nästan alltid att humor väger tyngst. Allt som är udda är kul. Det är också kul att diskutera, titta på kartor och sport.
 
-Mest av allt älskar jag staden. Att få vara med på ett litet hörn och påverka vad den säger, hur den låter och ser ut är fantastiskt. Förhoppningsvis kan jag hjälpa den till det bättre.
+Mest av allt älskar jag staden. Att få vara med på ett litet hörn och påverka vad den säger, hur den låter och ser ut är fantastiskt. 
 
-<br> 
-<br>
+Förhoppningsvis kan jag hjälpa den till det bättre.
+
+---
 
 {{< accordion-group type="info" >}}
 {{< accordion-item title="ERFARENHET" open="true" >}}
