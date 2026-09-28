@@ -30,7 +30,7 @@ figure {
 .post-row {
     width: 100%;
     max-width: 920px;
-    margin: 0 auto calc(var(--gap) * 2);
+    margin: 0 auto calc(var(--gap) * 1.2);
 }
 
 /* ---------- WIDE ROW ---------- */
@@ -53,6 +53,12 @@ figure {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
 }
 
+.post-row-wide .post-entry .entry-tag {
+    margin-left: 31px;    /* left indent of tag */
+    margin-bottom: 0px;  /* space below tag */
+    margin-top: 0px;
+}
+
 /* ---------- WIDE MINI ROW ---------- */
 
 .post-row-wide-mini {
@@ -72,7 +78,7 @@ figure {
 
 .post-row-tall .post-entry {
     max-width: 320px;
-    max-height: 580px;
+    max-height: 560px;
 }
 
 .post-row-tall:has(.post-entry:nth-child(1):last-child) {
@@ -82,6 +88,27 @@ figure {
 
 .post-row-tall:has(.post-entry:nth-child(2):last-child) {
     grid-template-columns: repeat(2, 1fr);
+}
+
+.post-row-tall .post-entry .entry-header h1,
+.post-row-tall .post-entry .entry-header h2 {
+    margin-inline: 0px;  /* left/right of title */
+    margin-top: 18px;     /* space above title */
+}
+
+.post-row-tall .post-entry .entry-content {
+    margin-top: 16px;     /* space between title and description */
+    margin-inline: 0px;  /* left/right of description */
+}
+
+.post-row-tall .post-entry .entry-tag {
+    margin-left: 2px;    /* left indent of tag */
+    margin-bottom: 0px;  /* space below tag */
+    margin-top: 8px;
+}
+
+.post-row-tall .post-entry .entry-cover {
+    margin: 0;
 }
 
 /* ============================================================
@@ -458,13 +485,33 @@ figure {
 
 .post-entry.post-wide-mini .entry-text-wrap {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 18px;
 }
 
 .post-entry.post-wide-mini .entry-header h2 {
-    margin-top: 18px;
+    margin-top: 34px;
+}
+
+@media (max-width: 900px) {
+
+.entry-header h1,
+.entry-header h2 {
+    margin-inline: 4px;  /* left/right of title */
+    margin-top: 18px;     /* space above title */
+}
+
+.entry-content {
+    margin-top: 8px;     /* space between title and description */
+    margin-inline: 4px;  /* left/right of description */
+}
+
+.entry-tag {
+    margin-left: 2px;    /* left indent of tag */
+    margin-bottom: 0px;  /* space below tag */
+    margin-top: 8px;
 }
 
 .entry-cover {
     margin: 0;
+}
 }
