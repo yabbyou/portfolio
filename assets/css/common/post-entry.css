@@ -39,12 +39,21 @@
     width: 100%;
 }
 
+.post-row-wide .post-entry.post-wide {
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  min-height: 300px;
+}
+
+.post-row-wide .post-entry.post-wide.img-right {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+}
+
 /* ---------- WIDE MINI ROW ---------- */
 
 .post-row-wide-mini {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-auto-rows: 200px; /* OPTION 2 — ROW CONTROLS HEIGHT */
+    grid-auto-rows: 200px;
     gap: var(--gap);
 }
 
@@ -58,7 +67,7 @@
 
 .post-row-tall .post-entry {
     max-width: 320px;
-    max-height: 600px;
+    max-height: 580px;
 }
 
 .post-row-tall:has(.post-entry:nth-child(1):last-child) {
@@ -80,8 +89,8 @@
     grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
     align-items: stretch;
 
-    height: 100%;        /* ✅ CRITICAL: fill grid row */
-    min-height: 0;       /* ✅ allow children to shrink */
+    height: 100%;
+    min-height: 0;
 }
 
 /* tall */
@@ -113,9 +122,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center;
+    /* Use per-article CSS var, fall back to center center */
+    object-position: var(--img-pos, center center);
 }
-
 
 /* ============================================================
    IMAGE — TALL CARD
@@ -178,7 +187,7 @@
 }
 
 /* ============================================================
-   HEADER (BASE — DO NOT TOUCH)
+   HEADER
    ============================================================ */
 
 .entry-header h1,
@@ -236,13 +245,13 @@
 /* Light theme */
 :root .entry-tag {
     background: rgb(241, 241, 241);
-    color: #666; /* your chosen light-mode tag color */
+    color: #666;
 }
 
 /* Dark theme */
 :root[data-theme="dark"] .entry-tag {
     background: rgba(255, 255, 255, 0.08);
-    color: #aaa; /* your chosen dark-mode tag color */
+    color: #aaa;
 }
 
 .post-entry.post-wide .entry-text,
@@ -292,10 +301,28 @@
         padding-bottom: 0;
     }
 
-    /* ============================================================
-   MOBILE — FORCE CASE IMAGE ON TOP
-   ============================================================ */
+    /* Tighter card padding on mobile */
+    .entry-text-wrap {
+        padding: 16px;
+    }
 
+    .entry-header h1,
+    .entry-header h2 {
+        margin-inline: 0;
+        margin-top: 12px;
+    }
+
+    .entry-content {
+        margin-inline: 0;
+        margin-top: 10px;
+    }
+
+    .entry-tag {
+        margin-left: 0;
+        margin-bottom: 12px;
+    }
+
+    /* MOBILE — FORCE CASE IMAGE ON TOP */
     .post-entry.variant-case .entry-media {
         order: -1 !important;
     }
@@ -304,10 +331,7 @@
         order: 1 !important;
     }
 
-    /* ============================================================
-   MOBILE — FORCE IMAGE ABOVE TEXT
-   ============================================================ */
-
+    /* MOBILE — FORCE IMAGE ABOVE TEXT */
     .post-entry.img-right .entry-media {
         order: -1 !important;
     }
@@ -316,10 +340,7 @@
         order: 1 !important;
     }
 
-    /* ============================================================
-   MOBILE — TALL CARDS BEHAVE LIKE STANDARD CARDS
-   ============================================================ */
-
+    /* MOBILE — TALL CARDS */
     .post-entry.post-tall {
         display: flex;
         flex-direction: column;
@@ -409,7 +430,7 @@
 }
 
 /* ============================================================
-   WIDE-MINI — HEADER TYPOGRAPHY OVERRIDE (SAFE)
+   WIDE-MINI — HEADER TYPOGRAPHY OVERRIDE
    ============================================================ */
 
 .post-entry.post-wide-mini .entry-header h1,

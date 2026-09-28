@@ -274,6 +274,7 @@ html.has-hero body.is-simple .post-hero-slider {
 }
 
 .post-hero-slider .custom-slider.tall {
+  aspect-ratio: unset !important;
   --slide-ratio: calc(9 / 16);
 }
 

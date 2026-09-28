@@ -20,6 +20,8 @@
   {{- range $pages }}
     {{- $layout := .Params.layout | default "wide" }}
     {{- $imgPos := .Params.imagePosition | default "auto" }}
+    {{- $imgPosX := .Params.imagePosX | default "center" }}
+    {{- $imgPosY := .Params.imagePosY | default "center" }}
     {{- $class := printf "post-entry post-%s img-%s" $layout $imgPos }}
 
     <article class="{{ $class }}">
@@ -30,7 +32,7 @@
       {{- end }}
 
       {{/* ---------- MEDIA COLUMN ---------- */}}
-      <div class="entry-media">
+      <div class="entry-media" style="--img-pos: {{ $imgPosX }} {{ $imgPosY }}">
         {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
         {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
       </div>

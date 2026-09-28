@@ -1,0 +1,68 @@
+{{- $pages := .Pages }}
+
+{{/* ------------------------------------------
+     DETERMINE ROW LAYOUT BY CONTENT
+------------------------------------------ */}}
+
+{{- $rowLayout := "tall" }}
+
+{{- range $pages }}
+  {{- $layout := .Params.layout | default "wide" }}
+  {{- if eq $layout "wide-mini" }}
+    {{- $rowLayout = "wide-mini" }}
+  {{- else if eq $layout "wide" }}
+    {{- $rowLayout = "wide" }}
+  {{- end }}
+{{- end }}
+
+<div class="post-row post-row-{{ $rowLayout }}">
+
+  {{- range $pages }}
+    {{- $layout := .Params.layout | default "wide" }}
+    {{- $imgPos := .Params.imagePosition | default "auto" }}
+    {{- $class := printf "post-entry post-%s img-%s" $layout $imgPos }}
+
+    <article class="{{ $class }}">
+
+      {{/* ---------- CARD BADGE ---------- */}}
+      {{- with .Params.badge }}
+        <span class="entry-badge">{{ . }}</span>
+      {{- end }}
+
+      {{/* ---------- MEDIA COLUMN ---------- */}}
+      <div class="entry-media">
+        {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+        {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+      </div>
+
+      {{/* ---------- TEXT COLUMN ---------- */}}
+      <div class="entry-text-wrap">
+        <div class="entry-text">
+
+          <header class="entry-header">
+            <h2 class="entry-hint-parent">{{ .Title }}</h2>
+          </header>
+
+          {{- if (ne (.Param "hideSummary") true) }}
+            <div class="entry-content">
+              <p>{{ .Summary | plainify }}</p>
+            </div>
+          {{- end }}
+
+          {{- with .Params.tags }}
+          <div class="entry-tags">
+            {{- range . }}
+              <span class="entry-tag">{{ . }}</span>
+            {{- end }}
+          </div>
+          {{- end }}
+
+        </div>
+      </div>
+
+      <a class="entry-link" href="{{ .Permalink }}"></a>
+    </article>
+
+  {{- end }}
+
+</div>
