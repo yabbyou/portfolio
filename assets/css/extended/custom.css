@@ -55,3 +55,7 @@ html {
 html, body {
   overflow-x: hidden;
 }
+
+.main {
+    padding-top: 3.1rem !important;
+}
