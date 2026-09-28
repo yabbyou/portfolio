@@ -18,7 +18,7 @@ heroOffsetY: -40px
 ---
 
 {{< slider >}}
-{{< slide type="video" src="img/mostwanted/MOSTWANTED_01.MOV" poster="img/mostwanted/thumb.png" caption="" >}}
+{{< slide type="video" src="img/mostwanted/MOSTWANTED_01.MOV" poster="img/mostwanted/mwthumb.png" caption="" >}}
 {{< /slider >}}
 
 ##### "Om du inte fanns" is a documentary made by Stella Explorer and Pontus Andersson in collaboration with YEAR0001 and Arketyp
