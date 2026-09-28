@@ -1,21 +1,21 @@
 #scroll-indicator {
   position: fixed;
   top: 0;
-  right: 0;
-  width: 12px;
+  right: 0.9px;
+  width: 6px;
   height: 100vh;
   z-index: 2147483647;
   pointer-events: auto;
   transition: opacity 0.25s ease;
-  clip-path: inset(var(--header-height) 0 0 0);
+  clip-path: inset(calc(var(--header-height) + 7px) 0 0 0);
 }
 
 .scroll-dot {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: currentColor;
   transform: translateX(-50%);
