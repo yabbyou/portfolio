@@ -105,17 +105,11 @@
     justify-content: space-between;
 }
 
-.entry-cover {
-    margin-bottom: var(--gap);
-    text-align: center;
-}
-
 .entry-cover img {
     border-radius: 3px;
     width: 100%;
     aspect-ratio: 14 / 8;
     object-fit: cover;
-    margin-top: 1%;
 }
 
 .entry-cover a {

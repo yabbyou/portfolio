@@ -59,6 +59,11 @@ figure {
     margin-top: 0px;
 }
 
+/* Equalizes wide card heights */
+.post-row-wide .post-entry {
+    max-height: 480px;
+}
+
 /* ---------- WIDE MINI ROW ---------- */
 
 .post-row-wide-mini {
