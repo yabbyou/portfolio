@@ -67,8 +67,9 @@ Hopefully I can make it a little bit better.
 
 {{< accordion-group type="info" >}}
 {{< accordion-item title="CONTACT" open="true" >}}
+- <a href="mailto:adam@adamlundgren.se">adam@adamlundgren.se</a>
+- [LinkedIn ☍](https://www.linkedin.com/in/adam-lundgren-730763232/)
 - +46707903023
-- adam@adamlundgren.se
 {{< /accordion-item >}}
 {{< /accordion-group >}}
 
