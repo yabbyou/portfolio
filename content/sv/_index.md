@@ -41,6 +41,8 @@ Mest av allt älskar jag staden. Att få vara med på ett litet hörn och påver
 Förhoppningsvis kan jag hjälpa den till det bättre.
 
 ---
+<br> 
+<br>
 
 {{< accordion-group type="info" >}}
 {{< accordion-item title="ERFARENHET" open="true" >}}
