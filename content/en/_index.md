@@ -28,7 +28,9 @@ intro_image: "/img/me.jpg"
 <br> 
 <br>
 
-**I’ve always wanted to create stuff.** Skits and battle scenes featuring a lot of blood in the snow. Pixel art that was sold for ”VIP-membership” on Playahead. Videos, shirts, sound loops, stickers and so on. 
+**I’ve always wanted to create stuff.** Comedy skits and battle scenes filmed with a lot of <span class="annotated" data-note="ketchup">
+blood
+</span>out in the snow. Pixel art that was sold for ”VIP-membership” on Playahead. Videos, shirts, sound loops, stickers and so on. 
 
 I’ve also always enjoyed writing. Stories, songs, radio drama, jokes and *advertising*. Just for fun at first and now for real. It took me a while to realize that the ad industry allows me to do all of these things, all while providing stimulation by constantly serving up new subjects that require thorough research. As a person I am constantly curious. Oddites are fun and so are discussions, looking at maps and sports.
 

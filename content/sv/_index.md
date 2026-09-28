@@ -30,7 +30,7 @@ intro_image: "/img/me.jpg"
 <br> 
 <br>
 
-**Jag har alltid velat göra saker.** Sketcher och krigsscener med stora mängder <span class="annotated" data-note="ketchup">
+**Jag har alltid velat göra saker.** Humorsketcher och krigsscener som filmades med stora mängder <span class="annotated" data-note="ketchup">
 blod
 </span> i snön. Pixel-ikoner som såldes mot “VIP” på Playahead. Videor, tröjor, ljud-loopar, klistermärken och så vidare.
 
