@@ -34,7 +34,7 @@ blood
 
 I also always enjoyed writing. Stories, songs, radio drama, jokes and *advertising*. Just for fun at first and now professionally. It took me a while to realize that the ad industry allows me to do all of these things, all while providing stimulation by constantly serving up new subjects that require thorough research. As a person I am constantly curious. Oddites are fun and so is discussing, sports and looking at maps.
 
-My greatest love of all is probably the city. Being able to shape what it says, how it sounds and the way it looks is a great privilege. 
+My greatest love of all is the city. To be part of shaping what it says, how it sounds and the way that it looks is a great privilege. 
 
 Hopefully I can make it a little bit better.
 
