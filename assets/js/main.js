@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!btn) return;
 
   btn.addEventListener('click', () => {
-    const email = 'adam@adamlundgren.se';
+    const email = 'ego@adamlundgren.se';
     navigator.clipboard.writeText(email).then(() => {
       tooltip.classList.add('visible');
       setTimeout(() => {

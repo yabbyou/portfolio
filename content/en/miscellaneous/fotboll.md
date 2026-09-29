@@ -26,4 +26,3 @@ heroOffsetY: -40px
 
 
 ##### During the Euros in 2020 I found the edits airing on TV4 before Swedens matches uninspiring. So I made one myself which was broadcasted to my friends who were watching me streaming some of the games for them on discord.
-
