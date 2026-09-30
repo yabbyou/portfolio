@@ -17,7 +17,7 @@ intro_image: "/img/me.jpg"
 
   
   <div class="hero-bottom-text">
-      Would like to make the city smarter, funnier and a little bit less predictable.
+      Would like to make the city smarter, funnier and a little less predictable.
     </div>
   </div>
 
