@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tooltip.classList.add('visible');
       setTimeout(() => {
         tooltip.classList.remove('visible');
-      }, 7000);
+      }, 2400);
     });
   });
 });
